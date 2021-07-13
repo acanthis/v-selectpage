@@ -185,7 +185,7 @@ export default {
         }
       })
       this.$emit('input', this.keys)
-      this.$emit('values', this.picked.slice())
+      this.$emit('values', (!this.multiple && 1 === val.length) ? this.picked.slice()[0] : this.picked.slice())
     },
     pageNumber (val, oldVal) {
       if (val !== oldVal) this.populate()
