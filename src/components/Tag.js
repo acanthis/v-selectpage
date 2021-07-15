@@ -3,7 +3,13 @@ export default {
   props: {
     picked: Array,
     disabled: Boolean,
-    placeholder: String
+    placeholder: String,
+    isLoading: Boolean,
+  },
+  data () {
+    return {
+      loadingWrapperClass: 'sp-input-loading',
+    }
   },
   inject: ['i18n', 'renderCell'],
   render (h) {
@@ -41,7 +47,13 @@ export default {
       // display placeholder message when there is no tag
       tags.push(h('span', { class: 'sp-placeholder' }, this.placeholder))
     }
-    return h('div', { class: 'sp-base sp-inputs' }, tags)
+
+    return h('div', {
+      class: {
+        'sp-base sp-inputs': true,
+        [this.loadingWrapperClass]: this.isLoading,
+      },
+    }, tags)
   },
   methods: {
     remove (index) {

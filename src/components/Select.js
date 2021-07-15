@@ -9,7 +9,6 @@ export default {
   data () {
     return {
       loadingWrapperClass: 'sp-input-loading',
-      loadingClass: 'v-select-container-loading',
     }
   },
   inject: ['i18n', 'renderCell'],
@@ -21,16 +20,6 @@ export default {
     } else {
       result = h('span', { class: 'sp-placeholder' }, this.placeholder)
     }
-
-    children.push(h('div', {
-      class: {
-        'sp-loading': true,
-        [this.loadingClass]: this.isLoading,
-      },
-      attrs: {
-        title: this.i18n.loading
-      },
-    }))
 
     children.push(h('div', {
       class: {

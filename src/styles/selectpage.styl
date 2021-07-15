@@ -59,6 +59,8 @@ div.v-selectpage
     div.sp-input-loading
       pointer-events none
       opacity: .5
+      span
+        display none !important
     div.sp-inputs
       padding 1px 24px 1px 1px
       position relative
@@ -111,6 +113,8 @@ div.v-selectpage
         &:hover
           fill #fd6b6b
           font-weight bold
+    div.sp-button-loading
+      display none !important
     div.sp-button
       display flex
       align-items center
@@ -431,7 +435,7 @@ div.sp-loading
   display flex
   align-items center
   top 0
-  right 22px
+  right 3px
   border none
   height 100%
   cursor wait

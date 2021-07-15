@@ -25,6 +25,11 @@ export default {
       ref: 'drop'
     }, child)
   },
+  data () {
+    return {
+      loadingClass: 'v-select-container-loading',
+    }
+  },
   methods: {
     /**
      * select panel
@@ -43,10 +48,22 @@ export default {
           remove: this.remove
         }
       }
+
+      input.push(h('div', {
+        class: {
+          'sp-loading': true,
+          [this.loadingClass]: this.isLoadingData,
+        },
+        attrs: {
+          title: this.i18n.loading
+        },
+      }))
+
       input.push(h(this.multiple ? 'sp-tag' : 'sp-select', inputAttrs))
       input.push(h('div', {
         class: {
           'sp-button': true,
+          'sp-button-loading': this.isLoadingData,
           open: this.show
         }
       }, [
