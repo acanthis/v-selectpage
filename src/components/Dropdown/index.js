@@ -137,7 +137,9 @@ export default {
         click: e => {
           if (this.embed || this.rightClick || this.manual) return
           e.stopPropagation()
-          this.visible()
+          if (!this.isLoading) {
+            this.visible()
+          }
         },
         // mouse right button click
         contextmenu: e => {

@@ -8,6 +8,7 @@ export default {
   },
   data () {
     return {
+      loadingWrapperClass: 'sp-input-loading',
       loadingClass: 'v-select-container-loading',
     }
   },
@@ -31,7 +32,13 @@ export default {
       },
     }))
 
-    children.push(h('div', { class: 'sp-base sp-input', ref: 'select' }, [result]))
+    children.push(h('div', {
+      class: {
+        'sp-base sp-input': true,
+        [this.loadingWrapperClass]: this.isLoading,
+      },
+      ref: 'select'
+    }, [result]))
     // clear button
     if (this.picked && this.picked.length && !this.disabled && !this.isLoading) {
       children.push(h('div', {
