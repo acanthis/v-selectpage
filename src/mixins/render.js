@@ -36,7 +36,8 @@ export default {
         props: {
           disabled: this.disabled,
           placeholder: this.placeholderString,
-          picked: this.picked
+          picked: this.picked,
+          isLoading: this.isLoadingData,
         },
         on: {
           remove: this.remove

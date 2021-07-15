@@ -3,7 +3,13 @@ export default {
   props: {
     picked: Array,
     disabled: Boolean,
-    placeholder: String
+    placeholder: String,
+    isLoading: Boolean,
+  },
+  data () {
+    return {
+      loadingClass: 'v-select-container-loading',
+    }
   },
   inject: ['i18n', 'renderCell'],
   render (h) {
@@ -14,9 +20,20 @@ export default {
     } else {
       result = h('span', { class: 'sp-placeholder' }, this.placeholder)
     }
+
+    children.push(h('div', {
+      class: {
+        'sp-loading': true,
+        [this.loadingClass]: this.isLoading,
+      },
+      attrs: {
+        title: this.i18n.loading
+      },
+    }))
+
     children.push(h('div', { class: 'sp-base sp-input', ref: 'select' }, [result]))
     // clear button
-    if (this.picked && this.picked.length && !this.disabled) {
+    if (this.picked && this.picked.length && !this.disabled && !this.isLoading) {
       children.push(h('div', {
         class: 'sp-clear',
         attrs: {

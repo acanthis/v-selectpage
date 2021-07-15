@@ -227,6 +227,7 @@ div.v-dropdown-container-loading
     content " "
   &:after
     position: absolute
+    color #898989
     top 50%
     left 50%
     margin -1.5rem 0 0 -1.5rem
@@ -235,6 +236,44 @@ div.v-dropdown-container-loading
     font-weight 600
     line-height 3rem
     font-size 1.5rem
+    text-align center
+    z-index 2
+    content "\f013"
+    animation: fa-spin 1.75s infinite linear;
+div.v-select-container-loading
+  position relative
+  font-family: 'Font Awesome 5 Free'
+  overflow hidden
+  .sp-header
+    opacity .3
+  .sp-search
+    opacity .3
+  .sp-result-area
+    opacity .3
+  .sp-result-area
+    opacity .3
+  .sp-pagination
+    opacity .3
+  &:before
+    position absolute;
+    top 0
+    right 0
+    bottom 0
+    left 0
+    display block
+    z-index 1
+    content " "
+  &:after
+    position: absolute
+    color #a7a7a7
+    top 50%
+    left 50%
+    margin -1.5rem 0 0 -1.5rem
+    width 3rem
+    height 3rem
+    font-weight 600
+    line-height 3rem
+    font-size 1rem
     text-align center
     z-index 2
     content "\f013"
@@ -384,4 +423,17 @@ span.sp-header-title
   font-size: 15px;
   padding: 7px;
 
-
+div.sp-loading
+  position absolute
+  display flex
+  align-items center
+  top 0
+  right 22px
+  border none
+  height 100%
+  cursor wait
+  font-weight 600
+  margin 0
+  padding 12px
+  box-sizing border-box
+  line-height 1
