@@ -245,13 +245,19 @@ export default {
 
         this.loadingData = true;
         let qParams = {};
+        let filters = {};
+
+        if (this.sort) qParams.orderBy = this.sort;
+
+        if (this.params) {
+          Object.assign(filters, this.params);
+        }
 
         // Если данные были при загрузке
         if (queryParams.searchKey && queryParams.searchValue) {
-          let searchData = {}
           const field = this.searchField || this.showField
-          searchData[field] = this.value
-          Object.assign(qParams, {filters: searchData})
+          filters[field] = this.value
+          Object.assign(qParams, {filters: filters})
 
           http.get(this.data, {params: qParams, delay: 250}).then(({data}) => {
             this.picked = data.data
@@ -261,8 +267,10 @@ export default {
           qParams = {page: this.pageNumber, per_page: this.pageSize};//query list
 
           if (this.search) {
-            Object.assign(qParams, {filters: {search: this.search}});
+            Object.assign(filters, {search: this.search});
           }
+
+          Object.assign(qParams, {filters: filters});
 
           http.get(this.data, {params: qParams, delay: 350})
               .then(({data}) => {

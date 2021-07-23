@@ -54,6 +54,10 @@ export default {
     /**
      * specify field to display
      */
+    isSearchable: {
+      type: Boolean,
+      default: true,
+    },
     showField: {
       type: [String, Function],
       default: 'name'
@@ -111,7 +115,7 @@ export default {
     disabled: {
       type: Boolean,
       default: false
-    }
+    },
   },
   data () {
     return {

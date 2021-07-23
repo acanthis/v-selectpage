@@ -3,7 +3,11 @@ export default {
     const child = []
     child.push(this.buildCaller(h))
     child.push(this.buildHeader(h))
-    child.push(this.buildSearch(h))
+
+    if (this.isSearchable) {
+      child.push(this.buildSearch(h))
+    }
+
     child.push(this.buildMessage(h))
     child.push(this.buildContent(h))
     child.push(this.buildPagination(h))
@@ -181,7 +185,10 @@ export default {
         // no result message
         child.push(h('div', { class: 'sp-result-message' }, this.i18n.not_found))
       }
-      return h('div', { class: 'sp-result-area' }, child)
+      return h('div', { class: {
+        'sp-result-area': true,
+        'sp-result-without-search': !this.isSearchable,
+      } }, child)
     },
     /**
      * pagination bar
