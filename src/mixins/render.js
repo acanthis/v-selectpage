@@ -55,7 +55,7 @@ export default {
 
       input.push(h('div', {
         class: {
-          'sp-loading': true,
+          'sp-loading': this.isLoadingData,
           [this.loadingClass]: this.isLoadingData,
         },
         attrs: {
