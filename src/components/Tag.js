@@ -25,7 +25,8 @@ export default {
         }))
         // close button in the tag
         if (!this.disabled) {
-          tag.push(h('button', {
+          tag.push(h('div', {
+            class: 'tag-close',
             attrs: {
               title: this.i18n.clear
             },
