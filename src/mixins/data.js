@@ -9,7 +9,7 @@ export default {
      * single mode: '123'
      * multiple mode: '123, 124, 125'
      */
-    value: [Number, String],
+    value: [Number, String, Array],
     data: {
       type: [Array, String],
       required: true
@@ -158,7 +158,7 @@ export default {
       return { 'sp-input-container': true, 'sp-open': this.show, 'sp-disabled': this.disabled }
     },
     keys () {
-      return this.picked.map(value => value[this.keyField]).join(',')
+      return this.picked.map(value => value[this.keyField])
     }
   },
   watch: {
