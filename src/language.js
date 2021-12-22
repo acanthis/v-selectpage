@@ -135,10 +135,10 @@ export default {
     page_info: 'from - to / row_count',
     not_found: 'Нет данных',
     server_error: 'Ошибка загрузки данных',
-    clear: 'Очистить',
+    clear: 'Удалить',
     select_all: 'Выбрать все',
     unselect_all: 'Сбросить все',
-    clear_all: 'Очистить выбранное',
+    clear_all: 'Удалить выбранное',
     max_selected: 'Нельзя выбрать более max_selected_limit значений',
     placeholder: 'Выберите значение',
     items_selected: 'selected_count - выбрано'
