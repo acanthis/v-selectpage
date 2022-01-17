@@ -158,6 +158,14 @@ export default {
       return { 'sp-input-container': true, 'sp-open': this.show, 'sp-disabled': this.disabled }
     },
     keys () {
+      if (!this.multiple) {
+        if (this.picked[0]) {
+          return this.picked[0][this.keyField] || null;
+        }
+
+         return null;
+      }
+
       return this.picked.map(value => value[this.keyField])
     }
   },
