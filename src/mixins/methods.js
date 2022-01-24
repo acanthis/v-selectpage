@@ -34,7 +34,7 @@ export default {
       if (val) {
         this.$refs.drop.$refs.dropdown.style.width = this.$el.clientWidth + 'px';
         this.inputFocus()
-        if (!this.value) {
+        if (!this.getValue()) {
           this.initSelection()
         }
       } else {
@@ -228,7 +228,7 @@ export default {
         queryParams.pageSize = this.pageSize
         queryParams.pageNumber = this.pageNumber
         if (this.sort) queryParams.orderBy = this.sort
-        if (initPicked && this.value) {
+        if (initPicked && this.getValue()) {
           queryParams.searchKey = this.keyField
           queryParams.searchValue = this.value
         }
@@ -309,7 +309,7 @@ export default {
       this.populate()
     },
     initSelection () {
-      if (this.value) {
+      if (this.getValue()) {
         if (Array.isArray(this.data)) {
           const arr = this.value.split(',')
           if (arr && arr.length) {
@@ -331,6 +331,15 @@ export default {
           this.pageNumber = Math.ceil((index + 1) / this.pageSize)
         }
       }
+    },
+    getValue() {
+      let value = this.value
+
+      if (Array.isArray(value)) {
+        value = this.value.length
+      }
+
+      return value
     }
   }
 }

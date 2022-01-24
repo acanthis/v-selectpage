@@ -39,7 +39,7 @@ export default {
     // sort data list
     this.sortList()
 
-    if (this.value) {
+    if (this.getValue()) {
       this.initSelection()
     }
   },
