@@ -108,6 +108,10 @@ export default {
      * the width of drop down menu
      */
     width: Number,
+    widthByContent:  {
+      type: Boolean,
+      default: false
+    },
     isError: {
       type: Boolean,
       default: false

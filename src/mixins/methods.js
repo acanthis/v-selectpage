@@ -32,7 +32,9 @@ export default {
     showChange (val) {
       this.show = val
       if (val) {
-        this.$refs.drop.$refs.dropdown.style.width = this.$el.clientWidth + 'px';
+        if (!this.widthByContent) {
+          this.$refs.drop.$refs.dropdown.style.width = this.$el.clientWidth + 'px';
+        }
         this.inputFocus()
         if (!this.getValue()) {
           this.initSelection()
