@@ -170,7 +170,13 @@ export default {
          return null;
       }
 
-      return this.picked.map(value => value[this.keyField])
+      const pickedKeys = this.picked.map(value => value[this.keyField]);
+
+      if (Array.isArray(pickedKeys) && pickedKeys.length === 0) {
+        return null;
+      }
+
+      return pickedKeys;
     }
   },
   watch: {
