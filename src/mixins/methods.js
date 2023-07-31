@@ -7,13 +7,11 @@ const ENTER = 13
 const ESCAPE = 27
 
 import axios from 'axios'
-import delayAdapterEnhancer from 'axios-delay';
 import Qs from 'qs';
 import debounce from 'lodash.debounce';
+import delay from 'lodash.delay';
 
-export const http = axios.create({
-  adapter: delayAdapterEnhancer(axios.defaults.adapter)
-});
+export const http = axios.create();
 
 http.interceptors.request.use(config => {
   config.paramsSerializer = params => {
@@ -261,9 +259,9 @@ export default {
           filters[field] = this.value
           Object.assign(qParams, {filters: filters})
 
-          http.get(this.data, {params: qParams, delay: 250}).then(({data}) => {
+          delay(() => http.get(this.data, {params: qParams}).then(({data}) => {
             this.picked = data.data
-          })
+          }), 250)
 
         } else {
           qParams = {page: this.pageNumber, per_page: this.pageSize};//query list
@@ -274,7 +272,7 @@ export default {
 
           Object.assign(qParams, {filters: filters});
 
-          http.get(this.data, {params: qParams, delay: 350})
+          delay(() => http.get(this.data, {params: qParams})
               .then(({data}) => {
                 if (data) {
                   if (!this.resultFormat || typeof this.resultFormat !== 'function') {
@@ -298,11 +296,12 @@ export default {
                   }
                 }
               }).catch(resp => {
-            this.list = []
-            this.totalRows = 0
-          }).finally(() => {
-            this.loadingData = false
-          })
+                this.list = []
+                this.totalRows = 0
+              }).finally(() => {
+                this.loadingData = false
+              }), 350);
+
         }
       }
     },
