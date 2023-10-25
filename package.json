@@ -1,7 +1,7 @@
 {
   "name": "vue-selectpage",
   "description": "SelectPage for Vue, a select items components provides the list of items with pagination",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "author": "TerryZ <terry5@foxmail.com>",
   "type": "module",
   "files": [
@@ -30,7 +30,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "dts": "npx -p typescript tsc src/index.js --declaration --allowJs --emitDeclarationOnly --outDir types",
     "dts:vue": "vue-tsc --declaration --emitDeclarationOnly",
-    "prepublish": "vite build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
