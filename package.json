@@ -1,7 +1,7 @@
 {
   "name": "vue-selectpage",
   "description": "SelectPage for Vue, a select items components provides the list of items with pagination",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "TerryZ <terry5@foxmail.com>",
   "type": "module",
   "files": [
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TerryZ/v-selectpage.git"
+    "url": "https://github.com/acanthis/v-selectpage.git"
   },
   "keywords": [
     "front-end",
