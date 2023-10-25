@@ -1,7 +1,7 @@
 {
   "name": "vue-selectpage",
   "description": "SelectPage for Vue, a select items components provides the list of items with pagination",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "author": "TerryZ <terry5@foxmail.com>",
   "type": "module",
   "files": [
