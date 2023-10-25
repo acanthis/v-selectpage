@@ -1,7 +1,7 @@
 import { ref, h, defineComponent, mergeProps, nextTick } from 'vue'
 
 import { dropdownProps } from './core/data'
-import { useDropdown } from './core/render'
+import {useDropdown, useRender} from './core/render';
 import { isMultiple } from './core/helper'
 
 import SelectPageListCore from './SelectPageListCore'
@@ -24,10 +24,18 @@ export default defineComponent({
       renderDropdown
     } = useDropdown(props)
 
+    const {removeAll} = useRender(props, emit)
+
+    expose({
+      removeAll,
+    })
+
     const selectedItems = ref([])
     const core = ref(null)
 
+
     return () => {
+      console.log('attrs', attrs);
       const elementOption = {
         selected: selectedItems,
         disabled: props.disabled,
