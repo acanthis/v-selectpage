@@ -197,7 +197,6 @@ export function useDropdown (props) {
       ref: dropdownRef,
       border: false,
       fullWidth: true,
-      width: '100%',
       disabled: props.disabled,
       customTriggerClass: props?.customTriggerClass,
       customContainerClass: props?.customContainerClass,

@@ -16,7 +16,7 @@ export default defineComponent({
     ...dropdownProps()
   },
   emits: ['visible-change'],
-  setup (props, { emit, attrs }) {
+  setup (props, { emit, expose, attrs }) {
     const {
       visible,
       adjustDropdown,
@@ -24,7 +24,9 @@ export default defineComponent({
       renderDropdown
     } = useDropdown(props)
 
-    const {removeAll} = useRender(props, emit)
+    const removeAll = () => {
+      selectedItems.value = [];
+    }
 
     expose({
       removeAll,
@@ -32,7 +34,6 @@ export default defineComponent({
 
     const selectedItems = ref([])
     const core = ref(null)
-
 
     return () => {
       console.log('attrs', attrs);
