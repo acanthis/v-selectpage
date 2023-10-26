@@ -36,7 +36,6 @@ export default defineComponent({
     const core = ref(null)
 
     return () => {
-      console.log('attrs', attrs);
       const elementOption = {
         selected: selectedItems,
         disabled: props.disabled,
