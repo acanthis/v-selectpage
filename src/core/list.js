@@ -14,14 +14,14 @@ export const listEmits = () => ['select', 'set-highlight']
 export function useItemSelection (props, emit) {
   const selected = ref([])
 
-  const selectedCount = computed(() => selected.value.length)
+  const selectedCount = computed(() => selected.value?.length)
 
   function isItemSelected (row) {
-    if (!selected.value.length) return false
+    if (!selected.value?.length) return false
     return selected.value.some(val => val[props.keyProp] === row[props.keyProp])
   }
   function isKeySelected (key) {
-    if (!selected.value.length) return false
+    if (!selected.value?.length) return false
     if (typeof key === 'undefined') return false
     return selected.value.some(entry => entry[props.keyProp] === key)
   }
@@ -29,7 +29,7 @@ export function useItemSelection (props, emit) {
     // ensure the uniqueness of the keys
     const keySet = new Set(keys)
 
-    if (keySet.size !== selected.value.length) return false
+    if (keySet.size !== selected.value?.length) return false
 
     return Array.from(keySet).every(isKeySelected)
   }
@@ -37,14 +37,14 @@ export function useItemSelection (props, emit) {
     if (isItemSelected(row)) return
 
     if (props.multiple) {
-      setSelected([...selected.value, row])
+      setSelected([...selected.value ?? [], row])
       return
     }
     setSelected([row])
   }
   function removeAll () {
     emit('remove', selected.value)
-    setSelected([])
+    setSelected(null)
   }
   function removeItem (row) {
     emit('remove', [row])
@@ -54,12 +54,15 @@ export function useItemSelection (props, emit) {
       })
     )
   }
-  function setSelected (data, updateVModel = true) {
-    selected.value = data
-    if (updateVModel) {
-      emit('update:modelValue', data.map(value => value[props.keyProp]))
-    }
-    emit('selection-change', data)
+    function setSelected (data, updateVModel = true) {
+      const isDataEmpty = (Array.isArray(data) && data.length === 0) || data === null
+      selected.value = isDataEmpty ? null : data
+
+      if (updateVModel) {
+        emit('update:modelValue', isDataEmpty ? null : data.map(value => value[props.keyProp]))
+      }
+
+      emit('selection-change', isDataEmpty ? null : data)
   }
 
   return {

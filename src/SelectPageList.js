@@ -1,7 +1,7 @@
 import { ref, h, defineComponent, mergeProps, nextTick } from 'vue'
 
-import { dropdownProps } from './core/data'
-import {useDropdown, useRender} from './core/render';
+import {dropdownProps} from './core/data';
+import {useDropdown} from './core/render';
 import { isMultiple } from './core/helper'
 
 import SelectPageListCore from './SelectPageListCore'
@@ -25,7 +25,8 @@ export default defineComponent({
     } = useDropdown(props)
 
     const removeAll = () => {
-      selectedItems.value = [];
+      selectedItems.value = null
+      core.value.removeAll()
     }
 
     expose({
@@ -49,7 +50,7 @@ export default defineComponent({
           }
         }
       }
-      const selectedContents = selectedItems.value.length
+      const selectedContents = selectedItems.value?.length
         ? () => h(isMultiple(attrs) ? FormElementChips : FormElementSelect, elementOption)
         : undefined
 
@@ -68,7 +69,7 @@ export default defineComponent({
         onSelectionChange (data) {
           selectedItems.value = data
           // close dropdown when item selected in single selection mode
-          if (!isMultiple(attrs) && data.length) {
+          if (!isMultiple(attrs) && data && data.length) {
             closeDropdown()
           }
         }
