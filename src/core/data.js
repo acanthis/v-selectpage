@@ -115,7 +115,7 @@ export function useData (props, emit) {
     if (props.max === UNLIMITED) {
       return selectItem(row)
     }
-    if (selected.value.length === props.max) {
+    if (selected.value?.length === props.max) {
       message.value = lang.maxSelected.replace(LANG_MAX_SELECTED_LIMIT, props.max)
 
       messageDebounce(() => { message.value = '' })
