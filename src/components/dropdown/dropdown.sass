@@ -1,0 +1,31 @@
+@import "./animate.sass"
+
+$duration: 250ms
+$down: animate-down
+$up: animate-up
+
+.v-dropdown-trigger
+  display: inline-flex
+  &.v-dropdown-trigger--full-width
+    display: flex
+.v-dropdown-container
+  -webkit-font-smoothing: subpixel-antialiased
+  backface-visibility: hidden
+  display: inline-flex
+  margin: 0
+  padding: 0
+  position: absolute
+  top: 0
+  left: 0
+  border: 1px solid #D6D7D7
+  box-sizing: border-box
+  background-color: white
+  border-radius: .3rem
+  overflow: hidden
+  z-index: 3000
+  will-change: opacity, transform, top, left
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2)
+  &.v-dropdown-no-border
+    border: 0
+    border-radius: .5rem
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4)

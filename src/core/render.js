@@ -13,7 +13,7 @@ import {
 } from './helper'
 import { parseWidth } from '../core/utilities'
 
-import Dropdown from 'v-dropdown'
+import Dropdown from '../components/dropdown/index'
 import Search from '../modules/Search'
 import Control from '../modules/Control'
 import List from '../modules/List'

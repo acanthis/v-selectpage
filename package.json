@@ -1,7 +1,7 @@
 {
   "name": "vue-selectpage",
   "description": "SelectPage for Vue, a select items components provides the list of items with pagination",
-  "version": "3.0.10",
+  "version": "3.0.11",
   "author": "TerryZ <terry5@foxmail.com>",
   "type": "module",
   "files": [
@@ -48,11 +48,10 @@
     "multiple"
   ],
   "peerDependencies": {
-    "vue": "^3.2.0"
+    "vue": "^3.3.7"
   },
   "dependencies": {
-    "v-dropdown": "3.0.0",
-    "vue": "^3.2.0"
+    "vue": "^3.3.7"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.5.1",
