@@ -15,6 +15,7 @@ import IconLast from '../icons/IconLast.vue'
 export default {
   name: 'SelectPagePagination',
   props: {
+    isDataEmpty: { type: Boolean, default: false },
     pageInfo: { type: String, default: '' },
     isFirstPage: { type: Boolean, default: true },
     isLastPage: { type: Boolean, default: false }
@@ -35,7 +36,7 @@ export default {
         const linkOption = {
           href: 'javascript:void(0)',
           onClick: () => {
-            if (!btn.disabled) {
+            if (!btn.disabled && !props.isDataEmpty) {
               emit('page-change', btn.action)
             }
           }
@@ -46,7 +47,7 @@ export default {
         ])
       })
 
-      return h('div', { class: 'sp-pagination' }, [
+      return h('div', { class: {'sp-pagination': true, 'd-none': props.isDataEmpty} }, [
         h('div', { class: 'sp-page-info' }, props.pageInfo),
         h('div', { class: 'sp-page-control' }, items)
       ])

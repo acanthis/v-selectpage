@@ -140,6 +140,7 @@ export function useRender (props, emit) {
 
     return h(Pagination, {
       pageInfo: paginationInfo.value,
+      isDataEmpty: isDataEmpty(),
       isFirstPage: isFirstPage.value,
       isLastPage: isLastPage.value,
       onPageChange (action) {

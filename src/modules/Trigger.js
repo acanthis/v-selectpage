@@ -8,6 +8,7 @@ export default {
   props: {
     dropdownVisible: { type: Boolean, default: false },
     disabled: { type: Boolean, default: false },
+    isMultiple: { type: Boolean, default: undefined },
     placeholder: { type: String, default: '' },
     lang: { type: Object, default: undefined }
   },
@@ -29,6 +30,8 @@ export default {
       const btnOption = {
         class: {
           'sp-trigger-container': true,
+          'sp-multiple': props.isMultiple,
+          'sp-single': !props.isMultiple,
           'sp-opened': props.dropdownVisible,
           'sp-disabled': props.disabled
         }

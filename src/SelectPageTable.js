@@ -57,6 +57,7 @@ export default defineComponent({
       const triggerOption = {
         dropdownVisible: visible.value,
         disabled: props.disabled,
+        isMultiple: isMultiple(attrs),
         placeholder: attrs.placeholder,
         lang: core?.value?.lang
       }
