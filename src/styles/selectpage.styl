@@ -192,6 +192,7 @@ div.sp-header
   font-family fonts
   padding 10px
   background-color white
+  position relative
   .sp-search-input
     display block
     background-color #fff
@@ -200,7 +201,7 @@ div.sp-header
     width 100%
     font-size 14px
     line-height 1.43
-    padding 4px 6px
+    padding 4px 22px 4px 6px
     box-sizing border-box
     outline none !important
     border-radius 0.2rem
@@ -211,6 +212,31 @@ div.sp-header
       //background-color #f6f6f6
     &.sp-search-input--rtl
       direction rtl
+    &.sp-search-input-no-valid
+      border-color #e56767
+  span.error-feedback
+    color #e56767
+    font-size 0.875rem
+    width 100%
+    margin-top 0.5rem
+  span.form-control-feedback
+    position absolute
+    color #ff9393
+    top 5px
+    right 7px
+    z-index 2
+    display block
+    width 34px
+    height 34px
+    line-height 42px
+    text-align center
+    pointer-events none
+    &:hover
+      color #fd6b6b
+  span.form-control-clear
+    z-index 10
+    pointer-events auto
+    cursor pointer
 
 div.v-dropdown-container-loading
   position relative
@@ -449,3 +475,6 @@ div.sp-loading
   padding 12px
   box-sizing border-box
   line-height 1
+
+.d-none
+  display none

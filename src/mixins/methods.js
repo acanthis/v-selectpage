@@ -28,6 +28,15 @@ http.interceptors.request.use(config => {
 export default {
   methods: {
     showChange (val) {
+      if (!val && this.clearSearchWhenClose) {
+        this.validationSearchError = null;
+        if (this.$refs.search) {
+          this.$refs.search.value = null;
+        }
+        this.search = '';
+        this.lastSearch = null;
+      }
+
       this.show = val
       if (val) {
         if (!this.widthByContent) {
@@ -109,6 +118,9 @@ export default {
     processKey: debounce(function (e) {
       if (![LEFT, UP, RIGHT, DOWN, ESCAPE, ENTER, TAB].includes(e.keyCode)) this.populate()
     }, 400),
+    processKeyNoDelay(e) {
+      if (![LEFT, UP, RIGHT, DOWN, ESCAPE, ENTER, TAB].includes(e.keyCode)) this.populate()
+    },
     processControl (e) {
       if ([LEFT, UP, RIGHT, DOWN, ESCAPE, ENTER, TAB].includes(e.keyCode)) {
         switch (e.keyCode) {
@@ -217,11 +229,11 @@ export default {
     },
     /**
      * load remote data
-     * @param initPicked[boolean]
      * true: load selected item info
      * false: load data list
+     * @param initPicked
      */
-    remote (initPicked = false) {
+    async remote (initPicked = false) {
       if (typeof this.data === 'string') {
         const queryParams = this.params && Object.keys(this.params).length
             ? JSON.parse(JSON.stringify(this.params)) : {}
@@ -232,7 +244,23 @@ export default {
           queryParams.searchKey = this.keyField
           queryParams.searchValue = this.value
         }
+
+        this.validationSearchError = null;
+
         if (this.search) {
+          // Search string validation
+          if (typeof this.validationSearchContent === 'function') {
+            const validationResult = await Promise.resolve(this.validationSearchContent(this.search));
+
+            if (!validationResult.valid) {
+              this.validationSearchError = validationResult.errors[0];
+
+              return;
+            } else {
+              this.validationSearchError = null;
+            }
+          }
+
           // this.searchField ? this.searchField : this.showField;
           if (!this.searchField && typeof this.showField === 'function') {
             // eslint-disable-next-line no-console
@@ -241,6 +269,8 @@ export default {
             const field = this.searchField || this.showField
             queryParams[field] = this.search
           }
+        } else {
+          this.clearSearch();
         }
 
         this.loadingData = true;
@@ -341,6 +371,15 @@ export default {
       }
 
       return value
+    },
+    clearSearch() {
+      this.search = '';
+      this.lastSearch = null;
+      this.validationSearchError = null;
+
+      if (this.$refs.search) {
+        this.$refs.search.value = null;
+      }
     }
   }
 }

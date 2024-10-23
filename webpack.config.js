@@ -4,7 +4,7 @@ var webpack = require('webpack')
 var isCoverage = process.env.NODE_ENV === 'coverage';
 //externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
 module.exports = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: 'dist/',
@@ -14,6 +14,9 @@ module.exports = {
 	umdNamedDefine: true
   },
   module: {
+    loaders: [
+      { test: /\.jsx?$/, loader: 'babel', }
+    ],
     rules: [
       isCoverage ? {
           test: /\.(js|ts)/,
@@ -107,7 +110,7 @@ module.exports = {
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
-  
+
   devServer: {
     historyApiFallback: true,
     noInfo: true,

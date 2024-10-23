@@ -120,6 +120,14 @@ export default {
       type: Boolean,
       default: false
     },
+    clearSearchWhenClose: {
+      type: Boolean,
+      default: false
+    },
+    validationSearchContent: {
+      type: Function,
+      default: null
+    }
   },
   data () {
     return {
@@ -135,6 +143,7 @@ export default {
       sortedList: null,
       picked: [],
       loadingData: false,
+      validationSearchError: null,
 
       pageNumber: 1,
       totalRows: 0,
