@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode(".sp-result-message{padding:20px 0;text-align:center;font-weight:700;color:#999}.sp-container{min-width:300px;display:inline-flex;overflow:hidden;flex-direction:column;font-family:Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Heiti SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}.sp-message{display:flex;align-items:center;padding:10px 0;background-color:#e4eaee;color:#000;flex-grow:1}.sp-message .bi-chat-left-dots{font-size:1.2rem;margin:0 1rem}.sp-message .sp-message-body{font-size:14px;line-height:1;flex-wrap:wrap;max-width:15rem}.sp-message-slide-enter-active,.sp-message-slide-leave-active{transition:opacity .3s}.sp-message-slide-enter,.sp-message-slide-leave-to{opacity:0}.sp-message-slide-enter-to,.sp-message-slide-leave{opacity:1}.sp-icon{width:1em;height:1em}.sp-icon.sp-icon-small{font-size:1rem}.sp-icon.sp-icon-medium{font-size:1.3rem}.sp-circle-btn{width:20px;height:20px;font-size:14px;line-height:1;display:inline-flex;justify-content:center;align-items:center;cursor:pointer;color:#aaa;transition:all .3s ease;border-radius:50%}.sp-circle-btn:hover{color:#000}.sp-circle-btn.sp-circle-btn--disabled,.sp-circle-btn.sp-circle-btn--disabled:hover{cursor:default;color:#eee}.sp-circle-btn.sp-circle-btn--small{width:16px;height:16px;font-size:12px}.sp-circle-btn.sp-circle-btn--large{width:28px;height:28px;font-size:16px}.animate-down-enter-from,.animate-down-leave-to{transform:scale(.95);opacity:0}.animate-down-enter-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-down-leave-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-enter-from,.animate-up-leave-to{transform:scale(.95);opacity:0}.animate-up-enter-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-leave-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.v-dropdown-trigger{display:inline-flex}.v-dropdown-trigger.v-dropdown-trigger--full-width{display:flex}.v-dropdown-container{-webkit-font-smoothing:subpixel-antialiased;backface-visibility:hidden;display:inline-flex;margin:0;padding:0;position:absolute;top:0;left:0;border:1px solid #D6D7D7;box-sizing:border-box;background-color:#fff;border-radius:.3rem;overflow:hidden;z-index:3000;will-change:opacity,transform,top,left;box-shadow:0 15px 25px #0003}.v-dropdown-container.v-dropdown-no-border{border:0;border-radius:.5rem;box-shadow:0 10px 30px #0006}.sp-search{display:flex;align-items:center;padding:.5rem 0;transition:all .3s ease}.sp-search .sp-search-container{display:flex;align-items:center;flex-grow:1;padding:0;padding-left:.7rem;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input{border:0;border-radius:50rem;background-color:transparent;margin-left:5px;font-size:14px;line-height:1.43;padding:4px 6px;box-sizing:border-box;outline:none!important;color:#333;font-weight:600;flex-grow:1;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input.sp-search-input--rtl{direction:rtl}.sp-search .sp-search-container .sp-search-input::-moz-placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-search-input::placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-icon-loading{opacity:.5}.sp-search .sp-search-container .bi-search,.sp-search .sp-search-container .bi-x-lg{transition:all .3s ease;color:#aaa}.sp-search .sp-search-container .bi-search.sp-search-in-focus,.sp-search .sp-search-container .bi-x-lg.sp-search-in-focus{color:#000}.sp-search .sp-search-container .bi-x-lg{cursor:pointer}.sp-search .sp-search-container .bi-x-lg:hover{color:#000}.sp-search .sp-search-control{display:inline-flex;transition:all .3s ease;padding:0 .5rem}.sp-list{min-width:300px;max-height:320px;overflow-y:auto;padding:0 .3rem;transition:all .3s ease}.sp-list .sp-list-item{display:flex;align-items:center;justify-content:space-between;line-height:1.43;font-size:14px;text-align:left;overflow:hidden;white-space:nowrap;margin:0;padding:.25rem .5rem;color:#666;cursor:pointer;transition:all .2s ease}.sp-list .sp-list-item.sp-over{background-color:#f6f8fa!important;color:#000!important;border-radius:.4rem}.sp-list .sp-list-item.sp-selected{color:#ccc;cursor:default}.sp-list .sp-list-item.sp-rtl{direction:rtl;text-align:right}.sp-table{padding:0 .3rem;min-width:300px;max-height:320px;overflow-y:auto}.sp-table table{width:100%;border-spacing:0}.sp-table table td,.sp-table table th{font-size:14px;line-height:1.43;border:0!important}.sp-table table th{padding:0 8px 5px;font-weight:600;font-size:15px;color:#333;text-align:left}.sp-table table td{padding:.25rem .5rem;color:#666;cursor:pointer}.sp-table table tbody tr.sp-over td{background-color:#f6f8fa!important;color:#000!important}.sp-table table tbody tr.sp-over td:first-child{border-top-left-radius:.4rem;border-bottom-left-radius:.4rem}.sp-table table tbody tr.sp-over td:last-child{border-top-right-radius:.4rem;border-bottom-right-radius:.4rem}.sp-table table tbody tr.sp-selected td{color:#ccc;cursor:default}.sp-table table thead .sp-rtl th,.sp-table table tbody .sp-rtl td{direction:rtl;text-align:right}.sp-pagination{display:flex;justify-content:space-between;align-items:center;padding:5px 10px}.sp-pagination .sp-page-info{line-height:1;color:#0000004d;font-size:14px;font-weight:600;margin-right:10px}.sp-pagination .sp-page-control{padding:0;margin:0}.sp-pagination .sp-page-control .sp-page-button{display:inline-flex}.sp-pagination .sp-page-control .sp-page-button a{display:inline-flex;padding:7px;font-size:14px;color:#333;text-decoration:none;cursor:pointer;line-height:1;background:transparent;transition:all .3s ease;border-radius:.6rem}.sp-pagination .sp-page-control .sp-page-button a:hover{color:#000;background-color:#f1f1f1}.sp-pagination .sp-page-control .sp-page-button.sp-page-disabled a{color:#ddd;font-weight:400;background-color:transparent;cursor:default}.sp-trigger-container{display:flex;align-items:center;justify-content:space-between;flex-grow:1;padding:6px 12px 6px 6px;background-color:#fff;border:1px solid #ddd;border-radius:.3rem;font-size:14px;line-height:1.42857143;outline:0!important;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;transition:all .2s ease}.sp-trigger-container:hover{border:1px solid #aaa}.sp-trigger-container.sp-disabled,.sp-trigger-container.sp-disabled:hover{border:1px solid #eee;background-color:#eee;cursor:default;color:#aaa}.sp-trigger-container.sp-disabled .sp-select,.sp-trigger-container.sp-disabled .sp-chips,.sp-trigger-container.sp-disabled:hover .sp-select,.sp-trigger-container.sp-disabled:hover .sp-chips{color:#aaa;background-color:#eee}.sp-trigger-container.sp-disabled .sp-chip,.sp-trigger-container.sp-disabled:hover .sp-chip{background-color:#d6d6d6!important;color:#666!important}.sp-trigger-container .bi-chevron-down{transition:transform .2s ease;margin-left:.5rem;font-size:1rem;color:#666}.sp-trigger-container.sp-opened{box-shadow:3px 2px 6px #0000004d;border:1px solid #666;color:#000}.sp-trigger-container.sp-opened .bi-chevron-down{transform:rotate(180deg)}.sp-trigger-container.sp-opened:hover{border:1px solid #666}.sp-trigger-container .sp-placeholder{color:#aaa;padding:5px;line-height:1}.sp-trigger-container .sp-trigger{display:flex;align-items:center;flex-wrap:wrap}.sp-trigger-container .sp-trigger.sp-select{justify-content:space-between;flex-grow:1}.sp-trigger-container .sp-trigger.sp-select .sp-select-content{padding:5px;line-height:1.143;color:#666}.sp-trigger-container .sp-trigger.sp-chips{gap:.5rem}.sp-trigger-container .sp-trigger .sp-chip{border-radius:.3rem;background-color:#eee;color:#666;display:inline-flex;align-items:center;padding:5px 7px;transition:all .2s ease}.sp-trigger-container .sp-trigger .sp-chip--body{display:inline-flex;line-height:1.143;margin-right:5px}.sp-trigger-container .sp-trigger .sp-chip:hover{background-color:#f7f7f7;color:#000}")),document.head.appendChild(e)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
-import { ref as w, computed as F, watch as J, onMounted as he, provide as z, nextTick as ne, inject as B, defineComponent as G, reactive as de, onBeforeUnmount as He, onUnmounted as Ve, withDirectives as je, h as r, vShow as Re, Teleport as Ue, Transition as me, openBlock as M, createElementBlock as N, createElementVNode as A, mergeProps as le, toRef as ve } from "vue";
+import { ref as w, computed as F, watch as J, onMounted as he, provide as z, nextTick as ne, inject as B, defineComponent as G, reactive as de, onBeforeUnmount as He, onUnmounted as Ve, withDirectives as je, h as r, vShow as Re, Teleport as Ue, Transition as me, openBlock as k, createElementBlock as N, createElementVNode as A, mergeProps as le, toRef as ve } from "vue";
 const [
   oe,
   ae,
@@ -14,7 +14,7 @@ const [
   40,
   13,
   27
-], Ge = [oe, ae, re, se, we, ye], R = -1, be = 0, Ze = 0, j = 1, We = 10, Se = "first", Q = "previous", ee = "next", Ce = "last", C = "page_num", _ = "page_count", P = "row_count", I = "max_select_limit", x = "selected_count", [
+], Ge = [oe, ae, re, se, we, ye], R = -1, be = 0, Ze = 0, j = 1, We = 10, Se = "first", Q = "previous", ee = "next", Ce = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
   Ke,
   K,
   Xe,
@@ -51,13 +51,13 @@ const [
     prev: "上一页",
     first: "首页",
     last: "尾页",
-    pageInfo: `第 ${C}/${_} 页(共 ${P} 条记录)`,
+    pageInfo: `第 ${_}/${P} 页(共 ${I} 条记录)`,
     notFound: "无查询结果",
     clear: "清除内容",
     clearAll: "清除全部已选择项目",
-    maxSelected: `最多只能选择 ${I} 个项目`,
+    maxSelected: `最多只能选择 ${x} 个项目`,
     placeholder: "请选择一个项目",
-    selectedCount: `已选择 ${x} 个项目`,
+    selectedCount: `已选择 ${$} 个项目`,
     search: "搜索"
   },
   [K]: {
@@ -66,13 +66,13 @@ const [
     prev: "Previous page",
     first: "First page",
     last: "Last page",
-    pageInfo: `Page ${C} of ${_} (${P} records)`,
+    pageInfo: `Page ${_} of ${P} (${I} records)`,
     notFound: "Data not found",
     clear: "Clear content",
     clearAll: "Clear all selected",
-    maxSelected: `You can only select up to ${I} items`,
+    maxSelected: `You can only select up to ${x} items`,
     placeholder: "Select an option",
-    selectedCount: `${x} items selected`,
+    selectedCount: `${$} items selected`,
     search: "Search"
   },
   [Xe]: {
@@ -81,13 +81,13 @@ const [
     prev: "前へ",
     first: "最初のページへ",
     last: "最後のページへ",
-    pageInfo: `${C}/${_} 件 (全 ${P} つ記録)`,
+    pageInfo: `${_}/${P} 件 (全 ${I} つ記録)`,
     notFound: "(0 件)",
     clear: "コンテンツをクリアする",
     clearAll: "選択した項目をクリアする",
-    maxSelected: `最多で ${I} のプロジェクトを選ぶことしかできません`,
+    maxSelected: `最多で ${x} のプロジェクトを選ぶことしかできません`,
     placeholder: "プロジェクトを選択してください",
-    selectedCount: `${x} アイテムが選択されました`,
+    selectedCount: `${$} アイテムが選択されました`,
     search: "検索"
   },
   [Ye]: {
@@ -96,13 +96,13 @@ const [
     prev: "السابق",
     first: "الاول",
     last: "الأخير",
-    pageInfo: `صفحة ${C}/${_} (${P} سجلات)`,
+    pageInfo: `صفحة ${_}/${P} (${I} سجلات)`,
     notFound: "لا يوجد نتائج",
     clear: "محو المحتوى",
     clearAll: "إلغاء التحديد",
-    maxSelected: `يمكنك فقط تحديد (${I}) عناصر`,
+    maxSelected: `يمكنك فقط تحديد (${x}) عناصر`,
     placeholder: "رجاء حدد الخيار",
-    selectedCount: `تم تحديد (${x}) عناصر`,
+    selectedCount: `تم تحديد (${$}) عناصر`,
     search: "يبحث"
   },
   [qe]: {
@@ -111,13 +111,13 @@ const [
     prev: "Pagina anterior",
     first: "Primera página",
     last: "última página",
-    pageInfo: `Página ${C}/${_} (${P} registros)`,
+    pageInfo: `Página ${_}/${P} (${I} registros)`,
     notFound: "no encontrado",
     clear: "Borrar contenido",
     clearAll: "Borrar todo lo seleccionado",
-    maxSelected: `Solo puedes seleccionar hasta ${I} items`,
+    maxSelected: `Solo puedes seleccionar hasta ${x} items`,
     placeholder: "Seleccione una opción",
-    selectedCount: `${x} items Seleccionado`,
+    selectedCount: `${$} items Seleccionado`,
     search: "Buscar"
   },
   [Je]: {
@@ -126,13 +126,13 @@ const [
     prev: "Vorherige Seite",
     first: "Erste Seite",
     last: "Letzte Seite",
-    pageInfo: `Seite ${C}/${_} (${P} Einträge)`,
+    pageInfo: `Seite ${_}/${P} (${I} Einträge)`,
     notFound: "Nicht gefunden",
     clear: "Inhalt löschen",
     clearAll: "Alle ausgewählten löschen",
-    maxSelected: `Sie können nur bis zu ${I} Elemente auswählen`,
+    maxSelected: `Sie können nur bis zu ${x} Elemente auswählen`,
     placeholder: "Wählen",
-    selectedCount: `${x} Elemente ausgewählt`,
+    selectedCount: `${$} Elemente ausgewählt`,
     search: "Suchen"
   },
   [Qe]: {
@@ -141,13 +141,13 @@ const [
     prev: "Pagina precedentă",
     first: "Prima pagină",
     last: "Ultima pagină",
-    pageInfo: `Pagina ${C}/${_} (${P} înregistrări)`,
+    pageInfo: `Pagina ${_}/${P} (${I} înregistrări)`,
     notFound: "nu a fost găsit",
     clear: "Șterge conținutul",
     clearAll: "Șterge înregistrările selectate",
-    maxSelected: `Poți selecta până la ${I} înregistrări`,
+    maxSelected: `Poți selecta până la ${x} înregistrări`,
     placeholder: "Selectează o înregistrare",
-    selectedCount: `${x} înregistrări selectate`,
+    selectedCount: `${$} înregistrări selectate`,
     search: "Căutare"
   },
   [et]: {
@@ -156,13 +156,13 @@ const [
     prev: "Назад",
     first: "В начало",
     last: "В конец",
-    pageInfo: `${C} - ${_} / ${P}`,
+    pageInfo: `${_} - ${P} / ${I}`,
     notFound: "Нет данных",
     clear: "Очистить",
     clearAll: "Очистить выбранное",
-    maxSelected: `Нельзя выбрать более ${I} значений`,
+    maxSelected: `Нельзя выбрать более ${x} значений`,
     placeholder: "Выберите значение",
-    selectedCount: `${x} - выбрано`,
+    selectedCount: `${$} - выбрано`,
     search: "Поиск"
   },
   [tt]: {
@@ -171,13 +171,13 @@ const [
     prev: "Page précédente",
     first: "Première page",
     last: "Dernière page",
-    pageInfo: `Page ${C}/${_} (${P} lignes)`,
+    pageInfo: `Page ${_}/${P} (${I} lignes)`,
     notFound: "Aucun résultat",
     clear: "Effacer",
     clearAll: "Tout déselectionner",
-    maxSelected: `Vous ne pouvez pas sélectionner plus de ${I} élements`,
+    maxSelected: `Vous ne pouvez pas sélectionner plus de ${x} élements`,
     placeholder: "Sélectionnez une option",
-    selectedCount: `${x} éléments sélectionnés`,
+    selectedCount: `${$} éléments sélectionnés`,
     search: "Recherche"
   },
   [nt]: {
@@ -186,13 +186,13 @@ const [
     prev: "Página anterior",
     first: "Primera página",
     last: "Última página",
-    pageInfo: `Página ${C}/${_} (${P} registros)`,
+    pageInfo: `Página ${_}/${P} (${I} registros)`,
     notFound: "não encontrado",
     clear: "Apagar conteúdo",
     clearAll: "Apagar itens selecionados",
-    maxSelected: `Máximo permitido ${I} itens`,
+    maxSelected: `Máximo permitido ${x} itens`,
     placeholder: "Selecione uma opção",
-    selectedCount: `${x} itens selecionados`,
+    selectedCount: `${$} itens selecionados`,
     search: "Procurar"
   },
   [lt]: {
@@ -201,13 +201,13 @@ const [
     prev: "Poprzednia",
     first: "Pierwsza",
     last: "Ostatnia",
-    pageInfo: `Strona ${C}/${_} (${P} rekordów)`,
+    pageInfo: `Strona ${_}/${P} (${I} rekordów)`,
     notFound: "Nic nie znaleziono",
     clear: "Wyczyść",
     clearAll: "Usuń wszystkie zaznaczone",
-    maxSelected: `Możesz zaznaczyć maksymalnie ${I}`,
+    maxSelected: `Możesz zaznaczyć maksymalnie ${x}`,
     placeholder: "Wybierz z listy",
-    selectedCount: `${x} zaznaczonych`,
+    selectedCount: `${$} zaznaczonych`,
     search: "Szukaj"
   },
   [ot]: {
@@ -216,13 +216,13 @@ const [
     prev: "Vorige pagina",
     first: "Eerste pagina",
     last: "Laatste pagina",
-    pageInfo: `Pagina ${C}/${_} (${P} items)`,
+    pageInfo: `Pagina ${_}/${P} (${I} items)`,
     notFound: "Niet gevonden",
     clear: "Wissen",
     clearAll: "Wis selectie",
-    maxSelected: `Je kunt maar ${I} items selecteren`,
+    maxSelected: `Je kunt maar ${x} items selecteren`,
     placeholder: "Kies een optie",
-    selectedCount: `${x} Items geselecteerd`,
+    selectedCount: `${$} Items geselecteerd`,
     search: "Zoekopdracht"
   },
   [at]: {
@@ -231,13 +231,13 @@ const [
     prev: "上一頁",
     first: "首頁",
     last: "尾頁",
-    pageInfo: `第 ${C}/${_} 頁(共 ${P} 條記錄)`,
+    pageInfo: `第 ${_}/${P} 頁(共 ${I} 條記錄)`,
     notFound: "無查詢結果",
     clear: "清除內容",
     clearAll: "清除全部已選擇項目",
-    maxSelected: `最多只能選擇 ${I} 個項目`,
+    maxSelected: `最多只能選擇 ${x} 個項目`,
     placeholder: "請選擇一個項目",
-    selectedCount: `已選擇 ${x} 個項目`,
+    selectedCount: `已選擇 ${$} 個項目`,
     search: "搜索"
   },
   [rt]: {
@@ -406,7 +406,8 @@ function xe() {
      */
     width: { type: [String, Number], default: void 0 },
     /** debounce delay when typing, in milliseconds */
-    debounce: { type: Number, default: 300 }
+    debounce: { type: Number, default: 300 },
+    fetchDataOnMount: { type: Boolean, default: !1 }
   };
 }
 function $e() {
@@ -439,7 +440,7 @@ function ht(e, t) {
     selectItem: i,
     setSelected: l,
     isKeysEqualToSelected: g
-  } = ft(e, t), u = w(""), f = w(""), y = w(j), $ = w(0), b = w([]), m = w(!1), T = ie(), O = () => te(b.value), p = (h) => {
+  } = ft(e, t), u = w(""), f = w(""), y = w(j), S = w(0), b = w([]), m = w(!1), T = ie(), O = () => te(b.value), p = (h) => {
     if (!h || !Object.keys(h).length)
       return "";
     switch (typeof e.labelProp) {
@@ -448,11 +449,11 @@ function ht(e, t) {
       case "function":
         return e.labelProp(h);
     }
-  }, S = (h) => {
+  }, C = (h) => {
     if (e.max === be)
       return i(h);
     if (s.value.length === e.max) {
-      f.value = n.maxSelected.replace(I, e.max), T(() => {
+      f.value = n.maxSelected.replace(x, e.max), T(() => {
         f.value = "";
       });
       return;
@@ -465,8 +466,8 @@ function ht(e, t) {
       pageNumber: y.value,
       pageSize: e.pagination ? e.pageSize : Ze
     };
-    t("fetch-data", h, (k, V) => {
-      Array.isArray(k) && (b.value = k, $.value = typeof V == "number" ? V : 0, ne(() => {
+    t("fetch-data", h, (M, V) => {
+      Array.isArray(M) && (b.value = M, S.value = typeof V == "number" ? V : 0, ne(() => {
         m.value = !1;
       }));
     });
@@ -481,28 +482,28 @@ function ht(e, t) {
         l([], !1);
         return;
       }
-      g(h) || t("fetch-selected-data", h, (k) => {
-        Array.isArray(k) && l(k, h.length !== k.length);
+      g(h) || t("fetch-selected-data", h, (M) => {
+        Array.isArray(M) && l(M, h.length !== M.length);
       });
     }
   };
   return J(u, () => {
     y.value = j, E();
   }), J(() => e.modelValue, L), he(() => {
-    E(), te(e.modelValue) || L();
+    e.fetchDataOnMount && E(), te(e.modelValue) || L();
   }), z("keyProp", e.keyProp), z("rtl", e.rtl), z("pageSize", e.pageSize), z("debounce", e.debounce), z("multiple", e.multiple), z("loading", m), z("language", n), z("renderCell", p), z("isItemSelected", a), z("selectedCount", o), z("removeAll", c), z("removeItem", d), {
     selected: s,
     query: u,
     message: f,
     currentPage: y,
-    totalRows: $,
+    totalRows: S,
     lang: n,
     list: b,
     renderCell: p,
     isDataEmpty: O,
     isItemSelected: a,
     selectedCount: o,
-    selectItem: S,
+    selectItem: C,
     removeAll: c,
     removeItem: d,
     fetchData: E
@@ -526,7 +527,7 @@ function H() {
 }
 function mt(e, t, n, s) {
   const o = F(() => Math.ceil(n.value / e.pageSize)), a = F(() => t.value === j), c = F(() => t.value === o.value), d = F(
-    () => s.pageInfo.replace(C, t.value).replace(_, o.value).replace(P, n.value)
+    () => s.pageInfo.replace(_, t.value).replace(P, o.value).replace(I, n.value)
   ), i = function(u) {
     switch (u) {
       case Se:
@@ -674,7 +675,7 @@ const $t = G({
       isTriggerByContextmenu: y
     } = ce(e);
     J(o, (p) => n("visible-change", p));
-    function $() {
+    function S() {
       e.disabled || ("trigger" in t && T(), f ? (window.clearTimeout(i.value), i.value = window.setTimeout(() => {
         o.value = !0;
       }, pe)) : o.value = !0);
@@ -685,17 +686,17 @@ const $t = G({
       }, pe)) : o.value = !1);
     }
     function m() {
-      o.value ? b() : $();
+      o.value ? b() : S();
     }
     function T() {
-      const p = fe(l.value), S = fe(g.value), E = Ct(e, c.y, p, S), L = _t(e, c.x, p, S);
+      const p = fe(l.value), C = fe(g.value), E = Ct(e, c.y, p, C), L = _t(e, c.x, p, C);
       d.value = E.dropUp, a.top = `${E.top}px`, a.left = `${L}px`;
     }
     function O(p) {
       if (!o.value)
         return;
-      const S = p.composedPath().some((E) => E === l.value);
-      S && !e.toggle && !y || (!S || S && y) && b(!0);
+      const C = p.composedPath().some((E) => E === l.value);
+      C && !e.toggle && !y || (!C || C && y) && b(!0);
     }
     return he(() => {
       typeof e.width < "u" && (a.width = e.width + "px"), document.body.addEventListener("mousedown", O);
@@ -704,7 +705,7 @@ const $t = G({
     }), Ve(() => {
       l.value && l.value.remove();
     }), s({
-      display: $,
+      display: S,
       close: b,
       toggleVisible: m,
       adjust: T,
@@ -716,7 +717,7 @@ const $t = G({
         visible: o,
         disabled: e.disabled
       }));
-      const S = {
+      const C = {
         class: It(e),
         style: a,
         ref: g,
@@ -724,9 +725,9 @@ const $t = G({
         // do some operations in that
         onMousedown: (h) => h.stopPropagation()
       };
-      f && (S.onMouseenter = $, S.onMouseleave = b);
+      f && (C.onMouseenter = S, C.onMouseleave = b);
       const E = je(
-        r("div", S, t.default && t.default()),
+        r("div", C, t.default && t.default()),
         [[Re, o.value]]
       );
       p.push(
@@ -738,14 +739,14 @@ const $t = G({
         class: xt(e),
         ref: l
       };
-      return f ? (L.onMouseenter = $, L.onMouseleave = b) : u ? L.onClick = (h) => {
+      return f ? (L.onMouseenter = S, L.onMouseleave = b) : u ? L.onClick = (h) => {
         e.manual || (h.stopPropagation(), m());
       } : y && (L.onContextmenu = (h) => {
         if (e.manual)
           return;
         h.stopPropagation(), h.preventDefault();
-        const k = Pt(h);
-        c.x = k.x, c.y = k.y, $();
+        const M = Pt(h);
+        c.x = M.x, c.y = M.y, S();
       }), r("div", L, p);
     };
   }
@@ -795,7 +796,7 @@ const Z = {
   viewBox: "0 0 16 16"
 };
 function Ot(e, t) {
-  return M(), N("svg", Tt, t[0] || (t[0] = [
+  return k(), N("svg", Tt, t[0] || (t[0] = [
     A("path", { d: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" }, null, -1)
   ]));
 }
@@ -808,11 +809,11 @@ const Et = /* @__PURE__ */ D(At, [["render", Ot]]), Lt = {}, zt = {
   viewBox: "0 0 16 16"
 };
 function Bt(e, t) {
-  return M(), N("svg", zt, t[0] || (t[0] = [
+  return k(), N("svg", zt, t[0] || (t[0] = [
     A("path", { d: "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" }, null, -1)
   ]));
 }
-const X = /* @__PURE__ */ D(Lt, [["render", Bt]]), kt = {}, Mt = {
+const X = /* @__PURE__ */ D(Lt, [["render", Bt]]), Mt = {}, kt = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -820,7 +821,7 @@ const X = /* @__PURE__ */ D(Lt, [["render", Bt]]), kt = {}, Mt = {
   class: "sp-icon sp-icon-loading"
 };
 function Nt(e, t) {
-  return M(), N("svg", Mt, t[0] || (t[0] = [
+  return k(), N("svg", kt, t[0] || (t[0] = [
     A("path", {
       d: "M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z",
       opacity: ".25"
@@ -836,13 +837,13 @@ function Nt(e, t) {
     ], -1)
   ]));
 }
-const Dt = /* @__PURE__ */ D(kt, [["render", Nt]]), Ft = {
+const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
   props: {
     modelValue: { type: String, default: "" }
   },
   emits: ["update:modelValue", "keyboard-operation"],
   setup(e, { emit: t, expose: n }) {
-    const { rtl: s, debounce: o, loading: a, language: c, selectedCount: d, multiple: i } = H(), l = w(!1), g = w(), u = ie(o), f = F(() => !i || !d.value ? c.search : c.selectedCount.replace(x, d.value)), y = () => gt(g.value);
+    const { rtl: s, debounce: o, loading: a, language: c, selectedCount: d, multiple: i } = H(), l = w(!1), g = w(), u = ie(o), f = F(() => !i || !d.value ? c.search : c.selectedCount.replace($, d.value)), y = () => gt(g.value);
     return n({ focus: y }), () => {
       const b = [
         F(() => a.value ? r(Dt) : r(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
@@ -894,7 +895,7 @@ const Dt = /* @__PURE__ */ D(kt, [["render", Nt]]), Ft = {
   viewBox: "0 0 16 16"
 };
 function jt(e, t) {
-  return M(), N("svg", Vt, t[0] || (t[0] = [
+  return k(), N("svg", Vt, t[0] || (t[0] = [
     A("path", { d: "M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" }, null, -1)
   ]));
 }
@@ -1048,7 +1049,7 @@ const Xt = {}, Yt = {
   viewBox: "0 0 16 16"
 };
 function qt(e, t) {
-  return M(), N("svg", Yt, t[0] || (t[0] = [
+  return k(), N("svg", Yt, t[0] || (t[0] = [
     A("path", {
       "fill-rule": "evenodd",
       d: "M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z"
@@ -1064,7 +1065,7 @@ const Jt = /* @__PURE__ */ D(Xt, [["render", qt]]), Qt = {}, en = {
   viewBox: "0 0 16 16"
 };
 function tn(e, t) {
-  return M(), N("svg", en, t[0] || (t[0] = [
+  return k(), N("svg", en, t[0] || (t[0] = [
     A("path", {
       "fill-rule": "evenodd",
       d: "M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
@@ -1080,7 +1081,7 @@ const nn = /* @__PURE__ */ D(Qt, [["render", tn]]), ln = {}, on = {
   viewBox: "0 0 16 16"
 };
 function an(e, t) {
-  return M(), N("svg", on, t[0] || (t[0] = [
+  return k(), N("svg", on, t[0] || (t[0] = [
     A("path", {
       "fill-rule": "evenodd",
       d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
@@ -1096,7 +1097,7 @@ const rn = /* @__PURE__ */ D(ln, [["render", an]]), sn = {}, cn = {
   viewBox: "0 0 16 16"
 };
 function un(e, t) {
-  return M(), N("svg", cn, t[0] || (t[0] = [
+  return k(), N("svg", cn, t[0] || (t[0] = [
     A("path", {
       "fill-rule": "evenodd",
       d: "M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"
@@ -1143,7 +1144,7 @@ const dn = /* @__PURE__ */ D(sn, [["render", un]]), gn = {
   viewBox: "0 0 16 16"
 };
 function hn(e, t) {
-  return M(), N("svg", pn, t[0] || (t[0] = [
+  return k(), N("svg", pn, t[0] || (t[0] = [
     A("path", { d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" }, null, -1),
     A("path", { d: "M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" }, null, -1)
   ]));
@@ -1163,7 +1164,7 @@ function Oe(e, t) {
     fetchData: u,
     renderCell: f,
     removeAll: y,
-    removeItem: $
+    removeItem: S
   } = ht(e, t), {
     highlightIndex: b,
     setItemHighlight: m,
@@ -1171,13 +1172,13 @@ function Oe(e, t) {
     isSomeRowHighlight: O
   } = pt(e, t, i), {
     paginationInfo: p,
-    isFirstPage: S,
+    isFirstPage: C,
     isLastPage: E,
     switchPage: L,
     pagingNavigation: h
-  } = mt(e, c, d, n), k = ie(e.debounce), V = w(), ke = () => {
+  } = mt(e, c, d, n), M = ie(e.debounce), V = w(), Me = () => {
     V.value && V.value.focus();
-  }, Me = () => r("div", { class: "sp-search" }, [
+  }, ke = () => r("div", { class: "sp-search" }, [
     r(Ft, {
       ref: V,
       modelValue: o.value,
@@ -1188,7 +1189,7 @@ function Oe(e, t) {
         if (it(v))
           return T(v);
         if (ct(v)) {
-          h(v), k(u);
+          h(v), M(u);
           return;
         }
         if (ut(v))
@@ -1230,9 +1231,9 @@ function Oe(e, t) {
     lang: n,
     renderCell: f,
     removeAll: y,
-    removeItem: $,
-    setSearchFocus: ke,
-    renderSearch: Me,
+    removeItem: S,
+    setSearchFocus: Me,
+    renderSearch: ke,
     renderMessage: Ne,
     renderList: De,
     renderTable: Fe,
@@ -1240,7 +1241,7 @@ function Oe(e, t) {
       if (e.pagination)
         return r(gn, {
           pageInfo: p.value,
-          isFirstPage: S.value,
+          isFirstPage: C.value,
           isLastPage: E.value,
           onPageChange(v) {
             L(v), u();
@@ -1250,7 +1251,8 @@ function Oe(e, t) {
     renderContainer: (v) => {
       const Y = { class: "sp-container" };
       return e.width && (Y.style = { width: _e(e.width) }), r("div", Y, v);
-    }
+    },
+    fetchData: u
   };
 }
 function Ee(e) {
@@ -1330,7 +1332,7 @@ const wn = {}, yn = {
   viewBox: "0 0 16 16"
 };
 function bn(e, t) {
-  return M(), N("svg", yn, t[0] || (t[0] = [
+  return k(), N("svg", yn, t[0] || (t[0] = [
     A("path", {
       "fill-rule": "evenodd",
       d: "M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
@@ -1506,7 +1508,8 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
       renderMessage: g,
       renderTable: u,
       renderPagination: f,
-      renderContainer: y
+      renderContainer: y,
+      fetchData: S
     } = Oe(e, t);
     return n({
       selected: s,
@@ -1514,7 +1517,8 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
       renderCell: i,
       removeAll: a,
       removeItem: c,
-      setSearchFocus: d
+      setSearchFocus: d,
+      fetchData: S
     }), () => y([
       l(),
       g(),
@@ -1565,7 +1569,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
         {
           onVisibleChange: (p) => {
             t("visible-change", p), p && ne(() => {
-              l.value.setSearchFocus();
+              l.value.fetchData(), l.value.setSearchFocus();
             });
           }
         },

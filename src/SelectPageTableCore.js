@@ -24,7 +24,8 @@ export default defineComponent({
       renderMessage,
       renderTable,
       renderPagination,
-      renderContainer
+      renderContainer,
+      fetchData
     } = useRender(props, emit)
 
     expose({
@@ -33,7 +34,8 @@ export default defineComponent({
       renderCell,
       removeAll,
       removeItem,
-      setSearchFocus
+      setSearchFocus,
+      fetchData
     })
 
     return () => renderContainer([

@@ -77,6 +77,7 @@ export default defineComponent({
           if (!val) return
 
           nextTick(() => {
+            core.value.fetchData()
             core.value.setSearchFocus()
           })
         }

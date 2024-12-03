@@ -48,7 +48,8 @@ export function selectPageProps () {
      */
     width: { type: [String, Number], default: undefined },
     /** debounce delay when typing, in milliseconds */
-    debounce: { type: Number, default: 300 }
+    debounce: { type: Number, default: 300 },
+    fetchDataOnMount: { type: Boolean, default: false }
   }
 }
 
@@ -177,7 +178,9 @@ export function useData (props, emit) {
   watch(() => props.modelValue, fetchSelectedData)
 
   onMounted(() => {
-    fetchData()
+    if (props.fetchDataOnMount) {
+      fetchData()
+    }
     if (!isEmptyArray(props.modelValue)) {
       fetchSelectedData()
     }
@@ -212,7 +215,7 @@ export function useData (props, emit) {
     selectItem: checkAndSelectItem,
     removeAll,
     removeItem,
-    fetchData
+    fetchData,
   }
 }
 

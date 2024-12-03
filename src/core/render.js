@@ -175,7 +175,9 @@ export function useRender (props, emit) {
     renderList,
     renderTable,
     renderPagination,
-    renderContainer
+    renderContainer,
+
+    fetchData
   }
 }
 
