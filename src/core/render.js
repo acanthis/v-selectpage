@@ -1,4 +1,4 @@
-import {h, Transition, ref, mergeProps, computed} from 'vue';
+import {h, Transition, ref, mergeProps, watch, nextTick} from 'vue';
 
 import '../styles/common.sass'
 import {useData} from './data';
@@ -57,8 +57,14 @@ export function useRender (props, emit) {
 
   const search = ref()
 
+  watch(loading, val => {
+    if (!val) {
+      nextTick(() => search.value && search.value.focus())
+    }
+  })
+
   const setSearchFocus = () => {
-    search.value && search.value.focus()
+    // search.value && search.value.focus()
   }
 
   const renderSearch = () => {

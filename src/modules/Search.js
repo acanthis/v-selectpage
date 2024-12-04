@@ -53,6 +53,7 @@ export default {
             'sp-search-input': true,
             'sp-search-input--rtl': rtl
           },
+          disabled: loading.value,
           placeholder: placeholder.value,
           onKeydown: e => {
             e.stopPropagation()

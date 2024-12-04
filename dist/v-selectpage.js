@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode(".sp-result-message{padding:20px 0;text-align:center;font-weight:700;color:#999}.sp-container{min-width:300px;display:inline-flex;overflow:hidden;flex-direction:column;font-family:Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Heiti SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}.sp-message{display:flex;align-items:center;padding:10px 0;background-color:#e4eaee;color:#000;flex-grow:1}.sp-message .bi-chat-left-dots{font-size:1.2rem;margin:0 1rem}.sp-message .sp-message-body{font-size:14px;line-height:1;flex-wrap:wrap;max-width:15rem}.sp-message-slide-enter-active,.sp-message-slide-leave-active{transition:opacity .3s}.sp-message-slide-enter,.sp-message-slide-leave-to{opacity:0}.sp-message-slide-enter-to,.sp-message-slide-leave{opacity:1}.sp-icon{width:1em;height:1em}.sp-icon.sp-icon-small{font-size:1rem}.sp-icon.sp-icon-medium{font-size:1.3rem}.sp-circle-btn{width:20px;height:20px;font-size:14px;line-height:1;display:inline-flex;justify-content:center;align-items:center;cursor:pointer;color:#aaa;transition:all .3s ease;border-radius:50%}.sp-circle-btn:hover{color:#000}.sp-circle-btn.sp-circle-btn--disabled,.sp-circle-btn.sp-circle-btn--disabled:hover{cursor:default;color:#eee}.sp-circle-btn.sp-circle-btn--small{width:16px;height:16px;font-size:12px}.sp-circle-btn.sp-circle-btn--large{width:28px;height:28px;font-size:16px}.animate-down-enter-from,.animate-down-leave-to{transform:scale(.95);opacity:0}.animate-down-enter-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-down-leave-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-enter-from,.animate-up-leave-to{transform:scale(.95);opacity:0}.animate-up-enter-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-leave-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.v-dropdown-trigger{display:inline-flex}.v-dropdown-trigger.v-dropdown-trigger--full-width{display:flex}.v-dropdown-container{-webkit-font-smoothing:subpixel-antialiased;backface-visibility:hidden;display:inline-flex;margin:0;padding:0;position:absolute;top:0;left:0;border:1px solid #D6D7D7;box-sizing:border-box;background-color:#fff;border-radius:.3rem;overflow:hidden;z-index:3000;will-change:opacity,transform,top,left;box-shadow:0 15px 25px #0003}.v-dropdown-container.v-dropdown-no-border{border:0;border-radius:.5rem;box-shadow:0 10px 30px #0006}.sp-search{display:flex;align-items:center;padding:.5rem 0;transition:all .3s ease}.sp-search .sp-search-container{display:flex;align-items:center;flex-grow:1;padding:0;padding-left:.7rem;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input{border:0;border-radius:50rem;background-color:transparent;margin-left:5px;font-size:14px;line-height:1.43;padding:4px 6px;box-sizing:border-box;outline:none!important;color:#333;font-weight:600;flex-grow:1;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input.sp-search-input--rtl{direction:rtl}.sp-search .sp-search-container .sp-search-input::-moz-placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-search-input::placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-icon-loading{opacity:.5}.sp-search .sp-search-container .bi-search,.sp-search .sp-search-container .bi-x-lg{transition:all .3s ease;color:#aaa}.sp-search .sp-search-container .bi-search.sp-search-in-focus,.sp-search .sp-search-container .bi-x-lg.sp-search-in-focus{color:#000}.sp-search .sp-search-container .bi-x-lg{cursor:pointer}.sp-search .sp-search-container .bi-x-lg:hover{color:#000}.sp-search .sp-search-control{display:inline-flex;transition:all .3s ease;padding:0 .5rem}.sp-list{min-width:300px;max-height:320px;overflow-y:auto;padding:0 .3rem;transition:all .3s ease}.sp-list .sp-list-item{display:flex;align-items:center;justify-content:space-between;line-height:1.43;font-size:14px;text-align:left;overflow:hidden;white-space:nowrap;margin:0;padding:.25rem .5rem;color:#666;cursor:pointer;transition:all .2s ease}.sp-list .sp-list-item.sp-over{background-color:#f6f8fa!important;color:#000!important;border-radius:.4rem}.sp-list .sp-list-item.sp-selected{color:#ccc;cursor:default}.sp-list .sp-list-item.sp-rtl{direction:rtl;text-align:right}.sp-table{padding:0 .3rem;min-width:300px;max-height:320px;overflow-y:auto}.sp-table table{width:100%;border-spacing:0}.sp-table table td,.sp-table table th{font-size:14px;line-height:1.43;border:0!important}.sp-table table th{padding:0 8px 5px;font-weight:600;font-size:15px;color:#333;text-align:left}.sp-table table td{padding:.25rem .5rem;color:#666;cursor:pointer}.sp-table table tbody tr.sp-over td{background-color:#f6f8fa!important;color:#000!important}.sp-table table tbody tr.sp-over td:first-child{border-top-left-radius:.4rem;border-bottom-left-radius:.4rem}.sp-table table tbody tr.sp-over td:last-child{border-top-right-radius:.4rem;border-bottom-right-radius:.4rem}.sp-table table tbody tr.sp-selected td{color:#ccc;cursor:default}.sp-table table thead .sp-rtl th,.sp-table table tbody .sp-rtl td{direction:rtl;text-align:right}.sp-pagination{display:flex;justify-content:space-between;align-items:center;padding:5px 10px}.sp-pagination .sp-page-info{line-height:1;color:#0000004d;font-size:14px;font-weight:600;margin-right:10px}.sp-pagination .sp-page-control{padding:0;margin:0}.sp-pagination .sp-page-control .sp-page-button{display:inline-flex}.sp-pagination .sp-page-control .sp-page-button a{display:inline-flex;padding:7px;font-size:14px;color:#333;text-decoration:none;cursor:pointer;line-height:1;background:transparent;transition:all .3s ease;border-radius:.6rem}.sp-pagination .sp-page-control .sp-page-button a:hover{color:#000;background-color:#f1f1f1}.sp-pagination .sp-page-control .sp-page-button.sp-page-disabled a{color:#ddd;font-weight:400;background-color:transparent;cursor:default}.sp-trigger-container{display:flex;align-items:center;justify-content:space-between;flex-grow:1;padding:6px 12px 6px 6px;background-color:#fff;border:1px solid #ddd;border-radius:.3rem;font-size:14px;line-height:1.42857143;outline:0!important;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;transition:all .2s ease}.sp-trigger-container:hover{border:1px solid #aaa}.sp-trigger-container.sp-disabled,.sp-trigger-container.sp-disabled:hover{border:1px solid #eee;background-color:#eee;cursor:default;color:#aaa}.sp-trigger-container.sp-disabled .sp-select,.sp-trigger-container.sp-disabled .sp-chips,.sp-trigger-container.sp-disabled:hover .sp-select,.sp-trigger-container.sp-disabled:hover .sp-chips{color:#aaa;background-color:#eee}.sp-trigger-container.sp-disabled .sp-chip,.sp-trigger-container.sp-disabled:hover .sp-chip{background-color:#d6d6d6!important;color:#666!important}.sp-trigger-container .bi-chevron-down{transition:transform .2s ease;margin-left:.5rem;font-size:1rem;color:#666}.sp-trigger-container.sp-opened{box-shadow:3px 2px 6px #0000004d;border:1px solid #666;color:#000}.sp-trigger-container.sp-opened .bi-chevron-down{transform:rotate(180deg)}.sp-trigger-container.sp-opened:hover{border:1px solid #666}.sp-trigger-container .sp-placeholder{color:#aaa;padding:5px;line-height:1}.sp-trigger-container .sp-trigger{display:flex;align-items:center;flex-wrap:wrap}.sp-trigger-container .sp-trigger.sp-select{justify-content:space-between;flex-grow:1}.sp-trigger-container .sp-trigger.sp-select .sp-select-content{padding:5px;line-height:1.143;color:#666}.sp-trigger-container .sp-trigger.sp-chips{gap:.5rem}.sp-trigger-container .sp-trigger .sp-chip{border-radius:.3rem;background-color:#eee;color:#666;display:inline-flex;align-items:center;padding:5px 7px;transition:all .2s ease}.sp-trigger-container .sp-trigger .sp-chip--body{display:inline-flex;line-height:1.143;margin-right:5px}.sp-trigger-container .sp-trigger .sp-chip:hover{background-color:#f7f7f7;color:#000}")),document.head.appendChild(e)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
-import { ref as w, computed as F, watch as Q, onMounted as ve, provide as D, nextTick as le, inject as z, defineComponent as U, reactive as ge, onBeforeUnmount as Ve, onUnmounted as je, withDirectives as Re, h as i, vShow as Ue, Teleport as Ge, Transition as me, openBlock as M, createElementBlock as k, createElementVNode as T, mergeProps as ae, toRef as we } from "vue";
+import { ref as y, computed as F, watch as K, onMounted as ve, provide as D, nextTick as Y, inject as z, defineComponent as U, reactive as ge, onBeforeUnmount as Ve, onUnmounted as je, withDirectives as Re, h as i, vShow as Ue, Teleport as Ge, Transition as me, openBlock as M, createElementBlock as k, createElementVNode as T, mergeProps as ae, toRef as we } from "vue";
 const [
   oe,
   ie,
@@ -14,9 +14,9 @@ const [
   40,
   13,
   27
-], Ze = [oe, ie, re, se, ye, be], j = -1, Se = 0, We = 0, V = 1, Ke = 10, Ce = "first", ee = "previous", te = "next", _e = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
+], Ze = [oe, ie, re, se, ye, be], j = -1, Se = 0, We = 0, V = 1, Ke = 10, Ce = "first", te = "previous", ne = "next", _e = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
   Xe,
-  K,
+  X,
   Ye,
   qe,
   Je,
@@ -61,7 +61,7 @@ const [
     selectedCount: `已选择 ${$} 个项目`,
     search: "搜索"
   },
-  [K]: {
+  [X]: {
     // English
     next: "Next page",
     prev: "Previous page",
@@ -272,9 +272,9 @@ const [
 };
 function st(e) {
   if (!e)
-    return W[K];
+    return W[X];
   const t = String(e).toLowerCase();
-  return Object.hasOwn(W, t) ? W[t] : W[K];
+  return Object.hasOwn(W, t) ? W[t] : W[X];
 }
 function ce(e = 3e3) {
   let t;
@@ -300,7 +300,7 @@ function gt(e) {
 function ft(e) {
   e && e.focus({ preventScroll: !0 });
 }
-function ne(e) {
+function le(e) {
   return Array.isArray(e) ? !e.length : !0;
 }
 function Pe(e) {
@@ -311,7 +311,7 @@ const Ie = () => ({
   highlightIndex: { type: Number, default: j }
 }), xe = () => ["select", "set-highlight"];
 function pt(e, t) {
-  const n = w([]), r = F(() => {
+  const n = y([]), r = F(() => {
     var s;
     return (s = n.value) == null ? void 0 : s.length;
   });
@@ -360,7 +360,7 @@ function pt(e, t) {
   };
 }
 function ht(e, t, n) {
-  const r = w(j);
+  const r = y(j);
   function a(l) {
     r.value = l;
   }
@@ -368,7 +368,7 @@ function ht(e, t, n) {
     r.value !== j && r.value !== 0 && (r.value -= 1);
   }
   function u() {
-    ne(n.value) || r.value !== n.value.length - 1 && (r.value += 1);
+    le(n.value) || r.value !== n.value.length - 1 && (r.value += 1);
   }
   function d(l) {
     if (l === ie)
@@ -398,7 +398,7 @@ function $e() {
     placeholder: { type: String, default: "" },
     /** multiple selection */
     multiple: { type: Boolean, default: !1 },
-    language: { type: String, default: K },
+    language: { type: String, default: X },
     /**
      * specify property to be key field, the value will return by v-model
      */
@@ -460,7 +460,7 @@ function vt(e, t) {
     selectItem: c,
     setSelected: l,
     isKeysEqualToSelected: g
-  } = pt(e, t), s = w(""), f = w(""), h = w(V), S = w(0), C = w([]), v = w(!1), A = ce(), L = () => ne(C.value), y = (m) => {
+  } = pt(e, t), s = y(""), f = y(""), h = y(V), S = y(0), C = y([]), v = y(!1), A = ce(), L = () => le(C.value), b = (m) => {
     if (!m || !Object.keys(m).length)
       return "";
     switch (typeof e.labelProp) {
@@ -487,7 +487,7 @@ function vt(e, t) {
       pageSize: e.pagination ? e.pageSize : We
     };
     t("fetch-data", m, (B, Z) => {
-      Array.isArray(B) && (C.value = B, S.value = typeof Z == "number" ? Z : 0, le(() => {
+      Array.isArray(B) && (C.value = B, S.value = typeof Z == "number" ? Z : 0, Y(() => {
         v.value = !1;
       }));
     });
@@ -507,11 +507,11 @@ function vt(e, t) {
       });
     }
   };
-  return Q(s, () => {
+  return K(s, () => {
     h.value = V, O();
-  }), Q(() => e.modelValue, E), ve(() => {
-    e.fetchDataOnMount && O(), ne(e.modelValue) || E();
-  }), D("keyProp", e.keyProp), D("rtl", e.rtl), D("pageSize", e.pageSize), D("debounce", e.debounce), D("multiple", e.multiple), D("loading", v), D("language", n), D("renderCell", y), D("isItemSelected", o), D("selectedCount", a), D("removeAll", u), D("removeItem", d), {
+  }), K(() => e.modelValue, E), ve(() => {
+    e.fetchDataOnMount && O(), le(e.modelValue) || E();
+  }), D("keyProp", e.keyProp), D("rtl", e.rtl), D("pageSize", e.pageSize), D("debounce", e.debounce), D("multiple", e.multiple), D("loading", v), D("language", n), D("renderCell", b), D("isItemSelected", o), D("selectedCount", a), D("removeAll", u), D("removeItem", d), {
     selected: r,
     query: s,
     message: f,
@@ -520,7 +520,7 @@ function vt(e, t) {
     lang: n,
     list: C,
     loading: v,
-    renderCell: y,
+    renderCell: b,
     isDataEmpty: L,
     isItemSelected: o,
     selectedCount: a,
@@ -553,9 +553,9 @@ function mt(e, t, n, r) {
     switch (s) {
       case Ce:
         return V;
-      case ee:
-        return t.value - 1;
       case te:
+        return t.value - 1;
+      case ne:
         return t.value + 1;
       case _e:
         return a.value;
@@ -571,9 +571,9 @@ function mt(e, t, n, r) {
     switchPage: l,
     pagingNavigation: (s) => {
       if (s === oe)
-        return l(ee);
-      if (s === re)
         return l(te);
+      if (s === re)
+        return l(ne);
     }
   };
 }
@@ -595,7 +595,7 @@ function pe(e) {
   }
   return e.getBoundingClientRect();
 }
-const Le = "click", bt = "hover", St = "contextmenu", he = 150, J = 5;
+const Le = "click", bt = "hover", St = "contextmenu", he = 150, ee = 5;
 function Ct(e, t) {
   return typeof e.animated == "string" ? e.animated : e.animated ? t.value ? "animate-up" : "animate-down" : "";
 }
@@ -608,8 +608,8 @@ function ue(e) {
 }
 function _t(e, t, n, r) {
   const { isTriggerByContextmenu: a } = ue(e), o = window.pageYOffset, u = document.documentElement.clientHeight, d = a ? t : n.top + o;
-  let c = a ? t : n.top + n.height + J + o, l = !1, g = !1, s = !1;
-  return c + r.height > o + u && (l = !0), d - J - r.height < o && (g = !0), !g && l && (c = d - J - r.height, s = !0), { dropUp: s, top: c };
+  let c = a ? t : n.top + n.height + ee + o, l = !1, g = !1, s = !1;
+  return c + r.height > o + u && (l = !0), d - ee - r.height < o && (g = !0), !g && l && (c = d - ee - r.height, s = !0), { dropUp: s, top: c };
 }
 function Pt(e, t, n, r) {
   const { isTriggerByContextmenu: a } = ue(e), o = window.pageXOffset, u = document.documentElement.clientWidth, d = a ? 0 : n.width, c = a ? t : n.left + o, l = c + d / 2 - r.width / 2, g = c + d - r.width;
@@ -690,19 +690,19 @@ const At = U({
   },
   emits: ["visible-change"],
   setup(e, { slots: t, emit: n, expose: r }) {
-    const a = w(!1), o = ge({ top: "", left: "", width: "" }), u = ge({ x: null, y: null }), d = w(!1), c = w(null), l = w(null), g = w(null), {
+    const a = y(!1), o = ge({ top: "", left: "", width: "" }), u = ge({ x: null, y: null }), d = y(!1), c = y(null), l = y(null), g = y(null), {
       isTriggerByClick: s,
       isTriggerByHover: f,
       isTriggerByContextmenu: h
     } = ue(e);
-    Q(a, (y) => n("visible-change", y));
+    K(a, (b) => n("visible-change", b));
     function S() {
       e.disabled || ("trigger" in t && A(), f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
         a.value = !0;
       }, he)) : a.value = !0);
     }
-    function C(y = !1) {
-      e.disabled || !e.toggle && !y || (f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
+    function C(b = !1) {
+      e.disabled || !e.toggle && !b || (f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
         a.value = !1;
       }, he)) : a.value = !1);
     }
@@ -710,13 +710,13 @@ const At = U({
       a.value ? C() : S();
     }
     function A() {
-      const y = pe(l.value), p = pe(g.value), O = _t(e, u.y, y, p), E = Pt(e, u.x, y, p);
+      const b = pe(l.value), p = pe(g.value), O = _t(e, u.y, b, p), E = Pt(e, u.x, b, p);
       d.value = O.dropUp, o.top = `${O.top}px`, o.left = `${E}px`;
     }
-    function L(y) {
+    function L(b) {
       if (!a.value)
         return;
-      const p = y.composedPath().some((O) => O === l.value);
+      const p = b.composedPath().some((O) => O === l.value);
       p && !e.toggle && !h || (!p || p && h) && C(!0);
     }
     return ve(() => {
@@ -733,8 +733,8 @@ const At = U({
       container: g,
       visible: a
     }), () => {
-      const y = [];
-      "trigger" in t && y.push(t.trigger({
+      const b = [];
+      "trigger" in t && b.push(t.trigger({
         visible: a,
         disabled: e.disabled
       }));
@@ -751,7 +751,7 @@ const At = U({
         i("div", p, t.default && t.default()),
         [[Ue, a.value]]
       );
-      y.push(
+      b.push(
         i(Ge, { to: "body" }, [
           i(me, { name: Ct(e, d) }, () => [O])
         ])
@@ -768,7 +768,7 @@ const At = U({
         m.stopPropagation(), m.preventDefault();
         const B = It(m);
         u.x = B.x, u.y = B.y, S();
-      }), i("div", E, y);
+      }), i("div", E, b);
     };
   }
 });
@@ -781,7 +781,7 @@ const G = {
     hoverBgColor: { type: String, default: "#f1f1f1" }
   },
   setup(e, { slots: t }) {
-    const n = w(""), r = F(() => ({
+    const n = y(""), r = F(() => ({
       "sp-circle-btn--disabled": e.disabled,
       "sp-circle-btn--small": e.size === "small",
       "sp-circle-btn--large": e.size === "large"
@@ -834,7 +834,7 @@ function Bt(e, t) {
     T("path", { d: "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" }, null, -1)
   ]));
 }
-const X = /* @__PURE__ */ N(Dt, [["render", Bt]]), Mt = {}, kt = {
+const q = /* @__PURE__ */ N(Dt, [["render", Bt]]), Mt = {}, kt = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -864,7 +864,7 @@ const Ft = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ht = {
   },
   emits: ["update:modelValue", "keyboard-operation"],
   setup(e, { emit: t, expose: n }) {
-    const { rtl: r, debounce: a, loading: o, language: u, selectedCount: d, multiple: c } = H(), l = w(!1), g = w(), s = ce(a), f = F(() => !c || !d.value ? u.search : u.selectedCount.replace($, d.value)), h = () => ft(g.value);
+    const { rtl: r, debounce: a, loading: o, language: u, selectedCount: d, multiple: c } = H(), l = y(!1), g = y(), s = ce(a), f = F(() => !c || !d.value ? u.search : u.selectedCount.replace($, d.value)), h = () => ft(g.value);
     return n({ focus: h }), () => {
       const C = [
         F(() => o.value ? i(Ft) : i(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
@@ -876,6 +876,7 @@ const Ft = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ht = {
             "sp-search-input": !0,
             "sp-search-input--rtl": r
           },
+          disabled: o.value,
           placeholder: f.value,
           onKeydown: (v) => {
             v.stopPropagation(), fe(v.keyCode) && t("keyboard-operation", v.keyCode);
@@ -901,7 +902,7 @@ const Ft = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ht = {
           }
         };
         C.push(
-          i(G, v, () => i(X))
+          i(G, v, () => i(q))
         );
       }
       return i("div", { class: "sp-search-container" }, C);
@@ -967,7 +968,7 @@ const Zt = {
           }
         };
         d.push(
-          i(G, c, () => i(X))
+          i(G, c, () => i(q))
         );
       }
       return i("div", u, d);
@@ -1138,8 +1139,8 @@ const gn = /* @__PURE__ */ N(cn, [["render", dn]]), fn = {
     return () => {
       const a = [
         { action: Ce, title: n.first, disabled: e.isFirstPage, icon: Qt },
-        { action: ee, title: n.prev, disabled: e.isFirstPage, icon: ln },
-        { action: te, title: n.next, disabled: e.isLastPage, icon: sn },
+        { action: te, title: n.prev, disabled: e.isFirstPage, icon: ln },
+        { action: ne, title: n.next, disabled: e.isLastPage, icon: sn },
         { action: _e, title: n.last, disabled: e.isLastPage, icon: gn }
       ].map((o) => {
         const u = {
@@ -1191,38 +1192,41 @@ function Oe(e, t) {
     highlightIndex: v,
     setItemHighlight: A,
     highlightNavigation: L,
-    isSomeRowHighlight: y
+    isSomeRowHighlight: b
   } = ht(e, t, c), {
     paginationInfo: p,
     isFirstPage: O,
     isLastPage: E,
     switchPage: m,
     pagingNavigation: B
-  } = mt(e, u, d, n), Z = ce(e.debounce), Y = w(), Me = () => {
-    Y.value && Y.value.focus();
+  } = mt(e, u, d, n), Z = ce(e.debounce), J = y();
+  K(l, (w) => {
+    w || Y(() => J.value && J.value.focus());
+  });
+  const Me = () => {
   }, ke = () => i("div", { class: "sp-search" }, [
     i(Ht, {
-      ref: Y,
+      ref: J,
       modelValue: a.value,
-      "onUpdate:modelValue"(b) {
-        a.value = b;
+      "onUpdate:modelValue"(w) {
+        a.value = w;
       },
-      onKeyboardOperation: (b) => {
-        if (ct(b))
-          return L(b);
-        if (ut(b)) {
-          B(b), Z(f);
+      onKeyboardOperation: (w) => {
+        if (ct(w))
+          return L(w);
+        if (ut(w)) {
+          B(w), Z(f);
           return;
         }
-        if (dt(b))
-          return y() ? s(c.value[v.value]) : void 0;
-        gt(b) && t("close-dropdown");
+        if (dt(w))
+          return b() ? s(c.value[v.value]) : void 0;
+        gt(w) && t("close-dropdown");
       }
     }),
     i(Gt)
   ]), Ne = () => {
-    const b = [];
-    return o.value && b.push(
+    const w = [];
+    return o.value && w.push(
       i("div", { class: "sp-message" }, [
         i(mn),
         i("div", { class: "sp-message-body", innerHTML: o.value })
@@ -1232,18 +1236,18 @@ function Oe(e, t) {
       appear: !0,
       onEnter: () => t("adjust-dropdown"),
       onAfterLeave: () => t("adjust-dropdown")
-    }, () => b);
+    }, () => w);
   }, Fe = () => g() ? de() : i(Wt, {
     list: c.value,
     highlightIndex: v.value,
-    onSelect: (b) => s(b),
-    onSetHighlight: (b) => A(b)
+    onSelect: (w) => s(w),
+    onSetHighlight: (w) => A(w)
   }), He = () => g() ? de() : i(Xt, {
     list: c.value,
     columns: e.columns,
     highlightIndex: v.value,
-    onSelect: (b) => s(b),
-    onSetHighlight: (b) => A(b)
+    onSelect: (w) => s(w),
+    onSetHighlight: (w) => A(w)
   }), de = () => i("div", { class: "sp-result-message" }, l.value ? "" : n.notFound);
   return {
     selected: r,
@@ -1265,25 +1269,25 @@ function Oe(e, t) {
           pageInfo: p.value,
           isFirstPage: O.value,
           isLastPage: E.value,
-          onPageChange(b) {
-            m(b), f();
+          onPageChange(w) {
+            m(w), f();
           }
         });
     },
-    renderContainer: (b) => {
-      const q = w({
+    renderContainer: (w) => {
+      const Q = y({
         class: {
           "sp-container": !0,
           "sp-loading": l.value
         }
       });
-      return e.width && (q.value.style = { width: Pe(e.width) }), i("div", q.value, b);
+      return e.width && (Q.value.style = { width: Pe(e.width) }), i("div", Q.value, w);
     },
     fetchData: f
   };
 }
 function Ee(e) {
-  const t = w(!1), n = w();
+  const t = y(!1), n = y();
   function r() {
     n.value && n.value.close();
   }
@@ -1418,7 +1422,7 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
           }
         };
         r.push(
-          i(G, u, () => i(X))
+          i(G, u, () => i(q))
         );
       }
       return i("div", { class: "sp-trigger sp-select" }, r);
@@ -1448,7 +1452,7 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
             }
           };
           u.push(
-            i(G, d, () => i(X))
+            i(G, d, () => i(q))
           );
         }
         return i("div", { class: "sp-chip", key: o }, u);
@@ -1469,7 +1473,7 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
       adjustDropdown: o,
       closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), c = w([]), l = w();
+    } = Ee(e), c = y([]), l = y();
     return r({
       removeItem: (g) => {
         var s;
@@ -1480,7 +1484,7 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
         return (g = l.value) == null ? void 0 : g.removeAll();
       }
     }), () => {
-      var v, A, L, y;
+      var v, A, L, b;
       const g = {
         selected: c,
         disabled: e.disabled,
@@ -1493,12 +1497,12 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
         dropdownVisible: a.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
-        lang: (y = l == null ? void 0 : l.value) == null ? void 0 : y.lang
+        lang: (b = l == null ? void 0 : l.value) == null ? void 0 : b.lang
       }, h = i(De, f, s);
       return d(
         {
           onVisibleChange: (p) => {
-            t("visible-change", p), p && le(() => {
+            t("visible-change", p), p && Y(() => {
               s === void 0 && l.value.fetchData(), l.value.setSearchFocus();
             });
           }
@@ -1568,7 +1572,7 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
       adjustDropdown: o,
       closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), c = w([]), l = w();
+    } = Ee(e), c = y([]), l = y();
     return r({
       removeItem: (g) => {
         var s;
@@ -1579,7 +1583,7 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
         return (g = l.value) == null ? void 0 : g.removeAll();
       }
     }), () => {
-      var v, A, L, y;
+      var v, A, L, b;
       const g = {
         selected: c,
         disabled: e.disabled,
@@ -1592,12 +1596,12 @@ const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
         dropdownVisible: a.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
-        lang: (y = l == null ? void 0 : l.value) == null ? void 0 : y.lang
+        lang: (b = l == null ? void 0 : l.value) == null ? void 0 : b.lang
       }, h = i(De, f, s);
       return d(
         {
           onVisibleChange: (p) => {
-            t("visible-change", p), p && le(() => {
+            t("visible-change", p), p && Y(() => {
               s === void 0 && l.value.fetchData(), l.value.setSearchFocus();
             });
           }
