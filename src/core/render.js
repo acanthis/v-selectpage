@@ -1,7 +1,7 @@
-import { h, Transition, ref, mergeProps } from 'vue'
+import {h, Transition, ref, mergeProps, computed} from 'vue';
 
 import '../styles/common.sass'
-import { useData } from './data'
+import {useData} from './data';
 import { useListItemHighlight } from './list'
 import { usePagination } from './pagination'
 import {
@@ -31,6 +31,7 @@ export function useRender (props, emit) {
     currentPage,
     totalRows,
     list,
+    loading,
     isDataEmpty,
     selectItem,
     fetchData,
@@ -133,7 +134,7 @@ export function useRender (props, emit) {
     })
   }
   const renderNoDataMessage = () => {
-    return h('div', { class: 'sp-result-message' }, lang.notFound)
+    return h('div', { class: 'sp-result-message' }, loading.value ? '' : lang.notFound)
   }
   const renderPagination = () => {
     if (!props.pagination) return
@@ -149,13 +150,18 @@ export function useRender (props, emit) {
     })
   }
   const renderContainer = children => {
-    const option = { class: 'sp-container' }
+    const option = ref({
+      class: {
+        'sp-container': true,
+        'sp-loading': loading.value,
+      }
+    });
 
     if (props.width) {
-      option.style = { width: parseWidth(props.width) }
+      option.value.style = { width: parseWidth(props.width) }
     }
 
-    return h('div', option, children)
+    return h('div', option.value, children)
   }
 
   return {

@@ -207,6 +207,7 @@ export function useData (props, emit) {
     totalRows,
     lang,
     list,
+    loading,
 
     renderCell,
     isDataEmpty,

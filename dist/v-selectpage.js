@@ -1,12 +1,12 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode(".sp-result-message{padding:20px 0;text-align:center;font-weight:700;color:#999}.sp-container{min-width:300px;display:inline-flex;overflow:hidden;flex-direction:column;font-family:Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Heiti SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}.sp-message{display:flex;align-items:center;padding:10px 0;background-color:#e4eaee;color:#000;flex-grow:1}.sp-message .bi-chat-left-dots{font-size:1.2rem;margin:0 1rem}.sp-message .sp-message-body{font-size:14px;line-height:1;flex-wrap:wrap;max-width:15rem}.sp-message-slide-enter-active,.sp-message-slide-leave-active{transition:opacity .3s}.sp-message-slide-enter,.sp-message-slide-leave-to{opacity:0}.sp-message-slide-enter-to,.sp-message-slide-leave{opacity:1}.sp-icon{width:1em;height:1em}.sp-icon.sp-icon-small{font-size:1rem}.sp-icon.sp-icon-medium{font-size:1.3rem}.sp-circle-btn{width:20px;height:20px;font-size:14px;line-height:1;display:inline-flex;justify-content:center;align-items:center;cursor:pointer;color:#aaa;transition:all .3s ease;border-radius:50%}.sp-circle-btn:hover{color:#000}.sp-circle-btn.sp-circle-btn--disabled,.sp-circle-btn.sp-circle-btn--disabled:hover{cursor:default;color:#eee}.sp-circle-btn.sp-circle-btn--small{width:16px;height:16px;font-size:12px}.sp-circle-btn.sp-circle-btn--large{width:28px;height:28px;font-size:16px}.animate-down-enter-from,.animate-down-leave-to{transform:scale(.95);opacity:0}.animate-down-enter-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-down-leave-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-enter-from,.animate-up-leave-to{transform:scale(.95);opacity:0}.animate-up-enter-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-leave-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.v-dropdown-trigger{display:inline-flex}.v-dropdown-trigger.v-dropdown-trigger--full-width{display:flex}.v-dropdown-container{-webkit-font-smoothing:subpixel-antialiased;backface-visibility:hidden;display:inline-flex;margin:0;padding:0;position:absolute;top:0;left:0;border:1px solid #D6D7D7;box-sizing:border-box;background-color:#fff;border-radius:.3rem;overflow:hidden;z-index:3000;will-change:opacity,transform,top,left;box-shadow:0 15px 25px #0003}.v-dropdown-container.v-dropdown-no-border{border:0;border-radius:.5rem;box-shadow:0 10px 30px #0006}.sp-search{display:flex;align-items:center;padding:.5rem 0;transition:all .3s ease}.sp-search .sp-search-container{display:flex;align-items:center;flex-grow:1;padding:0;padding-left:.7rem;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input{border:0;border-radius:50rem;background-color:transparent;margin-left:5px;font-size:14px;line-height:1.43;padding:4px 6px;box-sizing:border-box;outline:none!important;color:#333;font-weight:600;flex-grow:1;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input.sp-search-input--rtl{direction:rtl}.sp-search .sp-search-container .sp-search-input::-moz-placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-search-input::placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-icon-loading{opacity:.5}.sp-search .sp-search-container .bi-search,.sp-search .sp-search-container .bi-x-lg{transition:all .3s ease;color:#aaa}.sp-search .sp-search-container .bi-search.sp-search-in-focus,.sp-search .sp-search-container .bi-x-lg.sp-search-in-focus{color:#000}.sp-search .sp-search-container .bi-x-lg{cursor:pointer}.sp-search .sp-search-container .bi-x-lg:hover{color:#000}.sp-search .sp-search-control{display:inline-flex;transition:all .3s ease;padding:0 .5rem}.sp-list{min-width:300px;max-height:320px;overflow-y:auto;padding:0 .3rem;transition:all .3s ease}.sp-list .sp-list-item{display:flex;align-items:center;justify-content:space-between;line-height:1.43;font-size:14px;text-align:left;overflow:hidden;white-space:nowrap;margin:0;padding:.25rem .5rem;color:#666;cursor:pointer;transition:all .2s ease}.sp-list .sp-list-item.sp-over{background-color:#f6f8fa!important;color:#000!important;border-radius:.4rem}.sp-list .sp-list-item.sp-selected{color:#ccc;cursor:default}.sp-list .sp-list-item.sp-rtl{direction:rtl;text-align:right}.sp-table{padding:0 .3rem;min-width:300px;max-height:320px;overflow-y:auto}.sp-table table{width:100%;border-spacing:0}.sp-table table td,.sp-table table th{font-size:14px;line-height:1.43;border:0!important}.sp-table table th{padding:0 8px 5px;font-weight:600;font-size:15px;color:#333;text-align:left}.sp-table table td{padding:.25rem .5rem;color:#666;cursor:pointer}.sp-table table tbody tr.sp-over td{background-color:#f6f8fa!important;color:#000!important}.sp-table table tbody tr.sp-over td:first-child{border-top-left-radius:.4rem;border-bottom-left-radius:.4rem}.sp-table table tbody tr.sp-over td:last-child{border-top-right-radius:.4rem;border-bottom-right-radius:.4rem}.sp-table table tbody tr.sp-selected td{color:#ccc;cursor:default}.sp-table table thead .sp-rtl th,.sp-table table tbody .sp-rtl td{direction:rtl;text-align:right}.sp-pagination{display:flex;justify-content:space-between;align-items:center;padding:5px 10px}.sp-pagination .sp-page-info{line-height:1;color:#0000004d;font-size:14px;font-weight:600;margin-right:10px}.sp-pagination .sp-page-control{padding:0;margin:0}.sp-pagination .sp-page-control .sp-page-button{display:inline-flex}.sp-pagination .sp-page-control .sp-page-button a{display:inline-flex;padding:7px;font-size:14px;color:#333;text-decoration:none;cursor:pointer;line-height:1;background:transparent;transition:all .3s ease;border-radius:.6rem}.sp-pagination .sp-page-control .sp-page-button a:hover{color:#000;background-color:#f1f1f1}.sp-pagination .sp-page-control .sp-page-button.sp-page-disabled a{color:#ddd;font-weight:400;background-color:transparent;cursor:default}.sp-trigger-container{display:flex;align-items:center;justify-content:space-between;flex-grow:1;padding:6px 12px 6px 6px;background-color:#fff;border:1px solid #ddd;border-radius:.3rem;font-size:14px;line-height:1.42857143;outline:0!important;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;transition:all .2s ease}.sp-trigger-container:hover{border:1px solid #aaa}.sp-trigger-container.sp-disabled,.sp-trigger-container.sp-disabled:hover{border:1px solid #eee;background-color:#eee;cursor:default;color:#aaa}.sp-trigger-container.sp-disabled .sp-select,.sp-trigger-container.sp-disabled .sp-chips,.sp-trigger-container.sp-disabled:hover .sp-select,.sp-trigger-container.sp-disabled:hover .sp-chips{color:#aaa;background-color:#eee}.sp-trigger-container.sp-disabled .sp-chip,.sp-trigger-container.sp-disabled:hover .sp-chip{background-color:#d6d6d6!important;color:#666!important}.sp-trigger-container .bi-chevron-down{transition:transform .2s ease;margin-left:.5rem;font-size:1rem;color:#666}.sp-trigger-container.sp-opened{box-shadow:3px 2px 6px #0000004d;border:1px solid #666;color:#000}.sp-trigger-container.sp-opened .bi-chevron-down{transform:rotate(180deg)}.sp-trigger-container.sp-opened:hover{border:1px solid #666}.sp-trigger-container .sp-placeholder{color:#aaa;padding:5px;line-height:1}.sp-trigger-container .sp-trigger{display:flex;align-items:center;flex-wrap:wrap}.sp-trigger-container .sp-trigger.sp-select{justify-content:space-between;flex-grow:1}.sp-trigger-container .sp-trigger.sp-select .sp-select-content{padding:5px;line-height:1.143;color:#666}.sp-trigger-container .sp-trigger.sp-chips{gap:.5rem}.sp-trigger-container .sp-trigger .sp-chip{border-radius:.3rem;background-color:#eee;color:#666;display:inline-flex;align-items:center;padding:5px 7px;transition:all .2s ease}.sp-trigger-container .sp-trigger .sp-chip--body{display:inline-flex;line-height:1.143;margin-right:5px}.sp-trigger-container .sp-trigger .sp-chip:hover{background-color:#f7f7f7;color:#000}")),document.head.appendChild(e)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
-import { ref as b, computed as F, watch as J, onMounted as he, provide as z, nextTick as ne, inject as B, defineComponent as G, reactive as de, onBeforeUnmount as He, onUnmounted as Ve, withDirectives as je, h as r, vShow as Re, Teleport as Ue, Transition as me, openBlock as k, createElementBlock as N, createElementVNode as A, mergeProps as le, toRef as ve } from "vue";
+import { ref as w, computed as F, watch as Q, onMounted as ve, provide as D, nextTick as le, inject as z, defineComponent as U, reactive as ge, onBeforeUnmount as Ve, onUnmounted as je, withDirectives as Re, h as i, vShow as Ue, Teleport as Ge, Transition as me, openBlock as M, createElementBlock as k, createElementVNode as T, mergeProps as ae, toRef as we } from "vue";
 const [
   oe,
-  ae,
-  re,
   ie,
-  we,
-  ye
+  re,
+  se,
+  ye,
+  be
 ] = [
   37,
   38,
@@ -14,10 +14,9 @@ const [
   40,
   13,
   27
-], Ge = [oe, ae, re, ie, we, ye], R = -1, be = 0, Ze = 0, j = 1, We = 10, Se = "first", Q = "previous", ee = "next", Ce = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
-  Ke,
-  K,
+], Ze = [oe, ie, re, se, ye, be], j = -1, Se = 0, We = 0, V = 1, Ke = 10, Ce = "first", ee = "previous", te = "next", _e = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
   Xe,
+  K,
   Ye,
   qe,
   Je,
@@ -26,8 +25,9 @@ const [
   tt,
   nt,
   lt,
-  ot,
   at,
+  ot,
+  it,
   rt
 ] = [
   "zh-chs",
@@ -45,7 +45,7 @@ const [
   "zh-cht",
   "tr"
 ], W = {
-  [Ke]: {
+  [Xe]: {
     // Chinese
     next: "下一页",
     prev: "上一页",
@@ -53,6 +53,7 @@ const [
     last: "尾页",
     pageInfo: `第 ${_}/${P} 页(共 ${I} 条记录)`,
     notFound: "无查询结果",
+    loadingData: "Loading data...",
     clear: "清除内容",
     clearAll: "清除全部已选择项目",
     maxSelected: `最多只能选择 ${x} 个项目`,
@@ -68,6 +69,7 @@ const [
     last: "Last page",
     pageInfo: `Page ${_} of ${P} (${I} records)`,
     notFound: "Data not found",
+    loadingData: "Loading data...",
     clear: "Clear content",
     clearAll: "Clear all selected",
     maxSelected: `You can only select up to ${x} items`,
@@ -75,7 +77,7 @@ const [
     selectedCount: `${$} items selected`,
     search: "Search"
   },
-  [Xe]: {
+  [Ye]: {
     // Japanese
     next: "次へ",
     prev: "前へ",
@@ -83,6 +85,7 @@ const [
     last: "最後のページへ",
     pageInfo: `${_}/${P} 件 (全 ${I} つ記録)`,
     notFound: "(0 件)",
+    loadingData: "Loading data...",
     clear: "コンテンツをクリアする",
     clearAll: "選択した項目をクリアする",
     maxSelected: `最多で ${x} のプロジェクトを選ぶことしかできません`,
@@ -90,7 +93,7 @@ const [
     selectedCount: `${$} アイテムが選択されました`,
     search: "検索"
   },
-  [Ye]: {
+  [qe]: {
     // Arabic
     next: "التالي",
     prev: "السابق",
@@ -98,6 +101,7 @@ const [
     last: "الأخير",
     pageInfo: `صفحة ${_}/${P} (${I} سجلات)`,
     notFound: "لا يوجد نتائج",
+    loadingData: "Loading data...",
     clear: "محو المحتوى",
     clearAll: "إلغاء التحديد",
     maxSelected: `يمكنك فقط تحديد (${x}) عناصر`,
@@ -105,7 +109,7 @@ const [
     selectedCount: `تم تحديد (${$}) عناصر`,
     search: "يبحث"
   },
-  [qe]: {
+  [Je]: {
     // Spanish
     next: "Siguiente página",
     prev: "Pagina anterior",
@@ -113,6 +117,7 @@ const [
     last: "última página",
     pageInfo: `Página ${_}/${P} (${I} registros)`,
     notFound: "no encontrado",
+    loadingData: "Loading data...",
     clear: "Borrar contenido",
     clearAll: "Borrar todo lo seleccionado",
     maxSelected: `Solo puedes seleccionar hasta ${x} items`,
@@ -120,7 +125,7 @@ const [
     selectedCount: `${$} items Seleccionado`,
     search: "Buscar"
   },
-  [Je]: {
+  [Qe]: {
     // German
     next: "Nächste Seite",
     prev: "Vorherige Seite",
@@ -128,6 +133,7 @@ const [
     last: "Letzte Seite",
     pageInfo: `Seite ${_}/${P} (${I} Einträge)`,
     notFound: "Nicht gefunden",
+    loadingData: "Loading data...",
     clear: "Inhalt löschen",
     clearAll: "Alle ausgewählten löschen",
     maxSelected: `Sie können nur bis zu ${x} Elemente auswählen`,
@@ -135,7 +141,7 @@ const [
     selectedCount: `${$} Elemente ausgewählt`,
     search: "Suchen"
   },
-  [Qe]: {
+  [et]: {
     // Romanian
     next: "Pagina următoare",
     prev: "Pagina precedentă",
@@ -143,6 +149,7 @@ const [
     last: "Ultima pagină",
     pageInfo: `Pagina ${_}/${P} (${I} înregistrări)`,
     notFound: "nu a fost găsit",
+    loadingData: "Loading data...",
     clear: "Șterge conținutul",
     clearAll: "Șterge înregistrările selectate",
     maxSelected: `Poți selecta până la ${x} înregistrări`,
@@ -150,7 +157,7 @@ const [
     selectedCount: `${$} înregistrări selectate`,
     search: "Căutare"
   },
-  [et]: {
+  [tt]: {
     // Russian
     next: "Вперед",
     prev: "Назад",
@@ -158,6 +165,7 @@ const [
     last: "В конец",
     pageInfo: `${_} - ${P} / ${I}`,
     notFound: "Нет данных",
+    loadingData: "Загрузка данных...",
     clear: "Очистить",
     clearAll: "Очистить выбранное",
     maxSelected: `Нельзя выбрать более ${x} значений`,
@@ -165,7 +173,7 @@ const [
     selectedCount: `${$} - выбрано`,
     search: "Поиск"
   },
-  [tt]: {
+  [nt]: {
     // French
     next: "Page suivante",
     prev: "Page précédente",
@@ -173,6 +181,7 @@ const [
     last: "Dernière page",
     pageInfo: `Page ${_}/${P} (${I} lignes)`,
     notFound: "Aucun résultat",
+    loadingData: "Loading data...",
     clear: "Effacer",
     clearAll: "Tout déselectionner",
     maxSelected: `Vous ne pouvez pas sélectionner plus de ${x} élements`,
@@ -180,7 +189,7 @@ const [
     selectedCount: `${$} éléments sélectionnés`,
     search: "Recherche"
   },
-  [nt]: {
+  [lt]: {
     // Portuguese-Brazil
     next: "Página seguinte",
     prev: "Página anterior",
@@ -188,6 +197,7 @@ const [
     last: "Última página",
     pageInfo: `Página ${_}/${P} (${I} registros)`,
     notFound: "não encontrado",
+    loadingData: "Loading data...",
     clear: "Apagar conteúdo",
     clearAll: "Apagar itens selecionados",
     maxSelected: `Máximo permitido ${x} itens`,
@@ -195,7 +205,7 @@ const [
     selectedCount: `${$} itens selecionados`,
     search: "Procurar"
   },
-  [lt]: {
+  [at]: {
     // Polish
     next: "Następna",
     prev: "Poprzednia",
@@ -203,6 +213,7 @@ const [
     last: "Ostatnia",
     pageInfo: `Strona ${_}/${P} (${I} rekordów)`,
     notFound: "Nic nie znaleziono",
+    loadingData: "Loading data...",
     clear: "Wyczyść",
     clearAll: "Usuń wszystkie zaznaczone",
     maxSelected: `Możesz zaznaczyć maksymalnie ${x}`,
@@ -218,6 +229,7 @@ const [
     last: "Laatste pagina",
     pageInfo: `Pagina ${_}/${P} (${I} items)`,
     notFound: "Niet gevonden",
+    loadingData: "Loading data...",
     clear: "Wissen",
     clearAll: "Wis selectie",
     maxSelected: `Je kunt maar ${x} items selecteren`,
@@ -225,7 +237,7 @@ const [
     selectedCount: `${$} Items geselecteerd`,
     search: "Zoekopdracht"
   },
-  [at]: {
+  [it]: {
     // Traditional Chinese
     next: "下一頁",
     prev: "上一頁",
@@ -233,6 +245,7 @@ const [
     last: "尾頁",
     pageInfo: `第 ${_}/${P} 頁(共 ${I} 條記錄)`,
     notFound: "無查詢結果",
+    loadingData: "Loading data...",
     clear: "清除內容",
     clearAll: "清除全部已選擇項目",
     maxSelected: `最多只能選擇 ${x} 個項目`,
@@ -248,6 +261,7 @@ const [
     last: "Son",
     pageInfo: "Sayfa page_num/page_count ( row_count kayıt )",
     notFound: "Bulunamadı",
+    loadingData: "Loading data...",
     clear: "İçeriği temizle",
     clearAll: "Tüm seçilenleri bırak",
     maxSelected: "Sadece max_selected_limit kadar seçim yapabilirsin.",
@@ -256,66 +270,66 @@ const [
     search: "Aramak"
   }
 };
-function it(e) {
+function st(e) {
   if (!e)
     return W[K];
   const t = String(e).toLowerCase();
   return Object.hasOwn(W, t) ? W[t] : W[K];
 }
-function se(e = 3e3) {
+function ce(e = 3e3) {
   let t;
   return (n) => {
     clearTimeout(t), t = setTimeout(n, e);
   };
 }
-function U(e) {
+function R(e) {
   return !e || !Object.hasOwn(e, "multiple") ? !1 : typeof e.multiple == "boolean" ? e.multiple : e.multiple === "";
 }
-function st(e) {
-  return [ae, ie].includes(e);
-}
 function ct(e) {
-  return [oe, re].includes(e);
+  return [ie, se].includes(e);
 }
 function ut(e) {
-  return we === e;
+  return [oe, re].includes(e);
 }
 function dt(e) {
   return ye === e;
 }
 function gt(e) {
+  return be === e;
+}
+function ft(e) {
   e && e.focus({ preventScroll: !0 });
 }
-function te(e) {
+function ne(e) {
   return Array.isArray(e) ? !e.length : !0;
 }
-function _e(e) {
+function Pe(e) {
   return typeof e == "string" ? e : typeof e == "number" ? `${e}px` : "";
 }
-const Pe = () => ({
+const Ie = () => ({
   list: { type: Array, default: void 0 },
-  highlightIndex: { type: Number, default: R }
-}), Ie = () => ["select", "set-highlight"];
-function ft(e, t) {
-  const n = b([]), i = F(() => {
+  highlightIndex: { type: Number, default: j }
+}), xe = () => ["select", "set-highlight"];
+function pt(e, t) {
+  const n = w([]), r = F(() => {
     var s;
     return (s = n.value) == null ? void 0 : s.length;
   });
-  function o(s) {
+  function a(s) {
     var f;
     return (f = n.value) != null && f.length ? n.value.some((h) => h[e.keyProp] === s[e.keyProp]) : !1;
   }
-  function a(s) {
+  function o(s) {
     var f;
     return !((f = n.value) != null && f.length) || typeof s > "u" ? !1 : n.value.some((h) => h[e.keyProp] === s);
   }
   function u(s) {
     var h;
     const f = new Set(s);
-    return f.size !== ((h = n.value) == null ? void 0 : h.length) ? !1 : Array.from(f).every(a);
+    return f.size !== ((h = n.value) == null ? void 0 : h.length) ? !1 : Array.from(f).every(o);
   }
   function d(s) {
-    if (!o(s)) {
+    if (!a(s)) {
       if (e.multiple) {
         g([...n.value, s]);
         return;
@@ -336,8 +350,8 @@ function ft(e, t) {
   }
   return {
     selected: n,
-    selectedCount: i,
-    isItemSelected: o,
+    selectedCount: r,
+    isItemSelected: a,
     selectItem: d,
     removeItem: l,
     removeAll: c,
@@ -345,37 +359,37 @@ function ft(e, t) {
     isKeysEqualToSelected: u
   };
 }
-function pt(e, t, n) {
-  const i = b(R);
-  function o(l) {
-    i.value = l;
+function ht(e, t, n) {
+  const r = w(j);
+  function a(l) {
+    r.value = l;
   }
-  function a() {
-    i.value !== R && i.value !== 0 && (i.value -= 1);
+  function o() {
+    r.value !== j && r.value !== 0 && (r.value -= 1);
   }
   function u() {
-    te(n.value) || i.value !== n.value.length - 1 && (i.value += 1);
+    ne(n.value) || r.value !== n.value.length - 1 && (r.value += 1);
   }
   function d(l) {
-    if (l === ae)
-      return a();
     if (l === ie)
+      return o();
+    if (l === se)
       return u();
   }
   function c() {
-    return i.value !== R;
+    return r.value !== j;
   }
   return {
-    highlightIndex: i,
-    setItemHighlight: o,
+    highlightIndex: r,
+    setItemHighlight: a,
     highlightNavigation: d,
     isSomeRowHighlight: c
   };
 }
-function ge(e) {
-  return Ge.includes(e);
+function fe(e) {
+  return Ze.includes(e);
 }
-function xe() {
+function $e() {
   return {
     /**
      * binding selected item keys, it must be match 'keyProp' option value
@@ -393,12 +407,12 @@ function xe() {
      * specify property to display in data row
      */
     labelProp: { type: [String, Function], default: "name" },
-    pageSize: { type: Number, default: We },
+    pageSize: { type: Number, default: Ke },
     /**
      * maximum number of selection, set 0 to unlimited
      * depend on `multiple` prop set to true
      */
-    max: { type: Number, default: be, validator: (e) => e >= 0 },
+    max: { type: Number, default: Se, validator: (e) => e >= 0 },
     /**
      * pagination bar
      */
@@ -416,7 +430,7 @@ function xe() {
     fetchDataOnMount: { type: Boolean, default: !1 }
   };
 }
-function $e() {
+function Ae() {
   return {
     disabled: { type: Boolean, default: !1 },
     /** Add custom class to trigger container, work on dropdown selection mode */
@@ -425,7 +439,7 @@ function $e() {
     customContainerClass: { type: String, default: "" }
   };
 }
-function Ae() {
+function Te() {
   return [
     "update:modelValue",
     "fetch-data",
@@ -436,17 +450,17 @@ function Ae() {
     "adjust-dropdown"
   ];
 }
-function ht(e, t) {
-  const n = it(e.language), {
-    selected: i,
-    selectedCount: o,
-    isItemSelected: a,
+function vt(e, t) {
+  const n = st(e.language), {
+    selected: r,
+    selectedCount: a,
+    isItemSelected: o,
     removeAll: u,
     removeItem: d,
     selectItem: c,
     setSelected: l,
     isKeysEqualToSelected: g
-  } = ft(e, t), s = b(""), f = b(""), h = b(j), C = b(0), S = b([]), v = b(!1), T = se(), O = () => te(S.value), w = (m) => {
+  } = pt(e, t), s = w(""), f = w(""), h = w(V), S = w(0), C = w([]), v = w(!1), A = ce(), L = () => ne(C.value), y = (m) => {
     if (!m || !Object.keys(m).length)
       return "";
     switch (typeof e.labelProp) {
@@ -456,28 +470,28 @@ function ht(e, t) {
         return e.labelProp(m);
     }
   }, p = (m) => {
-    if (e.max === be)
+    if (e.max === Se)
       return c(m);
-    if (i.value.length === e.max) {
-      f.value = n.maxSelected.replace(x, e.max), T(() => {
+    if (r.value.length === e.max) {
+      f.value = n.maxSelected.replace(x, e.max), A(() => {
         f.value = "";
       });
       return;
     }
     c(m);
-  }, E = () => {
+  }, O = () => {
     v.value = !0;
     const m = {
       search: s.value,
       pageNumber: h.value,
-      pageSize: e.pagination ? e.pageSize : Ze
+      pageSize: e.pagination ? e.pageSize : We
     };
-    t("fetch-data", m, (M, V) => {
-      Array.isArray(M) && (S.value = M, C.value = typeof V == "number" ? V : 0, ne(() => {
+    t("fetch-data", m, (B, Z) => {
+      Array.isArray(B) && (C.value = B, S.value = typeof Z == "number" ? Z : 0, le(() => {
         v.value = !1;
       }));
     });
-  }, L = () => {
+  }, E = () => {
     const { modelValue: m } = e;
     if (Array.isArray(m)) {
       if (!e.multiple && m.length > 1) {
@@ -488,147 +502,148 @@ function ht(e, t) {
         l([], !1);
         return;
       }
-      g(m) || t("fetch-selected-data", m, (M) => {
-        Array.isArray(M) && l(M, m.length !== M.length);
+      g(m) || t("fetch-selected-data", m, (B) => {
+        Array.isArray(B) && l(B, m.length !== B.length);
       });
     }
   };
-  return J(s, () => {
-    h.value = j, E();
-  }), J(() => e.modelValue, L), he(() => {
-    e.fetchDataOnMount && E(), te(e.modelValue) || L();
-  }), z("keyProp", e.keyProp), z("rtl", e.rtl), z("pageSize", e.pageSize), z("debounce", e.debounce), z("multiple", e.multiple), z("loading", v), z("language", n), z("renderCell", w), z("isItemSelected", a), z("selectedCount", o), z("removeAll", u), z("removeItem", d), {
-    selected: i,
+  return Q(s, () => {
+    h.value = V, O();
+  }), Q(() => e.modelValue, E), ve(() => {
+    e.fetchDataOnMount && O(), ne(e.modelValue) || E();
+  }), D("keyProp", e.keyProp), D("rtl", e.rtl), D("pageSize", e.pageSize), D("debounce", e.debounce), D("multiple", e.multiple), D("loading", v), D("language", n), D("renderCell", y), D("isItemSelected", o), D("selectedCount", a), D("removeAll", u), D("removeItem", d), {
+    selected: r,
     query: s,
     message: f,
     currentPage: h,
-    totalRows: C,
+    totalRows: S,
     lang: n,
-    list: S,
-    renderCell: w,
-    isDataEmpty: O,
-    isItemSelected: a,
-    selectedCount: o,
+    list: C,
+    loading: v,
+    renderCell: y,
+    isDataEmpty: L,
+    isItemSelected: o,
+    selectedCount: a,
     selectItem: p,
     removeAll: u,
     removeItem: d,
-    fetchData: E
+    fetchData: O
   };
 }
 function H() {
   return {
-    keyProp: B("keyProp"),
-    renderCell: B("renderCell"),
-    rtl: B("rtl"),
-    isItemSelected: B("isItemSelected"),
-    pageSize: B("pageSize"),
-    language: B("language"),
-    debounce: B("debounce"),
-    multiple: B("multiple"),
-    loading: B("loading"),
-    selectedCount: B("selectedCount"),
-    removeAll: B("removeAll"),
-    removeItem: B("removeItem")
+    keyProp: z("keyProp"),
+    renderCell: z("renderCell"),
+    rtl: z("rtl"),
+    isItemSelected: z("isItemSelected"),
+    pageSize: z("pageSize"),
+    language: z("language"),
+    debounce: z("debounce"),
+    multiple: z("multiple"),
+    loading: z("loading"),
+    selectedCount: z("selectedCount"),
+    removeAll: z("removeAll"),
+    removeItem: z("removeItem")
   };
 }
-function mt(e, t, n, i) {
-  const o = F(() => Math.ceil(n.value / e.pageSize)), a = F(() => t.value === j), u = F(() => t.value === o.value), d = F(
-    () => i.pageInfo.replace(_, t.value).replace(P, o.value).replace(I, n.value)
+function mt(e, t, n, r) {
+  const a = F(() => Math.ceil(n.value / e.pageSize)), o = F(() => t.value === V), u = F(() => t.value === a.value), d = F(
+    () => r.pageInfo.replace(_, t.value).replace(P, a.value).replace(I, n.value)
   ), c = function(s) {
     switch (s) {
-      case Se:
-        return j;
-      case Q:
-        return t.value - 1;
-      case ee:
-        return t.value + 1;
       case Ce:
-        return o.value;
+        return V;
+      case ee:
+        return t.value - 1;
+      case te:
+        return t.value + 1;
+      case _e:
+        return a.value;
     }
   }, l = function(s) {
     let f = c(s);
-    typeof f > "u" || (f < j && (f = j), f > o.value && (f = o.value), f !== t.value && (t.value = f));
+    typeof f > "u" || (f < V && (f = V), f > a.value && (f = a.value), f !== t.value && (t.value = f));
   };
   return {
     paginationInfo: d,
-    isFirstPage: a,
+    isFirstPage: o,
     isLastPage: u,
     switchPage: l,
     pagingNavigation: (s) => {
       if (s === oe)
-        return l(Q);
-      if (s === re)
         return l(ee);
+      if (s === re)
+        return l(te);
     }
   };
 }
-function vt() {
+function wt() {
   const e = window.pageXOffset !== void 0, t = (document.compatMode || "") === "CSS1Compat";
   return {
     x: e ? window.pageXOffset : t ? document.documentElement.scrollLeft : document.body.scrollLeft,
     y: e ? window.pageYOffset : t ? document.documentElement.scrollTop : document.body.scrollTop
   };
 }
-function wt(e) {
+function yt(e) {
   return window.getComputedStyle(e).display === "none";
 }
-function fe(e) {
-  if (wt(e)) {
+function pe(e) {
+  if (yt(e)) {
     e.style.visibility = "hidden", e.style.display = "inline-block";
     const t = e.getBoundingClientRect();
     return e.style.visibility = "visible", e.style.display = "none", t;
   }
   return e.getBoundingClientRect();
 }
-const Te = "click", yt = "hover", bt = "contextmenu", pe = 150, q = 5;
-function St(e, t) {
+const Le = "click", bt = "hover", St = "contextmenu", he = 150, J = 5;
+function Ct(e, t) {
   return typeof e.animated == "string" ? e.animated : e.animated ? t.value ? "animate-up" : "animate-down" : "";
 }
-function ce(e) {
+function ue(e) {
   return {
-    isTriggerByClick: e.trigger === Te,
-    isTriggerByHover: e.trigger === yt,
-    isTriggerByContextmenu: e.trigger === bt
+    isTriggerByClick: e.trigger === Le,
+    isTriggerByHover: e.trigger === bt,
+    isTriggerByContextmenu: e.trigger === St
   };
 }
-function Ct(e, t, n, i) {
-  const { isTriggerByContextmenu: o } = ce(e), a = window.pageYOffset, u = document.documentElement.clientHeight, d = o ? t : n.top + a;
-  let c = o ? t : n.top + n.height + q + a, l = !1, g = !1, s = !1;
-  return c + i.height > a + u && (l = !0), d - q - i.height < a && (g = !0), !g && l && (c = d - q - i.height, s = !0), { dropUp: s, top: c };
+function _t(e, t, n, r) {
+  const { isTriggerByContextmenu: a } = ue(e), o = window.pageYOffset, u = document.documentElement.clientHeight, d = a ? t : n.top + o;
+  let c = a ? t : n.top + n.height + J + o, l = !1, g = !1, s = !1;
+  return c + r.height > o + u && (l = !0), d - J - r.height < o && (g = !0), !g && l && (c = d - J - r.height, s = !0), { dropUp: s, top: c };
 }
-function _t(e, t, n, i) {
-  const { isTriggerByContextmenu: o } = ce(e), a = window.pageXOffset, u = document.documentElement.clientWidth, d = o ? 0 : n.width, c = o ? t : n.left + a, l = c + d / 2 - i.width / 2, g = c + d - i.width;
+function Pt(e, t, n, r) {
+  const { isTriggerByContextmenu: a } = ue(e), o = window.pageXOffset, u = document.documentElement.clientWidth, d = a ? 0 : n.width, c = a ? t : n.left + o, l = c + d / 2 - r.width / 2, g = c + d - r.width;
   switch (e.align) {
     case "left":
-      return c + i.width > a + u ? g : c;
+      return c + r.width > o + u ? g : c;
     case "center":
-      return l + i.width > a + u ? g : g < a ? c : l;
+      return l + r.width > o + u ? g : g < o ? c : l;
     case "right":
-      return g < a ? c : g;
+      return g < o ? c : g;
   }
 }
-function Pt(e) {
-  const t = vt();
+function It(e) {
+  const t = wt();
   return {
     x: e.pageX || e.clientX + t.x,
     y: e.pageY || e.clientY + t.y
   };
 }
-function It(e) {
+function xt(e) {
   return [
     "v-dropdown-container",
     e.border || "v-dropdown-no-border",
     e.customContainerClass && e.customContainerClass
   ];
 }
-function xt(e) {
+function $t(e) {
   return [
     "v-dropdown-trigger",
     e.fullWidth && "v-dropdown-trigger--full-width",
     e.customTriggerClass && e.customTriggerClass
   ];
 }
-const $t = G({
+const At = U({
   name: "VDropdown",
   props: {
     /** Container show up alignment direction */
@@ -667,97 +682,97 @@ const $t = G({
      * - `hover`
      * - `contextmenu`
      */
-    trigger: { type: String, default: Te },
+    trigger: { type: String, default: Le },
     /** Add custom class to trigger */
     customTriggerClass: { type: String, default: "" },
     /** Add custom class to container */
     customContainerClass: { type: String, default: "" }
   },
   emits: ["visible-change"],
-  setup(e, { slots: t, emit: n, expose: i }) {
-    const o = b(!1), a = de({ top: "", left: "", width: "" }), u = de({ x: null, y: null }), d = b(!1), c = b(null), l = b(null), g = b(null), {
+  setup(e, { slots: t, emit: n, expose: r }) {
+    const a = w(!1), o = ge({ top: "", left: "", width: "" }), u = ge({ x: null, y: null }), d = w(!1), c = w(null), l = w(null), g = w(null), {
       isTriggerByClick: s,
       isTriggerByHover: f,
       isTriggerByContextmenu: h
-    } = ce(e);
-    J(o, (w) => n("visible-change", w));
-    function C() {
-      e.disabled || ("trigger" in t && T(), f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
-        o.value = !0;
-      }, pe)) : o.value = !0);
+    } = ue(e);
+    Q(a, (y) => n("visible-change", y));
+    function S() {
+      e.disabled || ("trigger" in t && A(), f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
+        a.value = !0;
+      }, he)) : a.value = !0);
     }
-    function S(w = !1) {
-      e.disabled || !e.toggle && !w || (f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
-        o.value = !1;
-      }, pe)) : o.value = !1);
+    function C(y = !1) {
+      e.disabled || !e.toggle && !y || (f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
+        a.value = !1;
+      }, he)) : a.value = !1);
     }
     function v() {
-      o.value ? S() : C();
+      a.value ? C() : S();
     }
-    function T() {
-      const w = fe(l.value), p = fe(g.value), E = Ct(e, u.y, w, p), L = _t(e, u.x, w, p);
-      d.value = E.dropUp, a.top = `${E.top}px`, a.left = `${L}px`;
+    function A() {
+      const y = pe(l.value), p = pe(g.value), O = _t(e, u.y, y, p), E = Pt(e, u.x, y, p);
+      d.value = O.dropUp, o.top = `${O.top}px`, o.left = `${E}px`;
     }
-    function O(w) {
-      if (!o.value)
+    function L(y) {
+      if (!a.value)
         return;
-      const p = w.composedPath().some((E) => E === l.value);
-      p && !e.toggle && !h || (!p || p && h) && S(!0);
+      const p = y.composedPath().some((O) => O === l.value);
+      p && !e.toggle && !h || (!p || p && h) && C(!0);
     }
-    return he(() => {
-      typeof e.width < "u" && (a.width = e.width + "px"), document.body.addEventListener("mousedown", O);
-    }), He(() => {
-      document.body.removeEventListener("mousedown", O), g.value && g.value.remove();
+    return ve(() => {
+      typeof e.width < "u" && (o.width = e.width + "px"), document.body.addEventListener("mousedown", L);
     }), Ve(() => {
+      document.body.removeEventListener("mousedown", L), g.value && g.value.remove();
+    }), je(() => {
       l.value && l.value.remove();
-    }), i({
-      display: C,
-      close: S,
+    }), r({
+      display: S,
+      close: C,
       toggleVisible: v,
-      adjust: T,
+      adjust: A,
       container: g,
-      visible: o
+      visible: a
     }), () => {
-      const w = [];
-      "trigger" in t && w.push(t.trigger({
-        visible: o,
+      const y = [];
+      "trigger" in t && y.push(t.trigger({
+        visible: a,
         disabled: e.disabled
       }));
       const p = {
-        class: It(e),
-        style: a,
+        class: xt(e),
+        style: o,
         ref: g,
         // do not close dropdown container when
         // do some operations in that
         onMousedown: (m) => m.stopPropagation()
       };
-      f && (p.onMouseenter = C, p.onMouseleave = S);
-      const E = je(
-        r("div", p, t.default && t.default()),
-        [[Re, o.value]]
+      f && (p.onMouseenter = S, p.onMouseleave = C);
+      const O = Re(
+        i("div", p, t.default && t.default()),
+        [[Ue, a.value]]
       );
-      w.push(
-        r(Ue, { to: "body" }, [
-          r(me, { name: St(e, d) }, () => [E])
+      y.push(
+        i(Ge, { to: "body" }, [
+          i(me, { name: Ct(e, d) }, () => [O])
         ])
       );
-      const L = {
-        class: xt(e),
+      const E = {
+        class: $t(e),
         ref: l
       };
-      return f ? (L.onMouseenter = C, L.onMouseleave = S) : s ? L.onClick = (m) => {
+      return f ? (E.onMouseenter = S, E.onMouseleave = C) : s ? E.onClick = (m) => {
         e.manual || (m.stopPropagation(), v());
-      } : h && (L.onContextmenu = (m) => {
+      } : h && (E.onContextmenu = (m) => {
         if (e.manual)
           return;
         m.stopPropagation(), m.preventDefault();
-        const M = Pt(m);
-        u.x = M.x, u.y = M.y, C();
-      }), r("div", L, w);
+        const B = It(m);
+        u.x = B.x, u.y = B.y, S();
+      }), i("div", E, y);
     };
   }
 });
-const Z = {
+const G = {
   name: "SelectPageCircleButton",
   props: {
     size: { type: String, default: "" },
@@ -766,18 +781,18 @@ const Z = {
     hoverBgColor: { type: String, default: "#f1f1f1" }
   },
   setup(e, { slots: t }) {
-    const n = b(""), i = F(() => ({
+    const n = w(""), r = F(() => ({
       "sp-circle-btn--disabled": e.disabled,
       "sp-circle-btn--small": e.size === "small",
       "sp-circle-btn--large": e.size === "large"
-    })), o = F(() => ({
+    })), a = F(() => ({
       "font-size": e.fontSize,
       "background-color": e.disabled ? "transparent" : n.value
     }));
     return () => {
-      const a = {
-        class: ["sp-circle-btn", i.value],
-        style: o.value,
+      const o = {
+        class: ["sp-circle-btn", r.value],
+        style: a.value,
         onMouseenter() {
           n.value = e.hoverBgColor;
         },
@@ -785,15 +800,15 @@ const Z = {
           n.value = e.bgColor;
         }
       };
-      return r("div", a, t.default && t.default());
+      return i("div", o, t.default && t.default());
     };
   }
-}, D = (e, t) => {
+}, N = (e, t) => {
   const n = e.__vccOpts || e;
-  for (const [i, o] of t)
-    n[i] = o;
+  for (const [r, a] of t)
+    n[r] = a;
   return n;
-}, At = {}, Tt = {
+}, Tt = {}, Lt = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -802,11 +817,11 @@ const Z = {
   viewBox: "0 0 16 16"
 };
 function Ot(e, t) {
-  return k(), N("svg", Tt, t[0] || (t[0] = [
-    A("path", { d: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" }, null, -1)
+  return M(), k("svg", Lt, t[0] || (t[0] = [
+    T("path", { d: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" }, null, -1)
   ]));
 }
-const Et = /* @__PURE__ */ D(At, [["render", Ot]]), Lt = {}, zt = {
+const Et = /* @__PURE__ */ N(Tt, [["render", Ot]]), Dt = {}, zt = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -815,11 +830,11 @@ const Et = /* @__PURE__ */ D(At, [["render", Ot]]), Lt = {}, zt = {
   viewBox: "0 0 16 16"
 };
 function Bt(e, t) {
-  return k(), N("svg", zt, t[0] || (t[0] = [
-    A("path", { d: "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" }, null, -1)
+  return M(), k("svg", zt, t[0] || (t[0] = [
+    T("path", { d: "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" }, null, -1)
   ]));
 }
-const X = /* @__PURE__ */ D(Lt, [["render", Bt]]), Mt = {}, kt = {
+const X = /* @__PURE__ */ N(Dt, [["render", Bt]]), Mt = {}, kt = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -827,13 +842,13 @@ const X = /* @__PURE__ */ D(Lt, [["render", Bt]]), Mt = {}, kt = {
   class: "sp-icon sp-icon-loading"
 };
 function Nt(e, t) {
-  return k(), N("svg", kt, t[0] || (t[0] = [
-    A("path", {
+  return M(), k("svg", kt, t[0] || (t[0] = [
+    T("path", {
       d: "M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z",
       opacity: ".25"
     }, null, -1),
-    A("path", { d: "M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z" }, [
-      A("animateTransform", {
+    T("path", { d: "M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z" }, [
+      T("animateTransform", {
         attributeName: "transform",
         type: "rotate",
         dur: "0.75s",
@@ -843,27 +858,27 @@ function Nt(e, t) {
     ], -1)
   ]));
 }
-const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
+const Ft = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ht = {
   props: {
     modelValue: { type: String, default: "" }
   },
   emits: ["update:modelValue", "keyboard-operation"],
   setup(e, { emit: t, expose: n }) {
-    const { rtl: i, debounce: o, loading: a, language: u, selectedCount: d, multiple: c } = H(), l = b(!1), g = b(), s = se(o), f = F(() => !c || !d.value ? u.search : u.selectedCount.replace($, d.value)), h = () => gt(g.value);
+    const { rtl: r, debounce: a, loading: o, language: u, selectedCount: d, multiple: c } = H(), l = w(!1), g = w(), s = ce(a), f = F(() => !c || !d.value ? u.search : u.selectedCount.replace($, d.value)), h = () => ft(g.value);
     return n({ focus: h }), () => {
-      const S = [
-        F(() => a.value ? r(Dt) : r(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
-        r("input", {
+      const C = [
+        F(() => o.value ? i(Ft) : i(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
+        i("input", {
           type: "text",
           autocomplete: "off",
           value: e.modelValue.trim(),
           class: {
             "sp-search-input": !0,
-            "sp-search-input--rtl": i
+            "sp-search-input--rtl": r
           },
           placeholder: f.value,
           onKeydown: (v) => {
-            v.stopPropagation(), ge(v.keyCode) && t("keyboard-operation", v.keyCode);
+            v.stopPropagation(), fe(v.keyCode) && t("keyboard-operation", v.keyCode);
           },
           onFocus: () => {
             l.value = !0;
@@ -872,7 +887,7 @@ const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
             l.value = !1;
           },
           onInput: (v) => {
-            ge(v.keyCode) || s(() => {
+            fe(v.keyCode) || s(() => {
               t("update:modelValue", v.target.value.trim());
             });
           },
@@ -885,14 +900,14 @@ const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
             t("update:modelValue", ""), h();
           }
         };
-        S.push(
-          r(Z, v, () => r(X))
+        C.push(
+          i(G, v, () => i(X))
         );
       }
-      return r("div", { class: "sp-search-container" }, S);
+      return i("div", { class: "sp-search-container" }, C);
     };
   }
-}, Ht = {}, Vt = {
+}, Vt = {}, jt = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -900,16 +915,16 @@ const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
   class: "sp-icon bi bi-trash3",
   viewBox: "0 0 16 16"
 };
-function jt(e, t) {
-  return k(), N("svg", Vt, t[0] || (t[0] = [
-    A("path", { d: "M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" }, null, -1)
+function Rt(e, t) {
+  return M(), k("svg", jt, t[0] || (t[0] = [
+    T("path", { d: "M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" }, null, -1)
   ]));
 }
-const Rt = /* @__PURE__ */ D(Ht, [["render", jt]]), Ut = {
+const Ut = /* @__PURE__ */ N(Vt, [["render", Rt]]), Gt = {
   setup() {
     const { selectedCount: e, removeAll: t, language: n } = H();
     return () => {
-      const i = [], o = {
+      const r = [], a = {
         title: n.clearAll,
         size: "large",
         // bgColor: '#f1f1f1',
@@ -917,13 +932,13 @@ const Rt = /* @__PURE__ */ D(Ht, [["render", jt]]), Ut = {
         disabled: !e.value,
         onClick: t
       };
-      return i.push(
-        r(Z, o, () => r(Rt))
-      ), r("div", { class: "sp-search-control" }, i);
+      return r.push(
+        i(G, a, () => i(Ut))
+      ), i("div", { class: "sp-search-control" }, r);
     };
   }
 };
-const Gt = {
+const Zt = {
   props: {
     data: { type: Object, default: void 0 },
     isHover: { type: Boolean, default: !1 },
@@ -931,56 +946,56 @@ const Gt = {
   },
   emits: ["select", "hover"],
   setup(e, { emit: t }) {
-    const { renderCell: n, rtl: i, removeItem: o } = H();
+    const { renderCell: n, rtl: r, removeItem: a } = H();
     return () => {
-      const a = n(e.data), u = {
+      const o = n(e.data), u = {
         class: {
           "sp-list-item": !0,
           "sp-over": !e.isSelected && e.isHover,
           "sp-selected": e.isSelected,
-          "sp-rtl": i
+          "sp-rtl": r
         },
         onClick: () => t("select"),
         onMouseenter: () => t("hover")
       }, d = [
-        r("div", { title: a, innerHTML: a })
+        i("div", { title: o, innerHTML: o })
       ];
       if (e.isSelected) {
         const c = {
           onClick: (l) => {
-            l.stopPropagation(), o(e.data);
+            l.stopPropagation(), a(e.data);
           }
         };
         d.push(
-          r(Z, c, () => r(X))
+          i(G, c, () => i(X))
         );
       }
-      return r("div", u, d);
+      return i("div", u, d);
     };
   }
-}, Zt = {
+}, Wt = {
   name: "SelectPageList",
-  props: Pe(),
-  emits: Ie(),
+  props: Ie(),
+  emits: xe(),
   setup(e, { emit: t }) {
-    const { isItemSelected: n, keyProp: i } = H();
+    const { isItemSelected: n, keyProp: r } = H();
     return () => {
-      const o = e.list.map((u, d) => r(Gt, {
-        key: u[i],
+      const a = e.list.map((u, d) => i(Zt, {
+        key: u[r],
         data: u,
         isHover: e.highlightIndex === d,
         isSelected: n(u),
         onSelect: () => t("select", u),
         onHover: () => t("set-highlight", d)
       }));
-      return r("div", {
+      return i("div", {
         class: "sp-list",
-        onMouseleave: () => t("set-highlight", R)
-      }, o);
+        onMouseleave: () => t("set-highlight", j)
+      }, a);
     };
   }
 };
-const Wt = {
+const Kt = {
   props: {
     columns: { type: Object, default: void 0 },
     row: { type: Object, default: void 0 },
@@ -989,64 +1004,64 @@ const Wt = {
   },
   emits: ["select", "hover"],
   setup(e, { emit: t }) {
-    const { row: n } = e, { rtl: i } = H(), o = (a) => {
-      if (!n || !Object.keys(n).length || !(a != null && a.data))
+    const { row: n } = e, { rtl: r } = H(), a = (o) => {
+      if (!n || !Object.keys(n).length || !(o != null && o.data))
         return "";
-      switch (typeof a.data) {
+      switch (typeof o.data) {
         case "string":
-          return n[a.data];
+          return n[o.data];
         case "function":
-          return a.data(n);
+          return o.data(n);
       }
     };
     return () => {
-      const a = {
+      const o = {
         class: {
           "sp-over": !e.isSelected && e.isHover,
           "sp-selected": e.isSelected,
-          "sp-rtl": i
+          "sp-rtl": r
         },
         onClick: () => t("select"),
         onMouseenter: () => t("hover")
       }, u = e.columns.map((d, c) => {
         const l = {
           key: c,
-          innerHTML: o(d)
+          innerHTML: a(d)
         };
-        return Object.hasOwn(d, "width") && (l.style = { width: _e(d.width) }), r("td", l);
+        return Object.hasOwn(d, "width") && (l.style = { width: Pe(d.width) }), i("td", l);
       });
-      return r("tr", a, u);
+      return i("tr", o, u);
     };
   }
-}, Kt = {
+}, Xt = {
   name: "SelectPageTable",
   props: {
-    ...Pe(),
+    ...Ie(),
     columns: { type: Array, default: void 0 }
   },
-  emits: Ie(),
+  emits: xe(),
   setup(e, { emit: t }) {
-    const { isItemSelected: n, rtl: i, keyProp: o } = H();
+    const { isItemSelected: n, rtl: r, keyProp: a } = H();
     return () => {
-      const a = e.columns.map((c) => r("th", c.title)), u = e.list.map((c, l) => r(Wt, {
-        key: c[o],
+      const o = e.columns.map((c) => i("th", c.title)), u = e.list.map((c, l) => i(Kt, {
+        key: c[a],
         row: c,
         columns: e.columns,
         isHover: e.highlightIndex === l,
         isSelected: n(c),
         onSelect: () => t("select", c),
         onHover: () => t("set-highlight", l)
-      })), d = r("table", [
+      })), d = i("table", [
         // table thead
-        r("thead", r("tr", { class: { "sp-rtl": i } }, a)),
+        i("thead", i("tr", { class: { "sp-rtl": r } }, o)),
         // table tbody
-        r("tbody", { onMouseleave: () => t("set-highlight", R) }, u)
+        i("tbody", { onMouseleave: () => t("set-highlight", j) }, u)
       ]);
-      return r("div", { class: "sp-table" }, d);
+      return i("div", { class: "sp-table" }, d);
     };
   }
 };
-const Xt = {}, Yt = {
+const Yt = {}, qt = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -1054,15 +1069,15 @@ const Xt = {}, Yt = {
   class: "sp-icon bi bi-chevron-bar-left",
   viewBox: "0 0 16 16"
 };
-function qt(e, t) {
-  return k(), N("svg", Yt, t[0] || (t[0] = [
-    A("path", {
+function Jt(e, t) {
+  return M(), k("svg", qt, t[0] || (t[0] = [
+    T("path", {
       "fill-rule": "evenodd",
       d: "M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z"
     }, null, -1)
   ]));
 }
-const Jt = /* @__PURE__ */ D(Xt, [["render", qt]]), Qt = {}, en = {
+const Qt = /* @__PURE__ */ N(Yt, [["render", Jt]]), en = {}, tn = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -1070,15 +1085,15 @@ const Jt = /* @__PURE__ */ D(Xt, [["render", qt]]), Qt = {}, en = {
   class: "sp-icon bi bi-chevron-left",
   viewBox: "0 0 16 16"
 };
-function tn(e, t) {
-  return k(), N("svg", en, t[0] || (t[0] = [
-    A("path", {
+function nn(e, t) {
+  return M(), k("svg", tn, t[0] || (t[0] = [
+    T("path", {
       "fill-rule": "evenodd",
       d: "M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
     }, null, -1)
   ]));
 }
-const nn = /* @__PURE__ */ D(Qt, [["render", tn]]), ln = {}, on = {
+const ln = /* @__PURE__ */ N(en, [["render", nn]]), an = {}, on = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -1086,15 +1101,15 @@ const nn = /* @__PURE__ */ D(Qt, [["render", tn]]), ln = {}, on = {
   class: "sp-icon bi bi-chevron-right",
   viewBox: "0 0 16 16"
 };
-function an(e, t) {
-  return k(), N("svg", on, t[0] || (t[0] = [
-    A("path", {
+function rn(e, t) {
+  return M(), k("svg", on, t[0] || (t[0] = [
+    T("path", {
       "fill-rule": "evenodd",
       d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
     }, null, -1)
   ]));
 }
-const rn = /* @__PURE__ */ D(ln, [["render", an]]), sn = {}, cn = {
+const sn = /* @__PURE__ */ N(an, [["render", rn]]), cn = {}, un = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -1102,15 +1117,15 @@ const rn = /* @__PURE__ */ D(ln, [["render", an]]), sn = {}, cn = {
   class: "sp-icon bi bi-chevron-bar-right",
   viewBox: "0 0 16 16"
 };
-function un(e, t) {
-  return k(), N("svg", cn, t[0] || (t[0] = [
-    A("path", {
+function dn(e, t) {
+  return M(), k("svg", un, t[0] || (t[0] = [
+    T("path", {
       "fill-rule": "evenodd",
       d: "M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"
     }, null, -1)
   ]));
 }
-const dn = /* @__PURE__ */ D(sn, [["render", un]]), gn = {
+const gn = /* @__PURE__ */ N(cn, [["render", dn]]), fn = {
   name: "SelectPagePagination",
   props: {
     pageInfo: { type: String, default: "" },
@@ -1121,27 +1136,27 @@ const dn = /* @__PURE__ */ D(sn, [["render", un]]), gn = {
   setup(e, { emit: t }) {
     const { language: n } = H();
     return () => {
-      const o = [
-        { action: Se, title: n.first, disabled: e.isFirstPage, icon: Jt },
-        { action: Q, title: n.prev, disabled: e.isFirstPage, icon: nn },
-        { action: ee, title: n.next, disabled: e.isLastPage, icon: rn },
-        { action: Ce, title: n.last, disabled: e.isLastPage, icon: dn }
-      ].map((a) => {
+      const a = [
+        { action: Ce, title: n.first, disabled: e.isFirstPage, icon: Qt },
+        { action: ee, title: n.prev, disabled: e.isFirstPage, icon: ln },
+        { action: te, title: n.next, disabled: e.isLastPage, icon: sn },
+        { action: _e, title: n.last, disabled: e.isLastPage, icon: gn }
+      ].map((o) => {
         const u = {
           href: "javascript:void(0)",
-          onClick: () => t("page-change", a.action)
-        }, d = [{ "sp-page-disabled": a.disabled }, "sp-page-button"];
-        return r("div", { class: d, title: a.title }, [
-          r("a", u, r(a.icon))
+          onClick: () => t("page-change", o.action)
+        }, d = [{ "sp-page-disabled": o.disabled }, "sp-page-button"];
+        return i("div", { class: d, title: o.title }, [
+          i("a", u, i(o.icon))
         ]);
       });
-      return r("div", { class: "sp-pagination" }, [
-        r("div", { class: "sp-page-info" }, e.pageInfo),
-        r("div", { class: "sp-page-control" }, o)
+      return i("div", { class: "sp-pagination" }, [
+        i("div", { class: "sp-page-info" }, e.pageInfo),
+        i("div", { class: "sp-page-control" }, a)
       ]);
     };
   }
-}, fn = {}, pn = {
+}, pn = {}, hn = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -1149,127 +1164,133 @@ const dn = /* @__PURE__ */ D(sn, [["render", un]]), gn = {
   class: "sp-icon bi bi-chat-left-dots",
   viewBox: "0 0 16 16"
 };
-function hn(e, t) {
-  return k(), N("svg", pn, t[0] || (t[0] = [
-    A("path", { d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" }, null, -1),
-    A("path", { d: "M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" }, null, -1)
+function vn(e, t) {
+  return M(), k("svg", hn, t[0] || (t[0] = [
+    T("path", { d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" }, null, -1),
+    T("path", { d: "M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" }, null, -1)
   ]));
 }
-const mn = /* @__PURE__ */ D(fn, [["render", hn]]);
+const mn = /* @__PURE__ */ N(pn, [["render", vn]]);
 function Oe(e, t) {
   const {
     lang: n,
-    selected: i,
-    query: o,
-    message: a,
+    selected: r,
+    query: a,
+    message: o,
     currentPage: u,
     totalRows: d,
     list: c,
-    isDataEmpty: l,
-    selectItem: g,
-    fetchData: s,
-    renderCell: f,
-    removeAll: h,
+    loading: l,
+    isDataEmpty: g,
+    selectItem: s,
+    fetchData: f,
+    renderCell: h,
+    removeAll: S,
     removeItem: C
-  } = ht(e, t), {
-    highlightIndex: S,
-    setItemHighlight: v,
-    highlightNavigation: T,
-    isSomeRowHighlight: O
-  } = pt(e, t, c), {
-    paginationInfo: w,
-    isFirstPage: p,
+  } = vt(e, t), {
+    highlightIndex: v,
+    setItemHighlight: A,
+    highlightNavigation: L,
+    isSomeRowHighlight: y
+  } = ht(e, t, c), {
+    paginationInfo: p,
+    isFirstPage: O,
     isLastPage: E,
-    switchPage: L,
-    pagingNavigation: m
-  } = mt(e, u, d, n), M = se(e.debounce), V = b(), Me = () => {
-    V.value && V.value.focus();
-  }, ke = () => r("div", { class: "sp-search" }, [
-    r(Ft, {
-      ref: V,
-      modelValue: o.value,
-      "onUpdate:modelValue"(y) {
-        o.value = y;
+    switchPage: m,
+    pagingNavigation: B
+  } = mt(e, u, d, n), Z = ce(e.debounce), Y = w(), Me = () => {
+    Y.value && Y.value.focus();
+  }, ke = () => i("div", { class: "sp-search" }, [
+    i(Ht, {
+      ref: Y,
+      modelValue: a.value,
+      "onUpdate:modelValue"(b) {
+        a.value = b;
       },
-      onKeyboardOperation: (y) => {
-        if (st(y))
-          return T(y);
-        if (ct(y)) {
-          m(y), M(s);
+      onKeyboardOperation: (b) => {
+        if (ct(b))
+          return L(b);
+        if (ut(b)) {
+          B(b), Z(f);
           return;
         }
-        if (ut(y))
-          return O() ? g(c.value[S.value]) : void 0;
-        dt(y) && t("close-dropdown");
+        if (dt(b))
+          return y() ? s(c.value[v.value]) : void 0;
+        gt(b) && t("close-dropdown");
       }
     }),
-    r(Ut)
+    i(Gt)
   ]), Ne = () => {
-    const y = [];
-    return a.value && y.push(
-      r("div", { class: "sp-message" }, [
-        r(mn),
-        r("div", { class: "sp-message-body", innerHTML: a.value })
+    const b = [];
+    return o.value && b.push(
+      i("div", { class: "sp-message" }, [
+        i(mn),
+        i("div", { class: "sp-message-body", innerHTML: o.value })
       ])
-    ), r(me, {
+    ), i(me, {
       name: "sp-message-slide",
       appear: !0,
       onEnter: () => t("adjust-dropdown"),
       onAfterLeave: () => t("adjust-dropdown")
-    }, () => y);
-  }, De = () => l() ? ue() : r(Zt, {
+    }, () => b);
+  }, Fe = () => g() ? de() : i(Wt, {
     list: c.value,
-    highlightIndex: S.value,
-    onSelect: (y) => g(y),
-    onSetHighlight: (y) => v(y)
-  }), Fe = () => l() ? ue() : r(Kt, {
+    highlightIndex: v.value,
+    onSelect: (b) => s(b),
+    onSetHighlight: (b) => A(b)
+  }), He = () => g() ? de() : i(Xt, {
     list: c.value,
     columns: e.columns,
-    highlightIndex: S.value,
-    onSelect: (y) => g(y),
-    onSetHighlight: (y) => v(y)
-  }), ue = () => r("div", { class: "sp-result-message" }, n.notFound);
+    highlightIndex: v.value,
+    onSelect: (b) => s(b),
+    onSetHighlight: (b) => A(b)
+  }), de = () => i("div", { class: "sp-result-message" }, l.value ? "" : n.notFound);
   return {
-    selected: i,
-    query: o,
-    message: a,
+    selected: r,
+    query: a,
+    message: o,
     currentPage: u,
     lang: n,
-    renderCell: f,
-    removeAll: h,
+    renderCell: h,
+    removeAll: S,
     removeItem: C,
     setSearchFocus: Me,
     renderSearch: ke,
     renderMessage: Ne,
-    renderList: De,
-    renderTable: Fe,
+    renderList: Fe,
+    renderTable: He,
     renderPagination: () => {
       if (e.pagination)
-        return r(gn, {
-          pageInfo: w.value,
-          isFirstPage: p.value,
+        return i(fn, {
+          pageInfo: p.value,
+          isFirstPage: O.value,
           isLastPage: E.value,
-          onPageChange(y) {
-            L(y), s();
+          onPageChange(b) {
+            m(b), f();
           }
         });
     },
-    renderContainer: (y) => {
-      const Y = { class: "sp-container" };
-      return e.width && (Y.style = { width: _e(e.width) }), r("div", Y, y);
+    renderContainer: (b) => {
+      const q = w({
+        class: {
+          "sp-container": !0,
+          "sp-loading": l.value
+        }
+      });
+      return e.width && (q.value.style = { width: Pe(e.width) }), i("div", q.value, b);
     },
-    fetchData: s
+    fetchData: f
   };
 }
 function Ee(e) {
-  const t = b(!1), n = b();
-  function i() {
+  const t = w(!1), n = w();
+  function r() {
     n.value && n.value.close();
   }
-  function o() {
+  function a() {
     n.value && n.value.adjust();
   }
-  function a(u, d, c) {
+  function o(u, d, c) {
     const l = {
       ref: n,
       border: !1,
@@ -1281,7 +1302,7 @@ function Ee(e) {
         t.value = g;
       }
     };
-    return r($t, le(l, u), {
+    return i(At, ae(l, u), {
       trigger: () => d,
       default: () => c
     });
@@ -1289,22 +1310,22 @@ function Ee(e) {
   return {
     visible: t,
     dropdownRef: n,
-    renderDropdown: a,
-    closeDropdown: i,
-    adjustDropdown: o
+    renderDropdown: o,
+    closeDropdown: r,
+    adjustDropdown: a
   };
 }
-const vn = G({
+const wn = U({
   name: "SelectPageListCore",
   props: {
-    ...xe()
+    ...$e()
   },
-  emits: Ae(),
+  emits: Te(),
   setup(e, { emit: t, expose: n }) {
     const {
-      selected: i,
-      lang: o,
-      renderCell: a,
+      selected: r,
+      lang: a,
+      renderCell: o,
       removeAll: u,
       removeItem: d,
       setSearchFocus: c,
@@ -1313,16 +1334,16 @@ const vn = G({
       renderList: s,
       renderPagination: f,
       renderContainer: h,
-      fetchData: C
+      fetchData: S
     } = Oe(e, t);
     return n({
-      selected: i,
-      lang: o,
-      renderCell: a,
+      selected: r,
+      lang: a,
+      renderCell: o,
       removeAll: u,
       removeItem: d,
       setSearchFocus: c,
-      fetchData: C
+      fetchData: S
     }), () => h([
       l(),
       g(),
@@ -1331,7 +1352,7 @@ const vn = G({
     ]);
   }
 });
-const wn = {}, yn = {
+const yn = {}, bn = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "16",
   height: "16",
@@ -1339,15 +1360,15 @@ const wn = {}, yn = {
   class: "sp-icon bi bi-chevron-down",
   viewBox: "0 0 16 16"
 };
-function bn(e, t) {
-  return k(), N("svg", yn, t[0] || (t[0] = [
-    A("path", {
+function Sn(e, t) {
+  return M(), k("svg", bn, t[0] || (t[0] = [
+    T("path", {
       "fill-rule": "evenodd",
       d: "M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
     }, null, -1)
   ]));
 }
-const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
+const Cn = /* @__PURE__ */ N(yn, [["render", Sn]]), De = {
   props: {
     dropdownVisible: { type: Boolean, default: !1 },
     disabled: { type: Boolean, default: !1 },
@@ -1356,19 +1377,19 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
   },
   setup(e, { slots: t }) {
     return () => {
-      var o;
+      var a;
       const n = [];
       Object.hasOwn(t, "default") ? n.push(t.default()) : n.push(
-        r("div", { class: "sp-placeholder" }, e.placeholder || ((o = e.lang) == null ? void 0 : o.placeholder))
-      ), n.push(r(Sn));
-      const i = {
+        i("div", { class: "sp-placeholder" }, e.placeholder || ((a = e.lang) == null ? void 0 : a.placeholder))
+      ), n.push(i(Cn));
+      const r = {
         class: {
           "sp-trigger-container": !0,
           "sp-opened": e.dropdownVisible,
           "sp-disabled": e.disabled
         }
       };
-      return r("div", i, n);
+      return i("div", r, n);
     };
   }
 }, ze = {
@@ -1381,26 +1402,26 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
   },
   emits: ["remove"],
   setup(e, { emit: t }) {
-    const n = ve(e, "selected");
+    const n = we(e, "selected");
     return () => {
-      var o, a;
-      if (!((o = n.value) != null && o.length))
+      var a, o;
+      if (!((a = n.value) != null && a.length))
         return;
-      const i = [
-        r("div", { class: "sp-select-content", innerHTML: e.renderCell(n.value[0]) })
+      const r = [
+        i("div", { class: "sp-select-content", innerHTML: e.renderCell(n.value[0]) })
       ];
-      if ((a = n.value) != null && a.length && !e.disabled) {
+      if ((o = n.value) != null && o.length && !e.disabled) {
         const u = {
           title: e.lang.clear,
           onClick: (d) => {
             d.stopPropagation(), t("remove");
           }
         };
-        i.push(
-          r(Z, u, () => r(X))
+        r.push(
+          i(G, u, () => i(X))
         );
       }
-      return r("div", { class: "sp-trigger sp-select" }, i);
+      return i("div", { class: "sp-trigger sp-select" }, r);
     };
   }
 }, Be = {
@@ -1412,44 +1433,44 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
   },
   emits: ["remove"],
   setup(e, { emit: t }) {
-    const n = ve(e, "selected");
+    const n = we(e, "selected");
     return () => {
-      const i = n.value.map((o, a) => {
+      const r = n.value.map((a, o) => {
         const u = [
-          r("div", { class: "sp-chip--body", innerHTML: e.renderCell(o) })
+          i("div", { class: "sp-chip--body", innerHTML: e.renderCell(a) })
         ];
         if (!e.disabled) {
           const d = {
             size: "small",
             hoverBgColor: "#ccc",
             onClick: (c) => {
-              c.stopPropagation(), t("remove", o);
+              c.stopPropagation(), t("remove", a);
             }
           };
           u.push(
-            r(Z, d, () => r(X))
+            i(G, d, () => i(X))
           );
         }
-        return r("div", { class: "sp-chip", key: a }, u);
+        return i("div", { class: "sp-chip", key: o }, u);
       });
-      return r("div", { class: "sp-trigger sp-chips" }, i);
+      return i("div", { class: "sp-trigger sp-chips" }, r);
     };
   }
-}, xn = G({
+}, $n = U({
   name: "SelectPageList",
   inheritAttrs: !1,
   props: {
-    ...$e()
+    ...Ae()
   },
   emits: ["visible-change"],
-  setup(e, { emit: t, attrs: n, expose: i }) {
+  setup(e, { emit: t, attrs: n, expose: r }) {
     const {
-      visible: o,
-      adjustDropdown: a,
+      visible: a,
+      adjustDropdown: o,
       closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), c = b([]), l = b();
-    return i({
+    } = Ee(e), c = w([]), l = w();
+    return r({
       removeItem: (g) => {
         var s;
         return (s = l.value) == null ? void 0 : s.removeItem(g);
@@ -1459,56 +1480,56 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
         return (g = l.value) == null ? void 0 : g.removeAll();
       }
     }), () => {
-      var v, T, O, w;
+      var v, A, L, y;
       const g = {
         selected: c,
         disabled: e.disabled,
         lang: (v = l == null ? void 0 : l.value) == null ? void 0 : v.lang,
-        renderCell: (T = l == null ? void 0 : l.value) == null ? void 0 : T.renderCell,
+        renderCell: (A = l == null ? void 0 : l.value) == null ? void 0 : A.renderCell,
         onRemove(p) {
-          U(n) ? l.value.removeItem(p) : l.value.removeAll();
+          R(n) ? l.value.removeItem(p) : l.value.removeAll();
         }
-      }, s = (O = c.value) != null && O.length ? () => r(U(n) ? Be : ze, g) : void 0, f = {
-        dropdownVisible: o.value,
+      }, s = (L = c.value) != null && L.length ? () => i(R(n) ? Be : ze, g) : void 0, f = {
+        dropdownVisible: a.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
-        lang: (w = l == null ? void 0 : l.value) == null ? void 0 : w.lang
-      }, h = r(Le, f, s);
+        lang: (y = l == null ? void 0 : l.value) == null ? void 0 : y.lang
+      }, h = i(De, f, s);
       return d(
         {
           onVisibleChange: (p) => {
-            t("visible-change", p), p && ne(() => {
+            t("visible-change", p), p && le(() => {
               s === void 0 && l.value.fetchData(), l.value.setSearchFocus();
             });
           }
         },
         h,
-        r(vn, le({
+        i(wn, ae({
           ref: l,
-          onAdjustDropdown: a,
+          onAdjustDropdown: o,
           onCloseDropdown: u,
           onSelectionChange(p) {
-            c.value = p, !U(n) && (p != null && p.length) && u();
+            c.value = p, !R(n) && (p != null && p.length) && u();
           }
         }, n))
       );
     };
   }
-}), Cn = G({
+}), _n = U({
   name: "SelectPageTableCore",
   props: {
-    ...xe(),
+    ...$e(),
     /**
      * table column settings
      */
     columns: { type: Array, default: void 0 }
   },
-  emits: Ae(),
+  emits: Te(),
   setup(e, { emit: t, expose: n }) {
     const {
-      selected: i,
-      lang: o,
-      removeAll: a,
+      selected: r,
+      lang: a,
+      removeAll: o,
       removeItem: u,
       setSearchFocus: d,
       renderCell: c,
@@ -1517,16 +1538,16 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
       renderTable: s,
       renderPagination: f,
       renderContainer: h,
-      fetchData: C
+      fetchData: S
     } = Oe(e, t);
     return n({
-      selected: i,
-      lang: o,
+      selected: r,
+      lang: a,
       renderCell: c,
-      removeAll: a,
+      removeAll: o,
       removeItem: u,
       setSearchFocus: d,
-      fetchData: C
+      fetchData: S
     }), () => h([
       l(),
       g(),
@@ -1534,21 +1555,21 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
       f()
     ]);
   }
-}), $n = G({
+}), An = U({
   name: "SelectPageTable",
   inheritAttrs: !1,
   props: {
-    ...$e()
+    ...Ae()
   },
   emits: ["visible-change"],
-  setup(e, { emit: t, attrs: n, expose: i }) {
+  setup(e, { emit: t, attrs: n, expose: r }) {
     const {
-      visible: o,
-      adjustDropdown: a,
+      visible: a,
+      adjustDropdown: o,
       closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), c = b([]), l = b();
-    return i({
+    } = Ee(e), c = w([]), l = w();
+    return r({
       removeItem: (g) => {
         var s;
         return (s = l.value) == null ? void 0 : s.removeItem(g);
@@ -1558,36 +1579,36 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
         return (g = l.value) == null ? void 0 : g.removeAll();
       }
     }), () => {
-      var v, T, O, w;
+      var v, A, L, y;
       const g = {
         selected: c,
         disabled: e.disabled,
         lang: (v = l == null ? void 0 : l.value) == null ? void 0 : v.lang,
-        renderCell: (T = l == null ? void 0 : l.value) == null ? void 0 : T.renderCell,
+        renderCell: (A = l == null ? void 0 : l.value) == null ? void 0 : A.renderCell,
         onRemove(p) {
-          U(n) ? l.value.removeItem(p) : l.value.removeAll();
+          R(n) ? l.value.removeItem(p) : l.value.removeAll();
         }
-      }, s = (O = c.value) != null && O.length ? () => r(U(n) ? Be : ze, g) : void 0, f = {
-        dropdownVisible: o.value,
+      }, s = (L = c.value) != null && L.length ? () => i(R(n) ? Be : ze, g) : void 0, f = {
+        dropdownVisible: a.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
-        lang: (w = l == null ? void 0 : l.value) == null ? void 0 : w.lang
-      }, h = r(Le, f, s);
+        lang: (y = l == null ? void 0 : l.value) == null ? void 0 : y.lang
+      }, h = i(De, f, s);
       return d(
         {
           onVisibleChange: (p) => {
-            t("visible-change", p), p && ne(() => {
+            t("visible-change", p), p && le(() => {
               s === void 0 && l.value.fetchData(), l.value.setSearchFocus();
             });
           }
         },
         h,
-        r(Cn, le({
+        i(_n, ae({
           ref: l,
-          onAdjustDropdown: a,
+          onAdjustDropdown: o,
           onCloseDropdown: u,
           onSelectionChange(p) {
-            c.value = p, !U(n) && (p != null && p.length) && u();
+            c.value = p, !R(n) && (p != null && p.length) && u();
           }
         }, n))
       );
@@ -1595,8 +1616,8 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
   }
 });
 export {
-  xn as SelectPageList,
-  vn as SelectPageListCore,
-  $n as SelectPageTable,
-  Cn as SelectPageTableCore
+  $n as SelectPageList,
+  wn as SelectPageListCore,
+  An as SelectPageTable,
+  _n as SelectPageTableCore
 };
