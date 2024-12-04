@@ -4,7 +4,7 @@ const [
   oe,
   ae,
   re,
-  se,
+  ie,
   we,
   ye
 ] = [
@@ -14,7 +14,7 @@ const [
   40,
   13,
   27
-], Ge = [oe, ae, re, se, we, ye], R = -1, be = 0, Ze = 0, j = 1, We = 10, Se = "first", Q = "previous", ee = "next", Ce = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
+], Ge = [oe, ae, re, ie, we, ye], R = -1, be = 0, Ze = 0, j = 1, We = 10, Se = "first", Q = "previous", ee = "next", Ce = "last", _ = "page_num", P = "page_count", I = "row_count", x = "max_select_limit", $ = "selected_count", [
   Ke,
   K,
   Xe,
@@ -256,13 +256,13 @@ const [
     search: "Aramak"
   }
 };
-function st(e) {
+function it(e) {
   if (!e)
     return W[K];
   const t = String(e).toLowerCase();
   return Object.hasOwn(W, t) ? W[t] : W[K];
 }
-function ie(e = 3e3) {
+function se(e = 3e3) {
   let t;
   return (n) => {
     clearTimeout(t), t = setTimeout(n, e);
@@ -271,8 +271,8 @@ function ie(e = 3e3) {
 function U(e) {
   return !e || !Object.hasOwn(e, "multiple") ? !1 : typeof e.multiple == "boolean" ? e.multiple : e.multiple === "";
 }
-function it(e) {
-  return [ae, se].includes(e);
+function st(e) {
+  return [ae, ie].includes(e);
 }
 function ct(e) {
   return [oe, re].includes(e);
@@ -297,79 +297,79 @@ const Pe = () => ({
   highlightIndex: { type: Number, default: R }
 }), Ie = () => ["select", "set-highlight"];
 function ft(e, t) {
-  const n = b([]), s = F(() => {
-    var c;
-    return (c = n.value) == null ? void 0 : c.length;
+  const n = b([]), i = F(() => {
+    var s;
+    return (s = n.value) == null ? void 0 : s.length;
   });
-  function o(c) {
+  function o(s) {
     var f;
-    return (f = n.value) != null && f.length ? n.value.some((h) => h[e.keyProp] === c[e.keyProp]) : !1;
+    return (f = n.value) != null && f.length ? n.value.some((h) => h[e.keyProp] === s[e.keyProp]) : !1;
   }
-  function a(c) {
+  function a(s) {
     var f;
-    return !((f = n.value) != null && f.length) || typeof c > "u" ? !1 : n.value.some((h) => h[e.keyProp] === c);
+    return !((f = n.value) != null && f.length) || typeof s > "u" ? !1 : n.value.some((h) => h[e.keyProp] === s);
   }
-  function u(c) {
+  function u(s) {
     var h;
-    const f = new Set(c);
+    const f = new Set(s);
     return f.size !== ((h = n.value) == null ? void 0 : h.length) ? !1 : Array.from(f).every(a);
   }
-  function d(c) {
-    if (!o(c)) {
+  function d(s) {
+    if (!o(s)) {
       if (e.multiple) {
-        g([...n.value, c]);
+        g([...n.value, s]);
         return;
       }
-      g([c]);
+      g([s]);
     }
   }
-  function i() {
+  function c() {
     t("remove", n.value), g(e.multiple ? [] : null);
   }
-  function l(c) {
-    t("remove", [c]), g(
-      n.value.filter((f) => f[e.keyProp] !== c[e.keyProp])
+  function l(s) {
+    t("remove", [s]), g(
+      n.value.filter((f) => f[e.keyProp] !== s[e.keyProp])
     );
   }
-  function g(c, f = !0) {
-    n.value = c, f && t("update:modelValue", c == null ? void 0 : c.map((h) => h[e.keyProp])), t("selection-change", c);
+  function g(s, f = !0) {
+    n.value = s, f && t("update:modelValue", s == null ? void 0 : s.map((h) => h[e.keyProp])), t("selection-change", s);
   }
   return {
     selected: n,
-    selectedCount: s,
+    selectedCount: i,
     isItemSelected: o,
     selectItem: d,
     removeItem: l,
-    removeAll: i,
+    removeAll: c,
     setSelected: g,
     isKeysEqualToSelected: u
   };
 }
 function pt(e, t, n) {
-  const s = b(R);
+  const i = b(R);
   function o(l) {
-    s.value = l;
+    i.value = l;
   }
   function a() {
-    s.value !== R && s.value !== 0 && (s.value -= 1);
+    i.value !== R && i.value !== 0 && (i.value -= 1);
   }
   function u() {
-    te(n.value) || s.value !== n.value.length - 1 && (s.value += 1);
+    te(n.value) || i.value !== n.value.length - 1 && (i.value += 1);
   }
   function d(l) {
     if (l === ae)
       return a();
-    if (l === se)
+    if (l === ie)
       return u();
   }
-  function i() {
-    return s.value !== R;
+  function c() {
+    return i.value !== R;
   }
   return {
-    highlightIndex: s,
+    highlightIndex: i,
     setItemHighlight: o,
     highlightNavigation: d,
-    isSomeRowHighlight: i
+    isSomeRowHighlight: c
   };
 }
 function ge(e) {
@@ -437,16 +437,16 @@ function Ae() {
   ];
 }
 function ht(e, t) {
-  const n = st(e.language), {
-    selected: s,
+  const n = it(e.language), {
+    selected: i,
     selectedCount: o,
     isItemSelected: a,
     removeAll: u,
     removeItem: d,
-    selectItem: i,
+    selectItem: c,
     setSelected: l,
     isKeysEqualToSelected: g
-  } = ft(e, t), c = b(""), f = b(""), h = b(j), C = b(0), S = b([]), v = b(!1), T = ie(), O = () => te(S.value), w = (m) => {
+  } = ft(e, t), s = b(""), f = b(""), h = b(j), C = b(0), S = b([]), v = b(!1), T = se(), O = () => te(S.value), w = (m) => {
     if (!m || !Object.keys(m).length)
       return "";
     switch (typeof e.labelProp) {
@@ -457,18 +457,18 @@ function ht(e, t) {
     }
   }, p = (m) => {
     if (e.max === be)
-      return i(m);
-    if (s.value.length === e.max) {
+      return c(m);
+    if (i.value.length === e.max) {
       f.value = n.maxSelected.replace(x, e.max), T(() => {
         f.value = "";
       });
       return;
     }
-    i(m);
+    c(m);
   }, E = () => {
     v.value = !0;
     const m = {
-      search: c.value,
+      search: s.value,
       pageNumber: h.value,
       pageSize: e.pagination ? e.pageSize : Ze
     };
@@ -493,13 +493,13 @@ function ht(e, t) {
       });
     }
   };
-  return J(c, () => {
+  return J(s, () => {
     h.value = j, E();
   }), J(() => e.modelValue, L), he(() => {
     e.fetchDataOnMount && E(), te(e.modelValue) || L();
   }), z("keyProp", e.keyProp), z("rtl", e.rtl), z("pageSize", e.pageSize), z("debounce", e.debounce), z("multiple", e.multiple), z("loading", v), z("language", n), z("renderCell", w), z("isItemSelected", a), z("selectedCount", o), z("removeAll", u), z("removeItem", d), {
-    selected: s,
-    query: c,
+    selected: i,
+    query: s,
     message: f,
     currentPage: h,
     totalRows: C,
@@ -531,11 +531,11 @@ function H() {
     removeItem: B("removeItem")
   };
 }
-function mt(e, t, n, s) {
+function mt(e, t, n, i) {
   const o = F(() => Math.ceil(n.value / e.pageSize)), a = F(() => t.value === j), u = F(() => t.value === o.value), d = F(
-    () => s.pageInfo.replace(_, t.value).replace(P, o.value).replace(I, n.value)
-  ), i = function(c) {
-    switch (c) {
+    () => i.pageInfo.replace(_, t.value).replace(P, o.value).replace(I, n.value)
+  ), c = function(s) {
+    switch (s) {
       case Se:
         return j;
       case Q:
@@ -545,8 +545,8 @@ function mt(e, t, n, s) {
       case Ce:
         return o.value;
     }
-  }, l = function(c) {
-    let f = i(c);
+  }, l = function(s) {
+    let f = c(s);
     typeof f > "u" || (f < j && (f = j), f > o.value && (f = o.value), f !== t.value && (t.value = f));
   };
   return {
@@ -554,10 +554,10 @@ function mt(e, t, n, s) {
     isFirstPage: a,
     isLastPage: u,
     switchPage: l,
-    pagingNavigation: (c) => {
-      if (c === oe)
+    pagingNavigation: (s) => {
+      if (s === oe)
         return l(Q);
-      if (c === re)
+      if (s === re)
         return l(ee);
     }
   };
@@ -591,20 +591,20 @@ function ce(e) {
     isTriggerByContextmenu: e.trigger === bt
   };
 }
-function Ct(e, t, n, s) {
+function Ct(e, t, n, i) {
   const { isTriggerByContextmenu: o } = ce(e), a = window.pageYOffset, u = document.documentElement.clientHeight, d = o ? t : n.top + a;
-  let i = o ? t : n.top + n.height + q + a, l = !1, g = !1, c = !1;
-  return i + s.height > a + u && (l = !0), d - q - s.height < a && (g = !0), !g && l && (i = d - q - s.height, c = !0), { dropUp: c, top: i };
+  let c = o ? t : n.top + n.height + q + a, l = !1, g = !1, s = !1;
+  return c + i.height > a + u && (l = !0), d - q - i.height < a && (g = !0), !g && l && (c = d - q - i.height, s = !0), { dropUp: s, top: c };
 }
-function _t(e, t, n, s) {
-  const { isTriggerByContextmenu: o } = ce(e), a = window.pageXOffset, u = document.documentElement.clientWidth, d = o ? 0 : n.width, i = o ? t : n.left + a, l = i + d / 2 - s.width / 2, g = i + d - s.width;
+function _t(e, t, n, i) {
+  const { isTriggerByContextmenu: o } = ce(e), a = window.pageXOffset, u = document.documentElement.clientWidth, d = o ? 0 : n.width, c = o ? t : n.left + a, l = c + d / 2 - i.width / 2, g = c + d - i.width;
   switch (e.align) {
     case "left":
-      return i + s.width > a + u ? g : i;
+      return c + i.width > a + u ? g : c;
     case "center":
-      return l + s.width > a + u ? g : g < a ? i : l;
+      return l + i.width > a + u ? g : g < a ? c : l;
     case "right":
-      return g < a ? i : g;
+      return g < a ? c : g;
   }
 }
 function Pt(e) {
@@ -674,20 +674,20 @@ const $t = G({
     customContainerClass: { type: String, default: "" }
   },
   emits: ["visible-change"],
-  setup(e, { slots: t, emit: n, expose: s }) {
-    const o = b(!1), a = de({ top: "", left: "", width: "" }), u = de({ x: null, y: null }), d = b(!1), i = b(null), l = b(null), g = b(null), {
-      isTriggerByClick: c,
+  setup(e, { slots: t, emit: n, expose: i }) {
+    const o = b(!1), a = de({ top: "", left: "", width: "" }), u = de({ x: null, y: null }), d = b(!1), c = b(null), l = b(null), g = b(null), {
+      isTriggerByClick: s,
       isTriggerByHover: f,
       isTriggerByContextmenu: h
     } = ce(e);
     J(o, (w) => n("visible-change", w));
     function C() {
-      e.disabled || ("trigger" in t && T(), f ? (window.clearTimeout(i.value), i.value = window.setTimeout(() => {
+      e.disabled || ("trigger" in t && T(), f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
         o.value = !0;
       }, pe)) : o.value = !0);
     }
     function S(w = !1) {
-      e.disabled || !e.toggle && !w || (f ? (window.clearTimeout(i.value), i.value = window.setTimeout(() => {
+      e.disabled || !e.toggle && !w || (f ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
         o.value = !1;
       }, pe)) : o.value = !1);
     }
@@ -710,7 +710,7 @@ const $t = G({
       document.body.removeEventListener("mousedown", O), g.value && g.value.remove();
     }), Ve(() => {
       l.value && l.value.remove();
-    }), s({
+    }), i({
       display: C,
       close: S,
       toggleVisible: v,
@@ -745,7 +745,7 @@ const $t = G({
         class: xt(e),
         ref: l
       };
-      return f ? (L.onMouseenter = C, L.onMouseleave = S) : c ? L.onClick = (m) => {
+      return f ? (L.onMouseenter = C, L.onMouseleave = S) : s ? L.onClick = (m) => {
         e.manual || (m.stopPropagation(), v());
       } : h && (L.onContextmenu = (m) => {
         if (e.manual)
@@ -766,7 +766,7 @@ const Z = {
     hoverBgColor: { type: String, default: "#f1f1f1" }
   },
   setup(e, { slots: t }) {
-    const n = b(""), s = F(() => ({
+    const n = b(""), i = F(() => ({
       "sp-circle-btn--disabled": e.disabled,
       "sp-circle-btn--small": e.size === "small",
       "sp-circle-btn--large": e.size === "large"
@@ -776,7 +776,7 @@ const Z = {
     }));
     return () => {
       const a = {
-        class: ["sp-circle-btn", s.value],
+        class: ["sp-circle-btn", i.value],
         style: o.value,
         onMouseenter() {
           n.value = e.hoverBgColor;
@@ -790,8 +790,8 @@ const Z = {
   }
 }, D = (e, t) => {
   const n = e.__vccOpts || e;
-  for (const [s, o] of t)
-    n[s] = o;
+  for (const [i, o] of t)
+    n[i] = o;
   return n;
 }, At = {}, Tt = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -849,7 +849,7 @@ const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
   },
   emits: ["update:modelValue", "keyboard-operation"],
   setup(e, { emit: t, expose: n }) {
-    const { rtl: s, debounce: o, loading: a, language: u, selectedCount: d, multiple: i } = H(), l = b(!1), g = b(), c = ie(o), f = F(() => !i || !d.value ? u.search : u.selectedCount.replace($, d.value)), h = () => gt(g.value);
+    const { rtl: i, debounce: o, loading: a, language: u, selectedCount: d, multiple: c } = H(), l = b(!1), g = b(), s = se(o), f = F(() => !c || !d.value ? u.search : u.selectedCount.replace($, d.value)), h = () => gt(g.value);
     return n({ focus: h }), () => {
       const S = [
         F(() => a.value ? r(Dt) : r(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
@@ -859,7 +859,7 @@ const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
           value: e.modelValue.trim(),
           class: {
             "sp-search-input": !0,
-            "sp-search-input--rtl": s
+            "sp-search-input--rtl": i
           },
           placeholder: f.value,
           onKeydown: (v) => {
@@ -872,7 +872,7 @@ const Dt = /* @__PURE__ */ D(Mt, [["render", Nt]]), Ft = {
             l.value = !1;
           },
           onInput: (v) => {
-            ge(v.keyCode) || c(() => {
+            ge(v.keyCode) || s(() => {
               t("update:modelValue", v.target.value.trim());
             });
           },
@@ -909,7 +909,7 @@ const Rt = /* @__PURE__ */ D(Ht, [["render", jt]]), Ut = {
   setup() {
     const { selectedCount: e, removeAll: t, language: n } = H();
     return () => {
-      const s = [], o = {
+      const i = [], o = {
         title: n.clearAll,
         size: "large",
         // bgColor: '#f1f1f1',
@@ -917,9 +917,9 @@ const Rt = /* @__PURE__ */ D(Ht, [["render", jt]]), Ut = {
         disabled: !e.value,
         onClick: t
       };
-      return s.push(
+      return i.push(
         r(Z, o, () => r(Rt))
-      ), r("div", { class: "sp-search-control" }, s);
+      ), r("div", { class: "sp-search-control" }, i);
     };
   }
 };
@@ -931,14 +931,14 @@ const Gt = {
   },
   emits: ["select", "hover"],
   setup(e, { emit: t }) {
-    const { renderCell: n, rtl: s, removeItem: o } = H();
+    const { renderCell: n, rtl: i, removeItem: o } = H();
     return () => {
       const a = n(e.data), u = {
         class: {
           "sp-list-item": !0,
           "sp-over": !e.isSelected && e.isHover,
           "sp-selected": e.isSelected,
-          "sp-rtl": s
+          "sp-rtl": i
         },
         onClick: () => t("select"),
         onMouseenter: () => t("hover")
@@ -946,13 +946,13 @@ const Gt = {
         r("div", { title: a, innerHTML: a })
       ];
       if (e.isSelected) {
-        const i = {
+        const c = {
           onClick: (l) => {
             l.stopPropagation(), o(e.data);
           }
         };
         d.push(
-          r(Z, i, () => r(X))
+          r(Z, c, () => r(X))
         );
       }
       return r("div", u, d);
@@ -963,10 +963,10 @@ const Gt = {
   props: Pe(),
   emits: Ie(),
   setup(e, { emit: t }) {
-    const { isItemSelected: n, keyProp: s } = H();
+    const { isItemSelected: n, keyProp: i } = H();
     return () => {
       const o = e.list.map((u, d) => r(Gt, {
-        key: u[s],
+        key: u[i],
         data: u,
         isHover: e.highlightIndex === d,
         isSelected: n(u),
@@ -989,7 +989,7 @@ const Wt = {
   },
   emits: ["select", "hover"],
   setup(e, { emit: t }) {
-    const { row: n } = e, { rtl: s } = H(), o = (a) => {
+    const { row: n } = e, { rtl: i } = H(), o = (a) => {
       if (!n || !Object.keys(n).length || !(a != null && a.data))
         return "";
       switch (typeof a.data) {
@@ -1004,13 +1004,13 @@ const Wt = {
         class: {
           "sp-over": !e.isSelected && e.isHover,
           "sp-selected": e.isSelected,
-          "sp-rtl": s
+          "sp-rtl": i
         },
         onClick: () => t("select"),
         onMouseenter: () => t("hover")
-      }, u = e.columns.map((d, i) => {
+      }, u = e.columns.map((d, c) => {
         const l = {
-          key: i,
+          key: c,
           innerHTML: o(d)
         };
         return Object.hasOwn(d, "width") && (l.style = { width: _e(d.width) }), r("td", l);
@@ -1026,19 +1026,19 @@ const Wt = {
   },
   emits: Ie(),
   setup(e, { emit: t }) {
-    const { isItemSelected: n, rtl: s, keyProp: o } = H();
+    const { isItemSelected: n, rtl: i, keyProp: o } = H();
     return () => {
-      const a = e.columns.map((i) => r("th", i.title)), u = e.list.map((i, l) => r(Wt, {
-        key: i[o],
-        row: i,
+      const a = e.columns.map((c) => r("th", c.title)), u = e.list.map((c, l) => r(Wt, {
+        key: c[o],
+        row: c,
         columns: e.columns,
         isHover: e.highlightIndex === l,
-        isSelected: n(i),
-        onSelect: () => t("select", i),
+        isSelected: n(c),
+        onSelect: () => t("select", c),
         onHover: () => t("set-highlight", l)
       })), d = r("table", [
         // table thead
-        r("thead", r("tr", { class: { "sp-rtl": s } }, a)),
+        r("thead", r("tr", { class: { "sp-rtl": i } }, a)),
         // table tbody
         r("tbody", { onMouseleave: () => t("set-highlight", R) }, u)
       ]);
@@ -1159,15 +1159,15 @@ const mn = /* @__PURE__ */ D(fn, [["render", hn]]);
 function Oe(e, t) {
   const {
     lang: n,
-    selected: s,
+    selected: i,
     query: o,
     message: a,
     currentPage: u,
     totalRows: d,
-    list: i,
+    list: c,
     isDataEmpty: l,
     selectItem: g,
-    fetchData: c,
+    fetchData: s,
     renderCell: f,
     removeAll: h,
     removeItem: C
@@ -1176,13 +1176,13 @@ function Oe(e, t) {
     setItemHighlight: v,
     highlightNavigation: T,
     isSomeRowHighlight: O
-  } = pt(e, t, i), {
+  } = pt(e, t, c), {
     paginationInfo: w,
     isFirstPage: p,
     isLastPage: E,
     switchPage: L,
     pagingNavigation: m
-  } = mt(e, u, d, n), M = ie(e.debounce), V = b(), Me = () => {
+  } = mt(e, u, d, n), M = se(e.debounce), V = b(), Me = () => {
     V.value && V.value.focus();
   }, ke = () => r("div", { class: "sp-search" }, [
     r(Ft, {
@@ -1192,14 +1192,14 @@ function Oe(e, t) {
         o.value = y;
       },
       onKeyboardOperation: (y) => {
-        if (it(y))
+        if (st(y))
           return T(y);
         if (ct(y)) {
-          m(y), M(c);
+          m(y), M(s);
           return;
         }
         if (ut(y))
-          return O() ? g(i.value[S.value]) : void 0;
+          return O() ? g(c.value[S.value]) : void 0;
         dt(y) && t("close-dropdown");
       }
     }),
@@ -1218,19 +1218,19 @@ function Oe(e, t) {
       onAfterLeave: () => t("adjust-dropdown")
     }, () => y);
   }, De = () => l() ? ue() : r(Zt, {
-    list: i.value,
+    list: c.value,
     highlightIndex: S.value,
     onSelect: (y) => g(y),
     onSetHighlight: (y) => v(y)
   }), Fe = () => l() ? ue() : r(Kt, {
-    list: i.value,
+    list: c.value,
     columns: e.columns,
     highlightIndex: S.value,
     onSelect: (y) => g(y),
     onSetHighlight: (y) => v(y)
   }), ue = () => r("div", { class: "sp-result-message" }, n.notFound);
   return {
-    selected: s,
+    selected: i,
     query: o,
     message: a,
     currentPage: u,
@@ -1250,7 +1250,7 @@ function Oe(e, t) {
           isFirstPage: p.value,
           isLastPage: E.value,
           onPageChange(y) {
-            L(y), c();
+            L(y), s();
           }
         });
     },
@@ -1258,18 +1258,18 @@ function Oe(e, t) {
       const Y = { class: "sp-container" };
       return e.width && (Y.style = { width: _e(e.width) }), r("div", Y, y);
     },
-    fetchData: c
+    fetchData: s
   };
 }
 function Ee(e) {
   const t = b(!1), n = b();
-  function s() {
+  function i() {
     n.value && n.value.close();
   }
   function o() {
     n.value && n.value.adjust();
   }
-  function a(u, d, i) {
+  function a(u, d, c) {
     const l = {
       ref: n,
       border: !1,
@@ -1283,14 +1283,14 @@ function Ee(e) {
     };
     return r($t, le(l, u), {
       trigger: () => d,
-      default: () => i
+      default: () => c
     });
   }
   return {
     visible: t,
     dropdownRef: n,
     renderDropdown: a,
-    closeDropdown: s,
+    closeDropdown: i,
     adjustDropdown: o
   };
 }
@@ -1302,29 +1302,31 @@ const vn = G({
   emits: Ae(),
   setup(e, { emit: t, expose: n }) {
     const {
-      selected: s,
+      selected: i,
       lang: o,
       renderCell: a,
       removeAll: u,
       removeItem: d,
-      setSearchFocus: i,
+      setSearchFocus: c,
       renderSearch: l,
       renderMessage: g,
-      renderList: c,
+      renderList: s,
       renderPagination: f,
-      renderContainer: h
+      renderContainer: h,
+      fetchData: C
     } = Oe(e, t);
     return n({
-      selected: s,
+      selected: i,
       lang: o,
       renderCell: a,
       removeAll: u,
       removeItem: d,
-      setSearchFocus: i
+      setSearchFocus: c,
+      fetchData: C
     }), () => h([
       l(),
       g(),
-      c(),
+      s(),
       f()
     ]);
   }
@@ -1359,14 +1361,14 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
       Object.hasOwn(t, "default") ? n.push(t.default()) : n.push(
         r("div", { class: "sp-placeholder" }, e.placeholder || ((o = e.lang) == null ? void 0 : o.placeholder))
       ), n.push(r(Sn));
-      const s = {
+      const i = {
         class: {
           "sp-trigger-container": !0,
           "sp-opened": e.dropdownVisible,
           "sp-disabled": e.disabled
         }
       };
-      return r("div", s, n);
+      return r("div", i, n);
     };
   }
 }, ze = {
@@ -1384,7 +1386,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
       var o, a;
       if (!((o = n.value) != null && o.length))
         return;
-      const s = [
+      const i = [
         r("div", { class: "sp-select-content", innerHTML: e.renderCell(n.value[0]) })
       ];
       if ((a = n.value) != null && a.length && !e.disabled) {
@@ -1394,11 +1396,11 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
             d.stopPropagation(), t("remove");
           }
         };
-        s.push(
+        i.push(
           r(Z, u, () => r(X))
         );
       }
-      return r("div", { class: "sp-trigger sp-select" }, s);
+      return r("div", { class: "sp-trigger sp-select" }, i);
     };
   }
 }, Be = {
@@ -1412,7 +1414,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
   setup(e, { emit: t }) {
     const n = ve(e, "selected");
     return () => {
-      const s = n.value.map((o, a) => {
+      const i = n.value.map((o, a) => {
         const u = [
           r("div", { class: "sp-chip--body", innerHTML: e.renderCell(o) })
         ];
@@ -1420,8 +1422,8 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
           const d = {
             size: "small",
             hoverBgColor: "#ccc",
-            onClick: (i) => {
-              i.stopPropagation(), t("remove", o);
+            onClick: (c) => {
+              c.stopPropagation(), t("remove", o);
             }
           };
           u.push(
@@ -1430,7 +1432,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
         }
         return r("div", { class: "sp-chip", key: a }, u);
       });
-      return r("div", { class: "sp-trigger sp-chips" }, s);
+      return r("div", { class: "sp-trigger sp-chips" }, i);
     };
   }
 }, xn = G({
@@ -1440,17 +1442,17 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
     ...$e()
   },
   emits: ["visible-change"],
-  setup(e, { emit: t, attrs: n, expose: s }) {
+  setup(e, { emit: t, attrs: n, expose: i }) {
     const {
       visible: o,
       adjustDropdown: a,
       closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), i = b([]), l = b();
-    return s({
+    } = Ee(e), c = b([]), l = b();
+    return i({
       removeItem: (g) => {
-        var c;
-        return (c = l.value) == null ? void 0 : c.removeItem(g);
+        var s;
+        return (s = l.value) == null ? void 0 : s.removeItem(g);
       },
       removeAll: () => {
         var g;
@@ -1459,24 +1461,24 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
     }), () => {
       var v, T, O, w;
       const g = {
-        selected: i,
+        selected: c,
         disabled: e.disabled,
         lang: (v = l == null ? void 0 : l.value) == null ? void 0 : v.lang,
         renderCell: (T = l == null ? void 0 : l.value) == null ? void 0 : T.renderCell,
         onRemove(p) {
           U(n) ? l.value.removeItem(p) : l.value.removeAll();
         }
-      }, c = (O = i.value) != null && O.length ? () => r(U(n) ? Be : ze, g) : void 0, f = {
+      }, s = (O = c.value) != null && O.length ? () => r(U(n) ? Be : ze, g) : void 0, f = {
         dropdownVisible: o.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
         lang: (w = l == null ? void 0 : l.value) == null ? void 0 : w.lang
-      }, h = r(Le, f, c);
+      }, h = r(Le, f, s);
       return d(
         {
           onVisibleChange: (p) => {
             t("visible-change", p), p && ne(() => {
-              l.value.setSearchFocus();
+              s === void 0 && l.value.fetchData(), l.value.setSearchFocus();
             });
           }
         },
@@ -1486,7 +1488,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
           onAdjustDropdown: a,
           onCloseDropdown: u,
           onSelectionChange(p) {
-            i.value = p, !U(n) && (p != null && p.length) && u();
+            c.value = p, !U(n) && (p != null && p.length) && u();
           }
         }, n))
       );
@@ -1504,23 +1506,23 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
   emits: Ae(),
   setup(e, { emit: t, expose: n }) {
     const {
-      selected: s,
+      selected: i,
       lang: o,
       removeAll: a,
       removeItem: u,
       setSearchFocus: d,
-      renderCell: i,
+      renderCell: c,
       renderSearch: l,
       renderMessage: g,
-      renderTable: c,
+      renderTable: s,
       renderPagination: f,
       renderContainer: h,
       fetchData: C
     } = Oe(e, t);
     return n({
-      selected: s,
+      selected: i,
       lang: o,
-      renderCell: i,
+      renderCell: c,
       removeAll: a,
       removeItem: u,
       setSearchFocus: d,
@@ -1528,7 +1530,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
     }), () => h([
       l(),
       g(),
-      c(),
+      s(),
       f()
     ]);
   }
@@ -1539,17 +1541,17 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
     ...$e()
   },
   emits: ["visible-change"],
-  setup(e, { emit: t, attrs: n, expose: s }) {
+  setup(e, { emit: t, attrs: n, expose: i }) {
     const {
       visible: o,
       adjustDropdown: a,
       closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), i = b([]), l = b();
-    return s({
+    } = Ee(e), c = b([]), l = b();
+    return i({
       removeItem: (g) => {
-        var c;
-        return (c = l.value) == null ? void 0 : c.removeItem(g);
+        var s;
+        return (s = l.value) == null ? void 0 : s.removeItem(g);
       },
       removeAll: () => {
         var g;
@@ -1558,24 +1560,24 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
     }), () => {
       var v, T, O, w;
       const g = {
-        selected: i,
+        selected: c,
         disabled: e.disabled,
         lang: (v = l == null ? void 0 : l.value) == null ? void 0 : v.lang,
         renderCell: (T = l == null ? void 0 : l.value) == null ? void 0 : T.renderCell,
         onRemove(p) {
           U(n) ? l.value.removeItem(p) : l.value.removeAll();
         }
-      }, c = (O = i.value) != null && O.length ? () => r(U(n) ? Be : ze, g) : void 0, f = {
+      }, s = (O = c.value) != null && O.length ? () => r(U(n) ? Be : ze, g) : void 0, f = {
         dropdownVisible: o.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
         lang: (w = l == null ? void 0 : l.value) == null ? void 0 : w.lang
-      }, h = r(Le, f, c);
+      }, h = r(Le, f, s);
       return d(
         {
           onVisibleChange: (p) => {
             t("visible-change", p), p && ne(() => {
-              l.value.fetchData(), l.value.setSearchFocus();
+              s === void 0 && l.value.fetchData(), l.value.setSearchFocus();
             });
           }
         },
@@ -1585,7 +1587,7 @@ const Sn = /* @__PURE__ */ D(wn, [["render", bn]]), Le = {
           onAdjustDropdown: a,
           onCloseDropdown: u,
           onSelectionChange(p) {
-            i.value = p, !U(n) && (p != null && p.length) && u();
+            c.value = p, !U(n) && (p != null && p.length) && u();
           }
         }, n))
       );
