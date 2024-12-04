@@ -46,7 +46,8 @@ export default defineComponent({
           }
         }
       }
-      const selectedContents = selectedItems.value.length
+
+      const selectedContents = selectedItems.value?.length
         ? () => h(isMultiple(attrs) ? FormElementChips : FormElementSelect, elementOption)
         : undefined
 
@@ -65,7 +66,7 @@ export default defineComponent({
         onSelectionChange (data) {
           selectedItems.value = data
           // close dropdown when item selected in single selection mode
-          if (!isMultiple(attrs) && data.length) {
+          if (!isMultiple(attrs) && data?.length) {
             closeDropdown()
           }
         }
