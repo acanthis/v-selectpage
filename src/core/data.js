@@ -16,7 +16,7 @@ export function selectPageProps () {
     /**
      * binding selected item keys, it must be match 'keyProp' option value
      */
-    modelValue: { type: Array, default: undefined },
+    modelValue: { type: [Array, Number, String], default: null },
     placeholder: { type: String, default: '' },
     /** multiple selection */
     multiple: { type: Boolean, default: false },
@@ -43,6 +43,7 @@ export function selectPageProps () {
      * text written from right to left
      */
     rtl: { type: Boolean, default: false },
+    convertValueToString: { type: Boolean, default: true },
     /**
      * the width of drop down menu
      */
@@ -115,7 +116,7 @@ export function useData (props, emit) {
     if (props.max === UNLIMITED) {
       return selectItem(row)
     }
-    if (props.multiple && selected.value.length === props.max) {
+    if (props.multiple && selected.value?.length === props.max) {
       message.value = lang.maxSelected.replace(LANG_MAX_SELECTED_LIMIT, props.max)
 
       messageDebounce(() => { message.value = '' })
@@ -146,22 +147,35 @@ export function useData (props, emit) {
   const fetchSelectedData = () => {
     const { modelValue } = props
 
-    if (!Array.isArray(modelValue)) return
+    if (props.multiple) {
+      if (!Array.isArray(modelValue)) return
+    }
 
-    if (!props.multiple && modelValue.length > 1) {
-      console.warn('Invalid prop: Only one key can be passed to prop "modelValue/v-model" in single selection mode({ multiple: false }).')
-      return
-    }
+    // if (!props.multiple && modelValue?.length > 1) {
+    //   console.warn('Invalid prop: Only one key can be passed to prop "modelValue/v-model" in single selection mode({ multiple: false }).')
+    //   return
+    // }
     // empty array will not emit event
-    if (!modelValue.length) {
-      setSelected([], false)
-      return
+
+    if (props.multiple) {
+      if (!modelValue.length) {
+        setSelected(null, false)
+        return
+      }
+    } else {
+      if (!modelValue) {
+        setSelected(null, false)
+        return
+      }
     }
+
     // each key exists in the selected models
     if (isKeysEqualToSelected(modelValue)) return
 
     emit('fetch-selected-data', modelValue, data => {
-      if (!Array.isArray(data)) return
+      if (props.multiple) {
+        if (!Array.isArray(data)) return
+      }
       /**
        * when key length not equal to data model length, required to
        * update `modelValue/v-model` value
@@ -175,13 +189,18 @@ export function useData (props, emit) {
     currentPage.value = FIRST_PAGE
     fetchData()
   })
-  // watch(() => props.modelValue, fetchSelectedData)
+  watch(() => props.modelValue, fetchSelectedData)
 
   onMounted(() => {
     if (props.fetchDataOnMount) {
       fetchData()
     }
-    if (!isEmptyArray(props.modelValue)) {
+
+    if (props.multiple) {
+      if (!isEmptyArray(props.modelValue)) {
+        fetchSelectedData()
+      }
+    } else {
       fetchSelectedData()
     }
   })

@@ -26,6 +26,7 @@ export default defineComponent({
 
     const selectedItems = ref([])
     const core = ref()
+    const isFirstOpen = ref(false)
 
     expose({
       removeItem: row => core.value?.removeItem(row),
@@ -78,7 +79,10 @@ export default defineComponent({
           if (!val) return
 
           nextTick(() => {
-            core.value.fetchData()
+            if (!isFirstOpen.value) {
+              isFirstOpen.value = true
+              core.value.fetchData()
+            }
             core.value.setSearchFocus()
           })
         }

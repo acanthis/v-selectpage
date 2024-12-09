@@ -26,17 +26,23 @@ export function useItemSelection (props, emit) {
     return selected.value.some(entry => entry[props.keyProp] === key)
   }
   function isKeysEqualToSelected (keys) {
-    // ensure the uniqueness of the keys
-    const keySet = new Set(keys)
+    if (props.multiple) {
+      // ensure the uniqueness of the keys
+      const keySet = new Set(keys)
 
-    if (keySet.size !== selected.value?.length) return false
+      if (keySet.size !== selected.value?.length) return false
 
-    return Array.from(keySet).every(isKeySelected)
+      return Array.from(keySet).every(isKeySelected)
+    } else {
+      if (selected.value?.length) {
+        return keys === selected.value[0][props.keyProp];
+      }
+    }
   }
   function selectItem (row) {
     if (isItemSelected(row)) return
 
-    if (props.multiple) {
+    if (props.multiple && selected.value) {
       setSelected([...selected.value, row])
       return
     }
@@ -44,7 +50,7 @@ export function useItemSelection (props, emit) {
   }
   function removeAll () {
     emit('remove', selected.value)
-    setSelected(props.multiple ? [] : null)
+    setSelected(null)
   }
   function removeItem (row) {
     emit('remove', [row])
@@ -57,8 +63,17 @@ export function useItemSelection (props, emit) {
   function setSelected (data, updateVModel = true) {
     selected.value = data
     if (updateVModel) {
-      emit('update:modelValue', data?.map(value => value[props.keyProp]))
+      if (props.multiple) {
+        emit('update:modelValue', data?.map(value => value[props.keyProp]))
+      } else {
+        const value = data?.[0]?.[props.keyProp] ?? null;
+
+        if (value) {
+          emit('update:modelValue', props.convertValueToString ? value.toString() : value)
+        }
+      }
     }
+
     emit('selection-change', data)
   }
 

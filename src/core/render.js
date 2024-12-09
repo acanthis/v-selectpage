@@ -64,7 +64,7 @@ export function useRender (props, emit) {
   })
 
   const setSearchFocus = () => {
-    // search.value && search.value.focus()
+    search.value && search.value.focus()
   }
 
   const renderSearch = () => {
