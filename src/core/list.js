@@ -70,6 +70,8 @@ export function useItemSelection (props, emit) {
 
         if (value) {
           emit('update:modelValue', props.convertValueToString ? value.toString() : value)
+        } else {
+          emit('update:modelValue', value)
         }
       }
     }

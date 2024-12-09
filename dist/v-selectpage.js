@@ -355,7 +355,7 @@ function pt(e, t) {
         t("update:modelValue", r == null ? void 0 : r.map((h) => h[e.keyProp]));
       else {
         const h = ((p = r == null ? void 0 : r[0]) == null ? void 0 : p[e.keyProp]) ?? null;
-        h && t("update:modelValue", e.convertValueToString ? h.toString() : h);
+        h ? t("update:modelValue", e.convertValueToString ? h.toString() : h) : t("update:modelValue", h);
       }
     t("selection-change", r);
   }
