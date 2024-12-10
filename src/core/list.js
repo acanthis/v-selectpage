@@ -35,7 +35,7 @@ export function useItemSelection (props, emit) {
       return Array.from(keySet).every(isKeySelected)
     } else {
       if (selected.value?.length) {
-        return keys === selected.value[0][props.keyProp];
+        return keys === selected.value[0][props.keyProp].toString();
       }
     }
   }
@@ -71,7 +71,7 @@ export function useItemSelection (props, emit) {
         if (value) {
           emit('update:modelValue', props.convertValueToString ? value.toString() : value)
         } else {
-          emit('update:modelValue', value)
+          emit('update:modelValue', null)
         }
       }
     }

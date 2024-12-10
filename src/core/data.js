@@ -189,7 +189,7 @@ export function useData (props, emit) {
     currentPage.value = FIRST_PAGE
     fetchData()
   })
-  // watch(() => props.modelValue, fetchSelectedData)
+  watch(() => props.modelValue, fetchSelectedData)
 
   onMounted(() => {
     if (props.fetchDataOnMount) {
