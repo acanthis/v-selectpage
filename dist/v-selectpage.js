@@ -344,15 +344,16 @@ function pt(e, t) {
     t("remove", n.value), f(null);
   }
   function l(i) {
-    t("remove", [i]), f(
-      n.value.filter((g) => g[e.keyProp] !== i[e.keyProp])
+    var g;
+    t("remove", [i]), ((g = n.value) == null ? void 0 : g.length) === 1 ? f(null) : f(
+      n.value.filter((p) => p[e.keyProp] !== i[e.keyProp])
     );
   }
   function f(i, g = !0) {
     var p;
     if (n.value = i, g)
       if (e.multiple)
-        t("update:modelValue", i == null ? void 0 : i.map((h) => h[e.keyProp]));
+        t("update:modelValue", (i == null ? void 0 : i.map((h) => h[e.keyProp])) || null);
       else {
         const h = ((p = i == null ? void 0 : i[0]) == null ? void 0 : p[e.keyProp]) ?? null;
         h ? t("update:modelValue", e.convertValueToString ? h.toString() : h) : t("update:modelValue", null);

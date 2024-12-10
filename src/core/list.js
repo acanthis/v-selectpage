@@ -54,17 +54,22 @@ export function useItemSelection (props, emit) {
   }
   function removeItem (row) {
     emit('remove', [row])
-    setSelected(
-      selected.value.filter(val => {
-        return val[props.keyProp] !== row[props.keyProp]
-      })
-    )
+
+    if (selected.value?.length === 1) {
+      setSelected(null)
+    } else {
+      setSelected(
+          selected.value.filter(val => {
+            return val[props.keyProp] !== row[props.keyProp]
+          })
+      )
+    }
   }
   function setSelected (data, updateVModel = true) {
     selected.value = data
     if (updateVModel) {
       if (props.multiple) {
-        emit('update:modelValue', data?.map(value => value[props.keyProp]))
+        emit('update:modelValue', data?.map(value => value[props.keyProp]) || null)
       } else {
         const value = data?.[0]?.[props.keyProp] ?? null;
 
