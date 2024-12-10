@@ -35,7 +35,7 @@ export function useItemSelection (props, emit) {
       return Array.from(keySet).every(isKeySelected)
     } else {
       if (selected.value?.length) {
-        return keys === selected.value[0][props.keyProp].toString();
+        return keys?.toString() === selected.value[0][props.keyProp]?.toString();
       }
     }
   }
