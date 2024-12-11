@@ -217,6 +217,7 @@ export function useData (props, emit) {
   provide('selectedCount', selectedCount)
   provide('removeAll', removeAll)
   provide('removeItem', removeItem)
+  provide('fetchData', fetchData)
 
   return {
     selected,
@@ -252,6 +253,7 @@ export function useInject () {
     loading: inject('loading'),
     selectedCount: inject('selectedCount'),
     removeAll: inject('removeAll'),
-    removeItem: inject('removeItem')
+    removeItem: inject('removeItem'),
+    fetchData: inject('fetchData')
   }
 }
