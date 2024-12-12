@@ -147,9 +147,9 @@ export function useData (props, emit) {
   const fetchSelectedData = () => {
     const { modelValue } = props
 
-    if (props.multiple) {
-      if (!Array.isArray(modelValue)) return
-    }
+    // if (props.multiple) {
+    //   if (!Array.isArray(modelValue)) return
+    // }
 
     // if (!props.multiple && modelValue?.length > 1) {
     //   console.warn('Invalid prop: Only one key can be passed to prop "modelValue/v-model" in single selection mode({ multiple: false }).')
@@ -158,7 +158,7 @@ export function useData (props, emit) {
     // empty array will not emit event
 
     if (props.multiple) {
-      if (!modelValue.length) {
+      if (!modelValue?.length) {
         setSelected(null, false)
         return
       }
@@ -196,13 +196,7 @@ export function useData (props, emit) {
       fetchData()
     }
 
-    if (props.multiple) {
-      if (!isEmptyArray(props.modelValue)) {
-        fetchSelectedData()
-      }
-    } else {
-      fetchSelectedData()
-    }
+    fetchSelectedData()
   })
 
   provide('keyProp', props.keyProp)
