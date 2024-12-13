@@ -146,6 +146,7 @@ export function useData (props, emit) {
   // fetch selected items data
   const fetchSelectedData = () => {
     const { modelValue } = props
+    let model = modelValue;
 
     // if (props.multiple) {
     //   if (!Array.isArray(modelValue)) return
@@ -158,9 +159,15 @@ export function useData (props, emit) {
     // empty array will not emit event
 
     if (props.multiple) {
-      if (!modelValue?.length) {
-        setSelected(null, false)
-        return
+      if (Array.isArray(modelValue)) {
+        if (!modelValue.length) {
+          setSelected(null, false)
+          return
+        }
+      } else {
+        if (modelValue) {
+          model = [modelValue];
+        }
       }
     } else {
       if (!modelValue) {
@@ -170,9 +177,10 @@ export function useData (props, emit) {
     }
 
     // each key exists in the selected models
-    if (isKeysEqualToSelected(modelValue)) return
+    if (isKeysEqualToSelected(model)) return
 
-    emit('fetch-selected-data', modelValue, data => {
+
+    emit('fetch-selected-data', model, data => {
       if (props.multiple) {
         if (!Array.isArray(data)) return
       }
