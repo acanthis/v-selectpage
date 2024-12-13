@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode(".sp-result-message{padding:20px 0;text-align:center;font-weight:700;color:#999}.sp-container{min-width:300px;display:inline-flex;overflow:hidden;flex-direction:column;font-family:Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Heiti SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}.sp-message{display:flex;align-items:center;padding:10px 0;background-color:#e4eaee;color:#000;flex-grow:1}.sp-message .bi-chat-left-dots{font-size:1.2rem;margin:0 1rem}.sp-message .sp-message-body{font-size:14px;line-height:1;flex-wrap:wrap;max-width:15rem}.sp-message-slide-enter-active,.sp-message-slide-leave-active{transition:opacity .3s}.sp-message-slide-enter,.sp-message-slide-leave-to{opacity:0}.sp-message-slide-enter-to,.sp-message-slide-leave{opacity:1}.sp-icon{width:1em;height:1em}.sp-icon.sp-icon-small{font-size:1rem}.sp-icon.sp-icon-medium{font-size:1.3rem}.sp-circle-btn{width:20px;height:20px;font-size:14px;line-height:1;display:inline-flex;justify-content:center;align-items:center;cursor:pointer;color:#aaa;transition:all .3s ease;border-radius:50%}.sp-circle-btn:hover{color:#000}.sp-circle-btn.sp-circle-btn--disabled,.sp-circle-btn.sp-circle-btn--disabled:hover{cursor:default;color:#eee}.sp-circle-btn.sp-circle-btn--small{width:16px;height:16px;font-size:12px}.sp-circle-btn.sp-circle-btn--large{width:28px;height:28px;font-size:16px}.animate-down-enter-from,.animate-down-leave-to{transform:scale(.95);opacity:0}.animate-down-enter-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-down-leave-active{transform-origin:top left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-enter-from,.animate-up-leave-to{transform:scale(.95);opacity:0}.animate-up-enter-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.animate-up-leave-active{transform-origin:bottom left;transition-property:opacity,transform;transition-duration:75ms;transition-timing-function:cubic-bezier(.4,0,.2,1)}.v-dropdown-trigger{display:inline-flex}.v-dropdown-trigger.v-dropdown-trigger--full-width{display:flex}.v-dropdown-container{-webkit-font-smoothing:subpixel-antialiased;backface-visibility:hidden;display:inline-flex;margin:0;padding:0;position:absolute;top:0;left:0;border:1px solid #D6D7D7;box-sizing:border-box;background-color:#fff;border-radius:.3rem;overflow:hidden;z-index:3000;will-change:opacity,transform,top,left;box-shadow:0 15px 25px #0003}.v-dropdown-container.v-dropdown-no-border{border:0;border-radius:.5rem;box-shadow:0 10px 30px #0006}.sp-search{display:flex;align-items:center;padding:.5rem 0;transition:all .3s ease}.sp-search .sp-search-container{display:flex;align-items:center;flex-grow:1;padding:0;padding-left:.7rem;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input{border:0;border-radius:50rem;background-color:transparent;margin-left:5px;font-size:14px;line-height:1.43;padding:4px 6px;box-sizing:border-box;outline:none!important;color:#333;font-weight:600;flex-grow:1;transition:all .3s ease}.sp-search .sp-search-container .sp-search-input.sp-search-input--rtl{direction:rtl}.sp-search .sp-search-container .sp-search-input::-moz-placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-search-input::placeholder{color:#aaa;font-weight:500}.sp-search .sp-search-container .sp-icon-loading{opacity:.5}.sp-search .sp-search-container .bi-search,.sp-search .sp-search-container .bi-x-lg{transition:all .3s ease;color:#aaa}.sp-search .sp-search-container .bi-search.sp-search-in-focus,.sp-search .sp-search-container .bi-x-lg.sp-search-in-focus{color:#000}.sp-search .sp-search-container .bi-x-lg{cursor:pointer}.sp-search .sp-search-container .bi-x-lg:hover{color:#000}.sp-search .sp-search-control{display:inline-flex;transition:all .3s ease;padding:0 .5rem}.sp-list{min-width:300px;max-height:320px;overflow-y:auto;padding:0 .3rem;transition:all .3s ease}.sp-list .sp-list-item{display:flex;align-items:center;justify-content:space-between;line-height:1.43;font-size:14px;text-align:left;overflow:hidden;white-space:nowrap;margin:0;padding:.25rem .5rem;color:#666;cursor:pointer;transition:all .2s ease}.sp-list .sp-list-item.sp-over{background-color:#f6f8fa!important;color:#000!important;border-radius:.4rem}.sp-list .sp-list-item.sp-selected{color:#ccc;cursor:default}.sp-list .sp-list-item.sp-rtl{direction:rtl;text-align:right}.sp-table{padding:0 .3rem;min-width:300px;max-height:320px;overflow-y:auto}.sp-table table{width:100%;border-spacing:0}.sp-table table td,.sp-table table th{font-size:14px;line-height:1.43;border:0!important}.sp-table table th{padding:0 8px 5px;font-weight:600;font-size:15px;color:#333;text-align:left}.sp-table table td{padding:.25rem .5rem;color:#666;cursor:pointer}.sp-table table tbody tr.sp-over td{background-color:#f6f8fa!important;color:#000!important}.sp-table table tbody tr.sp-over td:first-child{border-top-left-radius:.4rem;border-bottom-left-radius:.4rem}.sp-table table tbody tr.sp-over td:last-child{border-top-right-radius:.4rem;border-bottom-right-radius:.4rem}.sp-table table tbody tr.sp-selected td{color:#ccc;cursor:default}.sp-table table thead .sp-rtl th,.sp-table table tbody .sp-rtl td{direction:rtl;text-align:right}.sp-pagination{display:flex;justify-content:space-between;align-items:center;padding:5px 10px}.sp-pagination .sp-page-info{line-height:1;color:#0000004d;font-size:14px;font-weight:600;margin-right:10px}.sp-pagination .sp-page-control{padding:0;margin:0}.sp-pagination .sp-page-control .sp-page-button{display:inline-flex}.sp-pagination .sp-page-control .sp-page-button a{display:inline-flex;padding:7px;font-size:14px;color:#333;text-decoration:none;cursor:pointer;line-height:1;background:transparent;transition:all .3s ease;border-radius:.6rem}.sp-pagination .sp-page-control .sp-page-button a:hover{color:#000;background-color:#f1f1f1}.sp-pagination .sp-page-control .sp-page-button.sp-page-disabled a{color:#ddd;font-weight:400;background-color:transparent;cursor:default}.sp-trigger-container{display:flex;align-items:center;justify-content:space-between;flex-grow:1;padding:6px 12px 6px 6px;background-color:#fff;border:1px solid #ddd;border-radius:.3rem;font-size:14px;line-height:1.42857143;outline:0!important;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;transition:all .2s ease}.sp-trigger-container:hover{border:1px solid #aaa}.sp-trigger-container.sp-disabled,.sp-trigger-container.sp-disabled:hover{border:1px solid #eee;background-color:#eee;cursor:default;color:#aaa}.sp-trigger-container.sp-disabled .sp-select,.sp-trigger-container.sp-disabled .sp-chips,.sp-trigger-container.sp-disabled:hover .sp-select,.sp-trigger-container.sp-disabled:hover .sp-chips{color:#aaa;background-color:#eee}.sp-trigger-container.sp-disabled .sp-chip,.sp-trigger-container.sp-disabled:hover .sp-chip{background-color:#d6d6d6!important;color:#666!important}.sp-trigger-container .bi-chevron-down{transition:transform .2s ease;margin-left:.5rem;font-size:1rem;color:#666}.sp-trigger-container.sp-opened{box-shadow:3px 2px 6px #0000004d;border:1px solid #666;color:#000}.sp-trigger-container.sp-opened .bi-chevron-down{transform:rotate(180deg)}.sp-trigger-container.sp-opened:hover{border:1px solid #666}.sp-trigger-container .sp-placeholder{color:#aaa;padding:5px;line-height:1}.sp-trigger-container .sp-trigger{display:flex;align-items:center;flex-wrap:wrap}.sp-trigger-container .sp-trigger.sp-select{justify-content:space-between;flex-grow:1}.sp-trigger-container .sp-trigger.sp-select .sp-select-content{padding:5px;line-height:1.143;color:#666}.sp-trigger-container .sp-trigger.sp-chips{gap:.5rem}.sp-trigger-container .sp-trigger .sp-chip{border-radius:.3rem;background-color:#eee;color:#666;display:inline-flex;align-items:center;padding:5px 7px;transition:all .2s ease}.sp-trigger-container .sp-trigger .sp-chip--body{display:inline-flex;line-height:1.143;margin-right:5px}.sp-trigger-container .sp-trigger .sp-chip:hover{background-color:#f7f7f7;color:#000}")),document.head.appendChild(e)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
-import { ref as y, computed as R, watch as X, onMounted as pe, provide as O, nextTick as q, inject as E, defineComponent as W, reactive as de, onBeforeUnmount as He, onUnmounted as Ve, withDirectives as je, h as i, vShow as Ue, Teleport as Ge, Transition as ve, openBlock as M, createElementBlock as k, createElementVNode as D, mergeProps as le, toRef as me } from "vue";
+import { ref as w, computed as R, watch as X, onMounted as pe, provide as O, nextTick as q, inject as E, defineComponent as W, reactive as de, onBeforeUnmount as He, onUnmounted as Ve, withDirectives as je, h as i, vShow as Ue, Teleport as Ge, Transition as ve, openBlock as M, createElementBlock as k, createElementVNode as D, mergeProps as le, toRef as me } from "vue";
 const [
   ae,
   oe,
@@ -325,7 +325,7 @@ const xe = () => ({
   highlightIndex: { type: Number, default: j }
 }), Ie = () => ["select", "set-highlight"];
 function ht(e, t) {
-  const n = y([]), s = R(() => {
+  const n = w([]), s = R(() => {
     var r;
     return (r = n.value) == null ? void 0 : r.length;
   });
@@ -340,8 +340,8 @@ function ht(e, t) {
   function u(r) {
     var g, h, p;
     if (e.multiple) {
-      const _ = new Set(r);
-      return _.size !== ((g = n.value) == null ? void 0 : g.length) ? !1 : Array.from(_).every(o);
+      const P = new Set(r);
+      return P.size !== ((g = n.value) == null ? void 0 : g.length) ? !1 : Array.from(P).every(o);
     } else if ((h = n.value) != null && h.length)
       return (r == null ? void 0 : r.toString()) === ((p = n.value[0][e.keyProp]) == null ? void 0 : p.toString());
   }
@@ -386,7 +386,7 @@ function ht(e, t) {
   };
 }
 function pt(e, t, n) {
-  const s = y(j);
+  const s = w(j);
   function a(l) {
     s.value = l;
   }
@@ -487,78 +487,78 @@ function vt(e, t) {
     selectItem: c,
     setSelected: l,
     isKeysEqualToSelected: f
-  } = ht(e, t), r = y(""), g = y(""), h = y(V), p = y(0), _ = y([]), b = y(!1), L = se(), z = () => _e(_.value), S = (m) => {
-    if (!m || !Object.keys(m).length)
+  } = ht(e, t), r = w(""), g = w(""), h = w(V), p = w(0), P = w([]), y = w(!1), L = se(), z = () => _e(P.value), b = (C) => {
+    if (!C || !Object.keys(C).length)
       return "";
     switch (typeof e.labelProp) {
       case "string":
-        return m[e.labelProp];
+        return C[e.labelProp];
       case "function":
-        return e.labelProp(m);
+        return e.labelProp(C);
     }
-  }, v = (m) => {
-    var P;
+  }, v = (C) => {
+    var _;
     if (e.max === be)
-      return c(m);
-    if (e.multiple && ((P = s.value) == null ? void 0 : P.length) === e.max) {
+      return c(C);
+    if (e.multiple && ((_ = s.value) == null ? void 0 : _.length) === e.max) {
       g.value = n.maxSelected.replace(A, e.max), L(() => {
         g.value = "";
       });
       return;
     }
-    c(m);
-  }, C = () => {
-    b.value = !0;
-    const m = {
+    c(C);
+  }, S = () => {
+    y.value = !0;
+    const C = {
       search: r.value,
       pageNumber: h.value,
       pageSize: e.pagination ? e.pageSize : We
     };
-    t("fetch-data", m, (P, F) => {
-      Array.isArray(P) && (_.value = P, p.value = typeof F == "number" ? F : 0, q(() => {
-        b.value = !1;
+    t("fetch-data", C, (_, F) => {
+      Array.isArray(_) && (P.value = _, p.value = typeof F == "number" ? F : 0, q(() => {
+        y.value = !1;
       }));
     });
   }, B = () => {
-    const { modelValue: m } = e;
-    let P = m;
+    const { modelValue: C } = e;
+    let _ = C;
     if (e.multiple)
-      if (Array.isArray(m)) {
-        if (!m.length) {
+      if (Array.isArray(_)) {
+        if (!_.length) {
           l(null, !1);
           return;
         }
       } else
-        m && (P = [m]);
-    else if (!m) {
+        _ && (typeof _ == "string" ? _ = _.split(",") : _ = [C]);
+    else if (!_) {
       l(null, !1);
       return;
     }
-    f(P) || t("fetch-selected-data", P, (F) => {
-      e.multiple && !Array.isArray(F) || l(F, m.length !== F.length);
+    f(_) || t("fetch-selected-data", _, (F) => {
+      e.multiple && !Array.isArray(F) || l(F, C.length !== F.length);
     });
   };
   return X(r, () => {
-    h.value = V, C();
+    h.value = V, S();
   }), X(() => e.modelValue, B), pe(() => {
-    e.fetchDataOnMount && C(), B();
-  }), O("keyProp", e.keyProp), O("rtl", e.rtl), O("pageSize", e.pageSize), O("debounce", e.debounce), O("multiple", e.multiple), O("loading", b), O("language", n), O("renderCell", S), O("isItemSelected", o), O("selectedCount", a), O("removeAll", u), O("removeItem", d), O("fetchData", C), {
+    e.fetchDataOnMount && S(), B();
+  }), O("keyProp", e.keyProp), O("rtl", e.rtl), O("pageSize", e.pageSize), O("debounce", e.debounce), O("multiple", e.multiple), O("loading", y), O("language", n), O("renderCell", b), O("isItemSelected", o), O("selectedCount", a), O("removeAll", u), O("removeItem", d), O("fetchData", S), {
     selected: s,
     query: r,
     message: g,
     currentPage: h,
     totalRows: p,
     lang: n,
-    list: _,
-    loading: b,
-    renderCell: S,
+    list: P,
+    loading: y,
+    renderCell: b,
     isDataEmpty: z,
     isItemSelected: o,
     selectedCount: a,
     selectItem: v,
     removeAll: u,
     removeItem: d,
-    fetchData: C
+    fetchData: S
   };
 }
 function H() {
@@ -722,34 +722,34 @@ const At = W({
   },
   emits: ["visible-change"],
   setup(e, { slots: t, emit: n, expose: s }) {
-    const a = y(!1), o = de({ top: "", left: "", width: "" }), u = de({ x: null, y: null }), d = y(!1), c = y(null), l = y(null), f = y(null), {
+    const a = w(!1), o = de({ top: "", left: "", width: "" }), u = de({ x: null, y: null }), d = w(!1), c = w(null), l = w(null), f = w(null), {
       isTriggerByClick: r,
       isTriggerByHover: g,
       isTriggerByContextmenu: h
     } = ce(e);
-    X(a, (S) => n("visible-change", S));
+    X(a, (b) => n("visible-change", b));
     function p() {
       e.disabled || ("trigger" in t && L(), g ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
         a.value = !0;
       }, he)) : a.value = !0);
     }
-    function _(S = !1) {
-      e.disabled || !e.toggle && !S || (g ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
+    function P(b = !1) {
+      e.disabled || !e.toggle && !b || (g ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
         a.value = !1;
       }, he)) : a.value = !1);
     }
-    function b() {
-      a.value ? _() : p();
+    function y() {
+      a.value ? P() : p();
     }
     function L() {
-      const S = fe(l.value), v = fe(f.value), C = _t(e, u.y, S, v), B = Pt(e, u.x, S, v);
-      d.value = C.dropUp, o.top = `${C.top}px`, o.left = `${B}px`;
+      const b = fe(l.value), v = fe(f.value), S = _t(e, u.y, b, v), B = Pt(e, u.x, b, v);
+      d.value = S.dropUp, o.top = `${S.top}px`, o.left = `${B}px`;
     }
-    function z(S) {
+    function z(b) {
       if (!a.value)
         return;
-      const v = S.composedPath().some((C) => C === l.value);
-      v && !e.toggle && !h || (!v || v && h) && _(!0);
+      const v = b.composedPath().some((S) => S === l.value);
+      v && !e.toggle && !h || (!v || v && h) && P(!0);
     }
     return pe(() => {
       typeof e.width < "u" && (o.width = e.width + "px"), document.body.addEventListener("mousedown", z);
@@ -759,14 +759,14 @@ const At = W({
       l.value && l.value.remove();
     }), s({
       display: p,
-      close: _,
-      toggleVisible: b,
+      close: P,
+      toggleVisible: y,
       adjust: L,
       container: f,
       visible: a
     }), () => {
-      const S = [];
-      "trigger" in t && S.push(t.trigger({
+      const b = [];
+      "trigger" in t && b.push(t.trigger({
         visible: a,
         disabled: e.disabled
       }));
@@ -776,31 +776,31 @@ const At = W({
         ref: f,
         // do not close dropdown container when
         // do some operations in that
-        onMousedown: (m) => m.stopPropagation()
+        onMousedown: (C) => C.stopPropagation()
       };
-      g && (v.onMouseenter = p, v.onMouseleave = _);
-      const C = je(
+      g && (v.onMouseenter = p, v.onMouseleave = P);
+      const S = je(
         i("div", v, t.default && t.default()),
         [[Ue, a.value]]
       );
-      S.push(
+      b.push(
         i(Ge, { to: "body" }, [
-          i(ve, { name: Ct(e, d) }, () => [C])
+          i(ve, { name: Ct(e, d) }, () => [S])
         ])
       );
       const B = {
         class: $t(e),
         ref: l
       };
-      return g ? (B.onMouseenter = p, B.onMouseleave = _) : r ? B.onClick = (m) => {
-        e.manual || (m.stopPropagation(), b());
-      } : h && (B.onContextmenu = (m) => {
+      return g ? (B.onMouseenter = p, B.onMouseleave = P) : r ? B.onClick = (C) => {
+        e.manual || (C.stopPropagation(), y());
+      } : h && (B.onContextmenu = (C) => {
         if (e.manual)
           return;
-        m.stopPropagation(), m.preventDefault();
-        const P = xt(m);
-        u.x = P.x, u.y = P.y, p();
-      }), i("div", B, S);
+        C.stopPropagation(), C.preventDefault();
+        const _ = xt(C);
+        u.x = _.x, u.y = _.y, p();
+      }), i("div", B, b);
     };
   }
 });
@@ -813,7 +813,7 @@ const G = {
     hoverBgColor: { type: String, default: "#f1f1f1" }
   },
   setup(e, { slots: t }) {
-    const n = y(""), s = R(() => ({
+    const n = w(""), s = R(() => ({
       "sp-circle-btn--disabled": e.disabled,
       "sp-circle-btn--small": e.size === "small",
       "sp-circle-btn--large": e.size === "large"
@@ -896,9 +896,9 @@ const Rt = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ft = {
   },
   emits: ["update:modelValue", "keyboard-operation"],
   setup(e, { emit: t, expose: n }) {
-    const { rtl: s, debounce: a, loading: o, language: u, selectedCount: d, multiple: c } = H(), l = y(!1), f = y(), r = se(a), g = R(() => !c || !d.value ? u.search : u.selectedCount.replace(T, d.value)), h = () => ft(f.value);
+    const { rtl: s, debounce: a, loading: o, language: u, selectedCount: d, multiple: c } = H(), l = w(!1), f = w(), r = se(a), g = R(() => !c || !d.value ? u.search : u.selectedCount.replace(T, d.value)), h = () => ft(f.value);
     return n({ focus: h }), () => {
-      const _ = [
+      const P = [
         R(() => o.value ? i(Rt) : i(Ot, { class: l.value ? "sp-search-in-focus" : "" })).value,
         i("input", {
           type: "text",
@@ -910,8 +910,8 @@ const Rt = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ft = {
           },
           disabled: o.value,
           placeholder: g.value,
-          onKeydown: (b) => {
-            b.stopPropagation(), ge(b.keyCode) && t("keyboard-operation", b.keyCode);
+          onKeydown: (y) => {
+            y.stopPropagation(), ge(y.keyCode) && t("keyboard-operation", y.keyCode);
           },
           onFocus: () => {
             l.value = !0;
@@ -919,25 +919,25 @@ const Rt = /* @__PURE__ */ N(Mt, [["render", Nt]]), Ft = {
           onBlur: () => {
             l.value = !1;
           },
-          onInput: (b) => {
-            ge(b.keyCode) || r(() => {
-              t("update:modelValue", b.target.value.trim());
+          onInput: (y) => {
+            ge(y.keyCode) || r(() => {
+              t("update:modelValue", y.target.value.trim());
             });
           },
           ref: f
         })
       ];
       if (e.modelValue.trim()) {
-        const b = {
+        const y = {
           onClick() {
             t("update:modelValue", ""), h();
           }
         };
-        _.push(
-          i(G, b, () => i(J))
+        P.push(
+          i(G, y, () => i(J))
         );
       }
-      return i("div", { class: "sp-search-container" }, _);
+      return i("div", { class: "sp-search-container" }, P);
     };
   }
 }, Ht = {}, Vt = {
@@ -1238,21 +1238,21 @@ function Le(e, t) {
     fetchData: g,
     renderCell: h,
     removeAll: p,
-    removeItem: _
+    removeItem: P
   } = vt(e, t), {
-    highlightIndex: b,
+    highlightIndex: y,
     setItemHighlight: L,
     highlightNavigation: z,
-    isSomeRowHighlight: S
+    isSomeRowHighlight: b
   } = pt(e, t, c), {
     paginationInfo: v,
-    isFirstPage: C,
+    isFirstPage: S,
     isLastPage: B,
-    switchPage: m,
-    pagingNavigation: P
-  } = mt(e, u, d, n), F = se(e.debounce), Z = y();
-  X(l, (w) => {
-    w || q(() => Z.value && Z.value.focus());
+    switchPage: C,
+    pagingNavigation: _
+  } = mt(e, u, d, n), F = se(e.debounce), Z = w();
+  X(l, (m) => {
+    m || q(() => Z.value && Z.value.focus());
   });
   const Me = () => {
     Z.value && Z.value.focus();
@@ -1260,25 +1260,25 @@ function Le(e, t) {
     i(Ft, {
       ref: Z,
       modelValue: a.value,
-      "onUpdate:modelValue"(w) {
-        a.value = w;
+      "onUpdate:modelValue"(m) {
+        a.value = m;
       },
-      onKeyboardOperation: (w) => {
-        if (ct(w))
-          return z(w);
-        if (ut(w)) {
-          P(w), F(g);
+      onKeyboardOperation: (m) => {
+        if (ct(m))
+          return z(m);
+        if (ut(m)) {
+          _(m), F(g);
           return;
         }
-        if (dt(w))
-          return S() ? r(c.value[b.value]) : void 0;
-        gt(w) && t("close-dropdown");
+        if (dt(m))
+          return b() ? r(c.value[y.value]) : void 0;
+        gt(m) && t("close-dropdown");
       }
     }),
     i(Xt)
   ]), Ne = () => {
-    const w = [];
-    return o.value && w.push(
+    const m = [];
+    return o.value && m.push(
       i("div", { class: "sp-message" }, [
         i(Sn),
         i("div", { class: "sp-message-body", innerHTML: o.value })
@@ -1288,18 +1288,18 @@ function Le(e, t) {
       appear: !0,
       onEnter: () => t("adjust-dropdown"),
       onAfterLeave: () => t("adjust-dropdown")
-    }, () => w);
+    }, () => m);
   }, Re = () => f() ? ue() : i(qt, {
     list: c.value,
-    highlightIndex: b.value,
-    onSelect: (w) => r(w),
-    onSetHighlight: (w) => L(w)
+    highlightIndex: y.value,
+    onSelect: (m) => r(m),
+    onSetHighlight: (m) => L(m)
   }), Fe = () => f() ? ue() : i(Qt, {
     list: c.value,
     columns: e.columns,
-    highlightIndex: b.value,
-    onSelect: (w) => r(w),
-    onSetHighlight: (w) => L(w)
+    highlightIndex: y.value,
+    onSelect: (m) => r(m),
+    onSetHighlight: (m) => L(m)
   }), ue = () => i("div", { class: "sp-result-message" }, l.value ? "" : n.notFound);
   return {
     selected: s,
@@ -1309,7 +1309,7 @@ function Le(e, t) {
     lang: n,
     renderCell: h,
     removeAll: p,
-    removeItem: _,
+    removeItem: P,
     setSearchFocus: Me,
     renderSearch: ke,
     renderMessage: Ne,
@@ -1319,27 +1319,27 @@ function Le(e, t) {
       if (e.pagination)
         return i(mn, {
           pageInfo: v.value,
-          isFirstPage: C.value,
+          isFirstPage: S.value,
           isLastPage: B.value,
-          onPageChange(w) {
-            m(w), g();
+          onPageChange(m) {
+            C(m), g();
           }
         });
     },
-    renderContainer: (w) => {
-      const Q = y({
+    renderContainer: (m) => {
+      const Q = w({
         class: {
           "sp-container": !0,
           "sp-loading": l.value
         }
       });
-      return e.width && (Q.value.style = { width: Pe(e.width) }), i("div", Q.value, w);
+      return e.width && (Q.value.style = { width: Pe(e.width) }), i("div", Q.value, m);
     },
     fetchData: g
   };
 }
 function Oe(e) {
-  const t = y(!1), n = y();
+  const t = w(!1), n = w();
   function s() {
     n.value && n.value.close();
   }
@@ -1525,7 +1525,7 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
       adjustDropdown: o,
       closeDropdown: u,
       renderDropdown: d
-    } = Oe(e), c = y([]), l = y();
+    } = Oe(e), c = w([]), l = w();
     return s({
       removeItem: (f) => {
         var r;
@@ -1536,11 +1536,11 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
         return (f = l.value) == null ? void 0 : f.removeAll();
       }
     }), () => {
-      var b, L, z, S;
+      var y, L, z, b;
       const f = {
         selected: c,
         disabled: e.disabled,
-        lang: (b = l == null ? void 0 : l.value) == null ? void 0 : b.lang,
+        lang: (y = l == null ? void 0 : l.value) == null ? void 0 : y.lang,
         renderCell: (L = l == null ? void 0 : l.value) == null ? void 0 : L.renderCell,
         onRemove(v) {
           U(n) ? l.value.removeItem(v) : l.value.removeAll();
@@ -1549,7 +1549,7 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
         dropdownVisible: a.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
-        lang: (S = l == null ? void 0 : l.value) == null ? void 0 : S.lang
+        lang: (b = l == null ? void 0 : l.value) == null ? void 0 : b.lang
       }, h = i(Ee, g, r);
       return d(
         {
@@ -1624,7 +1624,7 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
       adjustDropdown: o,
       closeDropdown: u,
       renderDropdown: d
-    } = Oe(e), c = y([]), l = y(), f = y(!1);
+    } = Oe(e), c = w([]), l = w(), f = w(!1);
     return s({
       removeItem: (r) => {
         var g;
@@ -1635,16 +1635,16 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
         return (r = l.value) == null ? void 0 : r.removeAll();
       }
     }), () => {
-      var L, z, S, v;
+      var L, z, b, v;
       const r = {
         selected: c,
         disabled: e.disabled,
         lang: (L = l == null ? void 0 : l.value) == null ? void 0 : L.lang,
         renderCell: (z = l == null ? void 0 : l.value) == null ? void 0 : z.renderCell,
-        onRemove(C) {
-          U(n) ? l.value.removeItem(C) : l.value.removeAll();
+        onRemove(S) {
+          U(n) ? l.value.removeItem(S) : l.value.removeAll();
         }
-      }, g = (S = c.value) != null && S.length ? () => i(U(n) ? Be : ze, r) : void 0, h = {
+      }, g = (b = c.value) != null && b.length ? () => i(U(n) ? Be : ze, r) : void 0, h = {
         dropdownVisible: a.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
@@ -1652,8 +1652,8 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
       }, p = i(Ee, h, g);
       return d(
         {
-          onVisibleChange: (C) => {
-            t("visible-change", C), C && q(() => {
+          onVisibleChange: (S) => {
+            t("visible-change", S), S && q(() => {
               f.value || (f.value = !0, l.value.fetchData()), l.value.setSearchFocus();
             });
           }
@@ -1663,8 +1663,8 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), Ee = {
           ref: l,
           onAdjustDropdown: o,
           onCloseDropdown: u,
-          onSelectionChange(C) {
-            c.value = C, !U(n) && (C != null && C.length) && u();
+          onSelectionChange(S) {
+            c.value = S, !U(n) && (S != null && S.length) && u();
           }
         }, n))
       );

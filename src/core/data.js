@@ -159,18 +159,22 @@ export function useData (props, emit) {
     // empty array will not emit event
 
     if (props.multiple) {
-      if (Array.isArray(modelValue)) {
-        if (!modelValue.length) {
+      if (Array.isArray(model)) {
+        if (!model.length) {
           setSelected(null, false)
           return
         }
       } else {
-        if (modelValue) {
-          model = [modelValue];
+        if (model) {
+          if (typeof model === 'string') {
+            model = model.split(',');
+          } else {
+            model = [modelValue];
+          }
         }
       }
     } else {
-      if (!modelValue) {
+      if (!model) {
         setSelected(null, false)
         return
       }
