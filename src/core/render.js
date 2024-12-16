@@ -176,6 +176,7 @@ export function useRender (props, emit) {
     message,
     currentPage,
     lang,
+    loading,
 
     renderCell,
     removeAll,

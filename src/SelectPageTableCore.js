@@ -16,6 +16,7 @@ export default defineComponent({
     const {
       selected,
       lang,
+      loading,
       removeAll,
       removeItem,
       setSearchFocus,
@@ -31,6 +32,7 @@ export default defineComponent({
     expose({
       selected,
       lang,
+      loading,
       renderCell,
       removeAll,
       removeItem,

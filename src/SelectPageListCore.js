@@ -13,6 +13,7 @@ export default defineComponent({
     const {
       selected,
       lang,
+      loading,
       renderCell,
       removeAll,
       removeItem,
@@ -28,6 +29,7 @@ export default defineComponent({
     expose({
       selected,
       lang,
+      loading,
       renderCell,
       removeAll,
       removeItem,

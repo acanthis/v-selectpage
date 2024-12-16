@@ -56,7 +56,8 @@ export default defineComponent({
         dropdownVisible: visible.value,
         disabled: props.disabled,
         placeholder: attrs.placeholder,
-        lang: core?.value?.lang
+        lang: core?.value?.lang,
+        loading: core?.value?.loading
       }
       const dropdownTrigger = h(Trigger, triggerOption, selectedContents)
 

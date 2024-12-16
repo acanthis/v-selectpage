@@ -162,6 +162,7 @@ export function useData (props, emit) {
       if (Array.isArray(model)) {
         if (!model.length) {
           setSelected(null, false)
+          loading.value = false;
           return
         }
       } else {
@@ -176,6 +177,7 @@ export function useData (props, emit) {
     } else {
       if (!model) {
         setSelected(null, false)
+        loading.value = false;
         return
       }
     }
@@ -183,8 +185,10 @@ export function useData (props, emit) {
     // each key exists in the selected models
     if (isKeysEqualToSelected(model)) return
 
-
+    loading.value = true
     emit('fetch-selected-data', model, data => {
+      loading.value = false;
+
       if (props.multiple) {
         if (!Array.isArray(data)) return
       }
