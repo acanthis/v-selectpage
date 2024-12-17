@@ -172,6 +172,8 @@ export function useData (props, emit) {
           } else {
             model = [modelValue];
           }
+        } else {
+          return
         }
       }
     } else {

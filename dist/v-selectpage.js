@@ -528,8 +528,10 @@ function mt(e, t) {
           l(null, !1), p.value = !1;
           return;
         }
-      } else
-        P && (typeof P == "string" ? P = P.split(",") : P = [C]);
+      } else if (P)
+        typeof P == "string" ? P = P.split(",") : P = [C];
+      else
+        return;
     else if (!P) {
       l(null, !1), p.value = !1;
       return;
