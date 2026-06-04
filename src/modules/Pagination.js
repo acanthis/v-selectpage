@@ -33,8 +33,16 @@ export default {
 
       const items = buttons.map(btn => {
         const linkOption = {
-          href: 'javascript:void(0)',
-          onClick: () => emit('page-change', btn.action)
+          href: '#',
+          onClick: (event) => {
+            event.preventDefault()
+
+            if (btn.disabled) {
+              return
+            }
+
+            emit('page-change', btn.action)
+          }
         }
         const classes = [{ 'sp-page-disabled': btn.disabled }, 'sp-page-button']
         return h('div', { class: classes, title: btn.title }, [

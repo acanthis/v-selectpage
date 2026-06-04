@@ -329,24 +329,24 @@ function pt(e, t) {
     var r;
     return (r = n.value) == null ? void 0 : r.length;
   });
-  function a(r) {
+  function o(r) {
     var g;
     return (g = n.value) != null && g.length ? n.value.some((h) => h[e.keyProp] === r[e.keyProp]) : !1;
   }
-  function o(r) {
+  function a(r) {
     var g;
     return !((g = n.value) != null && g.length) || typeof r > "u" ? !1 : n.value.some((h) => h[e.keyProp] === r);
   }
-  function c(r) {
+  function u(r) {
     var g, h, v;
     if (e.multiple) {
       const b = new Set(r);
-      return b.size !== ((g = n.value) == null ? void 0 : g.length) ? !1 : Array.from(b).every(o);
+      return b.size !== ((g = n.value) == null ? void 0 : g.length) ? !1 : Array.from(b).every(a);
     } else if ((h = n.value) != null && h.length)
       return (r == null ? void 0 : r.toString()) === ((v = n.value[0][e.keyProp]) == null ? void 0 : v.toString());
   }
   function d(r) {
-    if (!a(r)) {
+    if (!o(r)) {
       if (e.multiple && n.value) {
         f([...n.value, r]);
         return;
@@ -354,7 +354,7 @@ function pt(e, t) {
       f([r]);
     }
   }
-  function u() {
+  function c() {
     t("remove", n.value), f(null);
   }
   function l(r) {
@@ -377,39 +377,39 @@ function pt(e, t) {
   return {
     selected: n,
     selectedCount: s,
-    isItemSelected: a,
+    isItemSelected: o,
     selectItem: d,
     removeItem: l,
-    removeAll: u,
+    removeAll: c,
     setSelected: f,
-    isKeysEqualToSelected: c
+    isKeysEqualToSelected: u
   };
 }
 function vt(e, t, n) {
   const s = y(j);
-  function a(l) {
+  function o(l) {
     s.value = l;
   }
-  function o() {
+  function a() {
     s.value !== j && s.value !== 0 && (s.value -= 1);
   }
-  function c() {
+  function u() {
     _e(n.value) || s.value !== n.value.length - 1 && (s.value += 1);
   }
   function d(l) {
     if (l === oe)
-      return o();
+      return a();
     if (l === re)
-      return c();
+      return u();
   }
-  function u() {
+  function c() {
     return s.value !== j;
   }
   return {
     highlightIndex: s,
-    setItemHighlight: a,
+    setItemHighlight: o,
     highlightNavigation: d,
-    isSomeRowHighlight: u
+    isSomeRowHighlight: c
   };
 }
 function ge(e) {
@@ -480,11 +480,11 @@ function Te() {
 function mt(e, t) {
   const n = ct(e.language), {
     selected: s,
-    selectedCount: a,
-    isItemSelected: o,
-    removeAll: c,
+    selectedCount: o,
+    isItemSelected: a,
+    removeAll: u,
     removeItem: d,
-    selectItem: u,
+    selectItem: c,
     setSelected: l,
     isKeysEqualToSelected: f
   } = pt(e, t), r = y(""), g = y(""), h = y(V), v = y(0), b = y([]), p = y(!1), O = se(), B = () => _e(b.value), S = (C) => {
@@ -499,14 +499,14 @@ function mt(e, t) {
   }, x = (C) => {
     var P;
     if (e.max === be)
-      return u(C);
+      return c(C);
     if (e.multiple && ((P = s.value) == null ? void 0 : P.length) === e.max) {
       g.value = n.maxSelected.replace(T, e.max), O(() => {
         g.value = "";
       });
       return;
     }
-    u(C);
+    c(C);
   }, m = () => {
     p.value = !0;
     const C = {
@@ -544,7 +544,7 @@ function mt(e, t) {
     h.value = V, m();
   }), X(() => e.modelValue, _), pe(() => {
     e.fetchDataOnMount && m(), _();
-  }), E("keyProp", e.keyProp), E("rtl", e.rtl), E("pageSize", e.pageSize), E("debounce", e.debounce), E("multiple", e.multiple), E("loading", p), E("language", n), E("renderCell", S), E("isItemSelected", o), E("selectedCount", a), E("removeAll", c), E("removeItem", d), E("fetchData", m), {
+  }), E("keyProp", e.keyProp), E("rtl", e.rtl), E("pageSize", e.pageSize), E("debounce", e.debounce), E("multiple", e.multiple), E("loading", p), E("language", n), E("renderCell", S), E("isItemSelected", a), E("selectedCount", o), E("removeAll", u), E("removeItem", d), E("fetchData", m), {
     selected: s,
     query: r,
     message: g,
@@ -555,10 +555,10 @@ function mt(e, t) {
     loading: p,
     renderCell: S,
     isDataEmpty: B,
-    isItemSelected: o,
-    selectedCount: a,
+    isItemSelected: a,
+    selectedCount: o,
     selectItem: x,
-    removeAll: c,
+    removeAll: u,
     removeItem: d,
     fetchData: m
   };
@@ -581,9 +581,9 @@ function H() {
   };
 }
 function wt(e, t, n, s) {
-  const a = R(() => Math.ceil(n.value / e.pageSize)), o = R(() => t.value === V), c = R(() => t.value === a.value), d = R(
-    () => s.pageInfo.replace(I, t.value).replace($, a.value).replace(A, n.value)
-  ), u = function(r) {
+  const o = R(() => Math.ceil(n.value / e.pageSize)), a = R(() => t.value === V), u = R(() => t.value === o.value), d = R(
+    () => s.pageInfo.replace(I, t.value).replace($, o.value).replace(A, n.value)
+  ), c = function(r) {
     switch (r) {
       case Se:
         return V;
@@ -592,16 +592,16 @@ function wt(e, t, n, s) {
       case ne:
         return t.value + 1;
       case Ce:
-        return a.value;
+        return o.value;
     }
   }, l = function(r) {
-    let g = u(r);
-    typeof g > "u" || (g < V && (g = V), g > a.value && (g = a.value), g !== t.value && (t.value = g));
+    let g = c(r);
+    typeof g > "u" || (g < V && (g = V), g > o.value && (g = o.value), g !== t.value && (t.value = g));
   };
   return {
     paginationInfo: d,
-    isFirstPage: o,
-    isLastPage: c,
+    isFirstPage: a,
+    isLastPage: u,
     switchPage: l,
     pagingNavigation: (r) => {
       if (r === ae)
@@ -641,19 +641,19 @@ function ce(e) {
   };
 }
 function Pt(e, t, n, s) {
-  const { isTriggerByContextmenu: a } = ce(e), o = window.pageYOffset, c = document.documentElement.clientHeight, d = a ? t : n.top + o;
-  let u = a ? t : n.top + n.height + ee + o, l = !1, f = !1, r = !1;
-  return u + s.height > o + c && (l = !0), d - ee - s.height < o && (f = !0), !f && l && (u = d - ee - s.height, r = !0), { dropUp: r, top: u };
+  const { isTriggerByContextmenu: o } = ce(e), a = window.pageYOffset, u = document.documentElement.clientHeight, d = o ? t : n.top + a;
+  let c = o ? t : n.top + n.height + ee + a, l = !1, f = !1, r = !1;
+  return c + s.height > a + u && (l = !0), d - ee - s.height < a && (f = !0), !f && l && (c = d - ee - s.height, r = !0), { dropUp: r, top: c };
 }
 function xt(e, t, n, s) {
-  const { isTriggerByContextmenu: a } = ce(e), o = window.pageXOffset, c = document.documentElement.clientWidth, d = a ? 0 : n.width, u = a ? t : n.left + o, l = u + d / 2 - s.width / 2, f = u + d - s.width;
+  const { isTriggerByContextmenu: o } = ce(e), a = window.pageXOffset, u = document.documentElement.clientWidth, d = o ? 0 : n.width, c = o ? t : n.left + a, l = c + d / 2 - s.width / 2, f = c + d - s.width;
   switch (e.align) {
     case "left":
-      return u + s.width > o + c ? f : u;
+      return c + s.width > a + u ? f : c;
     case "center":
-      return l + s.width > o + c ? f : f < o ? u : l;
+      return l + s.width > a + u ? f : f < a ? c : l;
     case "right":
-      return f < o ? u : f;
+      return f < a ? c : f;
   }
 }
 function It(e) {
@@ -724,37 +724,37 @@ const Tt = W({
   },
   emits: ["visible-change"],
   setup(e, { slots: t, emit: n, expose: s }) {
-    const a = y(!1), o = de({ top: "", left: "", width: "" }), c = de({ x: null, y: null }), d = y(!1), u = y(null), l = y(null), f = y(null), {
+    const o = y(!1), a = de({ top: "", left: "", width: "" }), u = de({ x: null, y: null }), d = y(!1), c = y(null), l = y(null), f = y(null), {
       isTriggerByClick: r,
       isTriggerByHover: g,
       isTriggerByContextmenu: h
     } = ce(e);
-    X(a, (S) => n("visible-change", S));
+    X(o, (S) => n("visible-change", S));
     function v() {
-      e.disabled || ("trigger" in t && O(), g ? (window.clearTimeout(u.value), u.value = window.setTimeout(() => {
-        a.value = !0;
-      }, he)) : a.value = !0);
+      e.disabled || ("trigger" in t && O(), g ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
+        o.value = !0;
+      }, he)) : o.value = !0);
     }
     function b(S = !1) {
-      e.disabled || !e.toggle && !S || (g ? (window.clearTimeout(u.value), u.value = window.setTimeout(() => {
-        a.value = !1;
-      }, he)) : a.value = !1);
+      e.disabled || !e.toggle && !S || (g ? (window.clearTimeout(c.value), c.value = window.setTimeout(() => {
+        o.value = !1;
+      }, he)) : o.value = !1);
     }
     function p() {
-      a.value ? b() : v();
+      o.value ? b() : v();
     }
     function O() {
-      const S = fe(l.value), x = fe(f.value), m = Pt(e, c.y, S, x), _ = xt(e, c.x, S, x);
-      d.value = m.dropUp, o.top = `${m.top}px`, o.left = `${_}px`;
+      const S = fe(l.value), x = fe(f.value), m = Pt(e, u.y, S, x), _ = xt(e, u.x, S, x);
+      d.value = m.dropUp, a.top = `${m.top}px`, a.left = `${_}px`;
     }
     function B(S) {
-      if (!a.value)
+      if (!o.value)
         return;
       const x = S.composedPath().some((m) => m === l.value);
       x && !e.toggle && !h || (!x || x && h) && b(!0);
     }
     return pe(() => {
-      typeof e.width < "u" && (o.width = e.width + "px"), document.body.addEventListener("mousedown", B);
+      typeof e.width < "u" && (a.width = e.width + "px"), document.body.addEventListener("mousedown", B);
     }), Ve(() => {
       document.body.removeEventListener("mousedown", B), f.value && f.value.remove();
     }), je(() => {
@@ -765,16 +765,16 @@ const Tt = W({
       toggleVisible: p,
       adjust: O,
       container: f,
-      visible: a
+      visible: o
     }), () => {
       const S = [];
       "trigger" in t && S.push(t.trigger({
-        visible: a,
+        visible: o,
         disabled: e.disabled
       }));
       const x = {
         class: $t(e),
-        style: o,
+        style: a,
         ref: f,
         // do not close dropdown container when
         // do some operations in that
@@ -783,7 +783,7 @@ const Tt = W({
       g && (x.onMouseenter = v, x.onMouseleave = b);
       const m = Ue(
         i("div", x, t.default && t.default()),
-        [[Ge, a.value]]
+        [[Ge, o.value]]
       );
       S.push(
         i(Ze, { to: "body" }, [
@@ -801,7 +801,7 @@ const Tt = W({
           return;
         C.stopPropagation(), C.preventDefault();
         const P = It(C);
-        c.x = P.x, c.y = P.y, v();
+        u.x = P.x, u.y = P.y, v();
       }), i("div", _, S);
     };
   }
@@ -819,14 +819,14 @@ const G = {
       "sp-circle-btn--disabled": e.disabled,
       "sp-circle-btn--small": e.size === "small",
       "sp-circle-btn--large": e.size === "large"
-    })), a = R(() => ({
+    })), o = R(() => ({
       "font-size": e.fontSize,
       "background-color": e.disabled ? "transparent" : n.value
     }));
     return () => {
-      const o = {
+      const a = {
         class: ["sp-circle-btn", s.value],
-        style: a.value,
+        style: o.value,
         onMouseenter() {
           n.value = e.hoverBgColor;
         },
@@ -834,13 +834,13 @@ const G = {
           n.value = e.bgColor;
         }
       };
-      return i("div", o, t.default && t.default());
+      return i("div", a, t.default && t.default());
     };
   }
 }, N = (e, t) => {
   const n = e.__vccOpts || e;
-  for (const [s, a] of t)
-    n[s] = a;
+  for (const [s, o] of t)
+    n[s] = o;
   return n;
 }, Dt = {}, Lt = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -851,9 +851,9 @@ const G = {
   viewBox: "0 0 16 16"
 };
 function Ot(e, t) {
-  return M(), k("svg", Lt, t[0] || (t[0] = [
+  return M(), k("svg", Lt, [...t[0] || (t[0] = [
     L("path", { d: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" }, null, -1)
-  ]));
+  ])]);
 }
 const Et = /* @__PURE__ */ N(Dt, [["render", Ot]]), zt = {}, Bt = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -864,9 +864,9 @@ const Et = /* @__PURE__ */ N(Dt, [["render", Ot]]), zt = {}, Bt = {
   viewBox: "0 0 16 16"
 };
 function Mt(e, t) {
-  return M(), k("svg", Bt, t[0] || (t[0] = [
+  return M(), k("svg", Bt, [...t[0] || (t[0] = [
     L("path", { d: "M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" }, null, -1)
-  ]));
+  ])]);
 }
 const J = /* @__PURE__ */ N(zt, [["render", Mt]]), kt = {}, Nt = {
   width: "24",
@@ -876,7 +876,7 @@ const J = /* @__PURE__ */ N(zt, [["render", Mt]]), kt = {}, Nt = {
   class: "sp-icon sp-icon-loading"
 };
 function Rt(e, t) {
-  return M(), k("svg", Nt, t[0] || (t[0] = [
+  return M(), k("svg", Nt, [...t[0] || (t[0] = [
     L("path", {
       d: "M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z",
       opacity: ".25"
@@ -890,7 +890,7 @@ function Rt(e, t) {
         repeatCount: "indefinite"
       })
     ], -1)
-  ]));
+  ])]);
 }
 const Le = /* @__PURE__ */ N(kt, [["render", Rt]]), Ft = {
   props: {
@@ -898,10 +898,10 @@ const Le = /* @__PURE__ */ N(kt, [["render", Rt]]), Ft = {
   },
   emits: ["update:modelValue", "keyboard-operation"],
   setup(e, { emit: t, expose: n }) {
-    const { rtl: s, debounce: a, loading: o, language: c, selectedCount: d, multiple: u } = H(), l = y(!1), f = y(), r = se(a), g = R(() => !u || !d.value ? c.search : c.selectedCount.replace(D, d.value)), h = () => ht(f.value);
+    const { rtl: s, debounce: o, loading: a, language: u, selectedCount: d, multiple: c } = H(), l = y(!1), f = y(), r = se(o), g = R(() => !c || !d.value ? u.search : u.selectedCount.replace(D, d.value)), h = () => ht(f.value);
     return n({ focus: h }), () => {
       const b = [
-        R(() => o.value ? i(Le) : i(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
+        R(() => a.value ? i(Le) : i(Et, { class: l.value ? "sp-search-in-focus" : "" })).value,
         i("input", {
           type: "text",
           autocomplete: "off",
@@ -910,7 +910,7 @@ const Le = /* @__PURE__ */ N(kt, [["render", Rt]]), Ft = {
             "sp-search-input": !0,
             "sp-search-input--rtl": s
           },
-          disabled: o.value,
+          disabled: a.value,
           placeholder: g.value,
           onKeydown: (p) => {
             p.stopPropagation(), ge(p.keyCode) && t("keyboard-operation", p.keyCode);
@@ -951,9 +951,9 @@ const Le = /* @__PURE__ */ N(kt, [["render", Rt]]), Ft = {
   viewBox: "0 0 16 16"
 };
 function jt(e, t) {
-  return M(), k("svg", Vt, t[0] || (t[0] = [
+  return M(), k("svg", Vt, [...t[0] || (t[0] = [
     L("path", { d: "M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" }, null, -1)
-  ]));
+  ])]);
 }
 const Ut = /* @__PURE__ */ N(Ht, [["render", jt]]), Gt = {}, Zt = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -964,31 +964,31 @@ const Ut = /* @__PURE__ */ N(Ht, [["render", jt]]), Gt = {}, Zt = {
   viewBox: "0 0 24 24"
 };
 function Wt(e, t) {
-  return M(), k("svg", Zt, t[0] || (t[0] = [
+  return M(), k("svg", Zt, [...t[0] || (t[0] = [
     L("path", { d: "M20.944 12.979c-.489 4.509-4.306 8.021-8.944 8.021-2.698 0-5.112-1.194-6.763-3.075l1.245-1.633c1.283 1.645 3.276 2.708 5.518 2.708 3.526 0 6.444-2.624 6.923-6.021h-2.923l4-5.25 4 5.25h-3.056zm-15.864-1.979c.487-3.387 3.4-6 6.92-6 2.237 0 4.228 1.059 5.51 2.698l1.244-1.632c-1.65-1.876-4.061-3.066-6.754-3.066-4.632 0-8.443 3.501-8.941 8h-3.059l4 5.25 4-5.25h-2.92z" }, null, -1)
-  ]));
+  ])]);
 }
 const Kt = /* @__PURE__ */ N(Gt, [["render", Wt]]), Xt = {
   setup() {
     const { selectedCount: e, removeAll: t, language: n, fetchData: s } = H();
     return () => {
-      const a = [], o = {
+      const o = [], a = {
         title: n.clearAll,
         size: "large",
         // bgColor: '#f1f1f1',
         // hoverBgColor: '#ddd',
         disabled: !e.value,
         onClick: t
-      }, c = {
+      }, u = {
         title: n.fetchData,
         size: "large",
         onClick: s
       };
-      return a.push(
-        i(G, c, () => i(Kt))
-      ), a.push(
-        i(G, o, () => i(Ut))
-      ), i("div", { class: "sp-search-control" }, a);
+      return o.push(
+        i(G, u, () => i(Kt))
+      ), o.push(
+        i(G, a, () => i(Ut))
+      ), i("div", { class: "sp-search-control" }, o);
     };
   }
 };
@@ -1000,9 +1000,9 @@ const Yt = {
   },
   emits: ["select", "hover"],
   setup(e, { emit: t }) {
-    const { renderCell: n, rtl: s, removeItem: a } = H();
+    const { renderCell: n, rtl: s, removeItem: o } = H();
     return () => {
-      const o = n(e.data), c = {
+      const a = n(e.data), u = {
         class: {
           "sp-list-item": !0,
           "sp-over": !e.isSelected && e.isHover,
@@ -1012,19 +1012,19 @@ const Yt = {
         onClick: () => t("select"),
         onMouseenter: () => t("hover")
       }, d = [
-        i("div", { title: o, innerHTML: o })
+        i("div", { title: a, innerHTML: a })
       ];
       if (e.isSelected) {
-        const u = {
+        const c = {
           onClick: (l) => {
-            l.stopPropagation(), a(e.data);
+            l.stopPropagation(), o(e.data);
           }
         };
         d.push(
-          i(G, u, () => i(J))
+          i(G, c, () => i(J))
         );
       }
-      return i("div", c, d);
+      return i("div", u, d);
     };
   }
 }, qt = {
@@ -1034,18 +1034,18 @@ const Yt = {
   setup(e, { emit: t }) {
     const { isItemSelected: n, keyProp: s } = H();
     return () => {
-      const a = e.list.map((c, d) => i(Yt, {
-        key: c[s],
-        data: c,
+      const o = e.list.map((u, d) => i(Yt, {
+        key: u[s],
+        data: u,
         isHover: e.highlightIndex === d,
-        isSelected: n(c),
-        onSelect: () => t("select", c),
+        isSelected: n(u),
+        onSelect: () => t("select", u),
         onHover: () => t("set-highlight", d)
       }));
       return i("div", {
         class: "sp-list",
         onMouseleave: () => t("set-highlight", j)
-      }, a);
+      }, o);
     };
   }
 };
@@ -1058,18 +1058,18 @@ const Jt = {
   },
   emits: ["select", "hover"],
   setup(e, { emit: t }) {
-    const { row: n } = e, { rtl: s } = H(), a = (o) => {
-      if (!n || !Object.keys(n).length || !(o != null && o.data))
+    const { row: n } = e, { rtl: s } = H(), o = (a) => {
+      if (!n || !Object.keys(n).length || !(a != null && a.data))
         return "";
-      switch (typeof o.data) {
+      switch (typeof a.data) {
         case "string":
-          return n[o.data];
+          return n[a.data];
         case "function":
-          return o.data(n);
+          return a.data(n);
       }
     };
     return () => {
-      const o = {
+      const a = {
         class: {
           "sp-over": !e.isSelected && e.isHover,
           "sp-selected": e.isSelected,
@@ -1077,14 +1077,14 @@ const Jt = {
         },
         onClick: () => t("select"),
         onMouseenter: () => t("hover")
-      }, c = e.columns.map((d, u) => {
+      }, u = e.columns.map((d, c) => {
         const l = {
-          key: u,
-          innerHTML: a(d)
+          key: c,
+          innerHTML: o(d)
         };
         return Object.hasOwn(d, "width") && (l.style = { width: Pe(d.width) }), i("td", l);
       });
-      return i("tr", o, c);
+      return i("tr", a, u);
     };
   }
 }, Qt = {
@@ -1095,21 +1095,21 @@ const Jt = {
   },
   emits: Ie(),
   setup(e, { emit: t }) {
-    const { isItemSelected: n, rtl: s, keyProp: a } = H();
+    const { isItemSelected: n, rtl: s, keyProp: o } = H();
     return () => {
-      const o = e.columns.map((u) => i("th", u.title)), c = e.list.map((u, l) => i(Jt, {
-        key: u[a],
-        row: u,
+      const a = e.columns.map((c) => i("th", c.title)), u = e.list.map((c, l) => i(Jt, {
+        key: c[o],
+        row: c,
         columns: e.columns,
         isHover: e.highlightIndex === l,
-        isSelected: n(u),
-        onSelect: () => t("select", u),
+        isSelected: n(c),
+        onSelect: () => t("select", c),
         onHover: () => t("set-highlight", l)
       })), d = i("table", [
         // table thead
-        i("thead", i("tr", { class: { "sp-rtl": s } }, o)),
+        i("thead", i("tr", { class: { "sp-rtl": s } }, a)),
         // table tbody
-        i("tbody", { onMouseleave: () => t("set-highlight", j) }, c)
+        i("tbody", { onMouseleave: () => t("set-highlight", j) }, u)
       ]);
       return i("div", { class: "sp-table" }, d);
     };
@@ -1124,12 +1124,12 @@ const en = {}, tn = {
   viewBox: "0 0 16 16"
 };
 function nn(e, t) {
-  return M(), k("svg", tn, t[0] || (t[0] = [
+  return M(), k("svg", tn, [...t[0] || (t[0] = [
     L("path", {
       "fill-rule": "evenodd",
       d: "M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z"
     }, null, -1)
-  ]));
+  ])]);
 }
 const ln = /* @__PURE__ */ N(en, [["render", nn]]), an = {}, on = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -1140,12 +1140,12 @@ const ln = /* @__PURE__ */ N(en, [["render", nn]]), an = {}, on = {
   viewBox: "0 0 16 16"
 };
 function rn(e, t) {
-  return M(), k("svg", on, t[0] || (t[0] = [
+  return M(), k("svg", on, [...t[0] || (t[0] = [
     L("path", {
       "fill-rule": "evenodd",
       d: "M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
     }, null, -1)
-  ]));
+  ])]);
 }
 const sn = /* @__PURE__ */ N(an, [["render", rn]]), cn = {}, un = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -1156,12 +1156,12 @@ const sn = /* @__PURE__ */ N(an, [["render", rn]]), cn = {}, un = {
   viewBox: "0 0 16 16"
 };
 function dn(e, t) {
-  return M(), k("svg", un, t[0] || (t[0] = [
+  return M(), k("svg", un, [...t[0] || (t[0] = [
     L("path", {
       "fill-rule": "evenodd",
       d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
     }, null, -1)
-  ]));
+  ])]);
 }
 const gn = /* @__PURE__ */ N(cn, [["render", dn]]), fn = {}, hn = {
   xmlns: "http://www.w3.org/2000/svg",
@@ -1172,12 +1172,12 @@ const gn = /* @__PURE__ */ N(cn, [["render", dn]]), fn = {}, hn = {
   viewBox: "0 0 16 16"
 };
 function pn(e, t) {
-  return M(), k("svg", hn, t[0] || (t[0] = [
+  return M(), k("svg", hn, [...t[0] || (t[0] = [
     L("path", {
       "fill-rule": "evenodd",
       d: "M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"
     }, null, -1)
-  ]));
+  ])]);
 }
 const vn = /* @__PURE__ */ N(fn, [["render", pn]]), mn = {
   name: "SelectPagePagination",
@@ -1190,23 +1190,25 @@ const vn = /* @__PURE__ */ N(fn, [["render", pn]]), mn = {
   setup(e, { emit: t }) {
     const { language: n } = H();
     return () => {
-      const a = [
+      const o = [
         { action: Se, title: n.first, disabled: e.isFirstPage, icon: ln },
         { action: te, title: n.prev, disabled: e.isFirstPage, icon: sn },
         { action: ne, title: n.next, disabled: e.isLastPage, icon: gn },
         { action: Ce, title: n.last, disabled: e.isLastPage, icon: vn }
-      ].map((o) => {
-        const c = {
-          href: "javascript:void(0)",
-          onClick: () => t("page-change", o.action)
-        }, d = [{ "sp-page-disabled": o.disabled }, "sp-page-button"];
-        return i("div", { class: d, title: o.title }, [
-          i("a", c, i(o.icon))
+      ].map((a) => {
+        const u = {
+          href: "#",
+          onClick: (c) => {
+            c.preventDefault(), !a.disabled && t("page-change", a.action);
+          }
+        }, d = [{ "sp-page-disabled": a.disabled }, "sp-page-button"];
+        return i("div", { class: d, title: a.title }, [
+          i("a", u, i(a.icon))
         ]);
       });
       return i("div", { class: "sp-pagination" }, [
         i("div", { class: "sp-page-info" }, e.pageInfo),
-        i("div", { class: "sp-page-control" }, a)
+        i("div", { class: "sp-page-control" }, o)
       ]);
     };
   }
@@ -1219,21 +1221,21 @@ const vn = /* @__PURE__ */ N(fn, [["render", pn]]), mn = {
   viewBox: "0 0 16 16"
 };
 function bn(e, t) {
-  return M(), k("svg", yn, t[0] || (t[0] = [
+  return M(), k("svg", yn, [...t[0] || (t[0] = [
     L("path", { d: "M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" }, null, -1),
     L("path", { d: "M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" }, null, -1)
-  ]));
+  ])]);
 }
 const Sn = /* @__PURE__ */ N(wn, [["render", bn]]);
 function Oe(e, t) {
   const {
     lang: n,
     selected: s,
-    query: a,
-    message: o,
-    currentPage: c,
+    query: o,
+    message: a,
+    currentPage: u,
     totalRows: d,
-    list: u,
+    list: c,
     loading: l,
     isDataEmpty: f,
     selectItem: r,
@@ -1246,13 +1248,13 @@ function Oe(e, t) {
     setItemHighlight: O,
     highlightNavigation: B,
     isSomeRowHighlight: S
-  } = vt(e, t, u), {
+  } = vt(e, t, c), {
     paginationInfo: x,
     isFirstPage: m,
     isLastPage: _,
     switchPage: C,
     pagingNavigation: P
-  } = wt(e, c, d, n), F = se(e.debounce), Z = y();
+  } = wt(e, u, d, n), F = se(e.debounce), Z = y();
   X(l, (w) => {
     w || q(() => Z.value && Z.value.focus());
   });
@@ -1261,9 +1263,9 @@ function Oe(e, t) {
   }, Ne = () => i("div", { class: "sp-search" }, [
     i(Ft, {
       ref: Z,
-      modelValue: a.value,
+      modelValue: o.value,
       "onUpdate:modelValue"(w) {
-        a.value = w;
+        o.value = w;
       },
       onKeyboardOperation: (w) => {
         if (ut(w))
@@ -1273,17 +1275,17 @@ function Oe(e, t) {
           return;
         }
         if (gt(w))
-          return S() ? r(u.value[p.value]) : void 0;
+          return S() ? r(c.value[p.value]) : void 0;
         ft(w) && t("close-dropdown");
       }
     }),
     i(Xt)
   ]), Re = () => {
     const w = [];
-    return o.value && w.push(
+    return a.value && w.push(
       i("div", { class: "sp-message" }, [
         i(Sn),
-        i("div", { class: "sp-message-body", innerHTML: o.value })
+        i("div", { class: "sp-message-body", innerHTML: a.value })
       ])
     ), i(ve, {
       name: "sp-message-slide",
@@ -1292,12 +1294,12 @@ function Oe(e, t) {
       onAfterLeave: () => t("adjust-dropdown")
     }, () => w);
   }, Fe = () => f() ? ue() : i(qt, {
-    list: u.value,
+    list: c.value,
     highlightIndex: p.value,
     onSelect: (w) => r(w),
     onSetHighlight: (w) => O(w)
   }), He = () => f() ? ue() : i(Qt, {
-    list: u.value,
+    list: c.value,
     columns: e.columns,
     highlightIndex: p.value,
     onSelect: (w) => r(w),
@@ -1305,9 +1307,9 @@ function Oe(e, t) {
   }), ue = () => i("div", { class: "sp-result-message" }, l.value ? "" : n.notFound);
   return {
     selected: s,
-    query: a,
-    message: o,
-    currentPage: c,
+    query: o,
+    message: a,
+    currentPage: u,
     lang: n,
     loading: l,
     renderCell: h,
@@ -1346,10 +1348,10 @@ function Ee(e) {
   function s() {
     n.value && n.value.close();
   }
-  function a() {
+  function o() {
     n.value && n.value.adjust();
   }
-  function o(c, d, u) {
+  function a(u, d, c) {
     const l = {
       ref: n,
       border: !1,
@@ -1361,17 +1363,17 @@ function Ee(e) {
         t.value = f;
       }
     };
-    return i(Tt, le(l, c), {
+    return i(Tt, le(l, u), {
       trigger: () => d,
-      default: () => u
+      default: () => c
     });
   }
   return {
     visible: t,
     dropdownRef: n,
-    renderDropdown: o,
+    renderDropdown: a,
     closeDropdown: s,
-    adjustDropdown: a
+    adjustDropdown: o
   };
 }
 const Cn = W({
@@ -1383,11 +1385,11 @@ const Cn = W({
   setup(e, { emit: t, expose: n }) {
     const {
       selected: s,
-      lang: a,
-      loading: o,
-      renderCell: c,
+      lang: o,
+      loading: a,
+      renderCell: u,
       removeAll: d,
-      removeItem: u,
+      removeItem: c,
       setSearchFocus: l,
       renderSearch: f,
       renderMessage: r,
@@ -1398,11 +1400,11 @@ const Cn = W({
     } = Oe(e, t);
     return n({
       selected: s,
-      lang: a,
-      loading: o,
-      renderCell: c,
+      lang: o,
+      loading: a,
+      renderCell: u,
       removeAll: d,
-      removeItem: u,
+      removeItem: c,
       setSearchFocus: l,
       fetchData: b
     }), () => v([
@@ -1422,12 +1424,12 @@ const _n = {}, Pn = {
   viewBox: "0 0 16 16"
 };
 function xn(e, t) {
-  return M(), k("svg", Pn, t[0] || (t[0] = [
+  return M(), k("svg", Pn, [...t[0] || (t[0] = [
     L("path", {
       "fill-rule": "evenodd",
       d: "M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
     }, null, -1)
-  ]));
+  ])]);
 }
 const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   props: {
@@ -1439,10 +1441,10 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   },
   setup(e, { slots: t }) {
     return () => {
-      var c;
+      var u;
       const n = [];
       Object.hasOwn(t, "default") ? n.push(t.default()) : n.push(
-        i("div", { class: "sp-placeholder" }, e.placeholder || ((c = e.lang) == null ? void 0 : c.placeholder))
+        i("div", { class: "sp-placeholder" }, e.placeholder || ((u = e.lang) == null ? void 0 : u.placeholder))
       );
       const s = {
         style: {
@@ -1451,20 +1453,20 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
           "margin-right": "-5px",
           "margin-left": "5px"
         }
-      }, a = {
+      }, o = {
         style: {
           display: e.loading ? "none" : "inherit"
         }
       };
-      n.push(i(In, a)), n.push(i(Le, s));
-      const o = {
+      n.push(i(In, o)), n.push(i(Le, s));
+      const a = {
         class: {
           "sp-trigger-container": !0,
           "sp-opened": e.dropdownVisible,
           "sp-disabled": e.disabled
         }
       };
-      return i("div", o, n);
+      return i("div", a, n);
     };
   }
 }, Be = {
@@ -1479,21 +1481,21 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   setup(e, { emit: t }) {
     const n = me(e, "selected");
     return () => {
-      var a, o;
-      if (!((a = n.value) != null && a.length))
+      var o, a;
+      if (!((o = n.value) != null && o.length))
         return;
       const s = [
         i("div", { class: "sp-select-content", innerHTML: e.renderCell(n.value[0]) })
       ];
-      if ((o = n.value) != null && o.length && !e.disabled) {
-        const c = {
+      if ((a = n.value) != null && a.length && !e.disabled) {
+        const u = {
           title: e.lang.clear,
           onClick: (d) => {
             d.stopPropagation(), t("remove");
           }
         };
         s.push(
-          i(G, c, () => i(J))
+          i(G, u, () => i(J))
         );
       }
       return i("div", { class: "sp-trigger sp-select" }, s);
@@ -1510,23 +1512,23 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   setup(e, { emit: t }) {
     const n = me(e, "selected");
     return () => {
-      const s = n.value.map((a, o) => {
-        const c = [
-          i("div", { class: "sp-chip--body", innerHTML: e.renderCell(a) })
+      const s = n.value.map((o, a) => {
+        const u = [
+          i("div", { class: "sp-chip--body", innerHTML: e.renderCell(o) })
         ];
         if (!e.disabled) {
           const d = {
             size: "small",
             hoverBgColor: "#ccc",
-            onClick: (u) => {
-              u.stopPropagation(), t("remove", a);
+            onClick: (c) => {
+              c.stopPropagation(), t("remove", o);
             }
           };
-          c.push(
+          u.push(
             i(G, d, () => i(J))
           );
         }
-        return i("div", { class: "sp-chip", key: o }, c);
+        return i("div", { class: "sp-chip", key: a }, u);
       });
       return i("div", { class: "sp-trigger sp-chips" }, s);
     };
@@ -1540,11 +1542,11 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   emits: ["visible-change"],
   setup(e, { emit: t, attrs: n, expose: s }) {
     const {
-      visible: a,
-      adjustDropdown: o,
-      closeDropdown: c,
+      visible: o,
+      adjustDropdown: a,
+      closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), u = y([]), l = y();
+    } = Ee(e), c = y([]), l = y();
     return s({
       removeItem: (f) => {
         var r;
@@ -1557,15 +1559,15 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
     }), () => {
       var p, O, B, S, x;
       const f = {
-        selected: u,
+        selected: c,
         disabled: e.disabled,
         lang: (p = l == null ? void 0 : l.value) == null ? void 0 : p.lang,
         renderCell: (O = l == null ? void 0 : l.value) == null ? void 0 : O.renderCell,
         onRemove(m) {
           U(n) ? l.value.removeItem(m) : l.value.removeAll();
         }
-      }, r = (B = u.value) != null && B.length ? () => i(U(n) ? Me : Be, f) : void 0, g = {
-        dropdownVisible: a.value,
+      }, r = (B = c.value) != null && B.length ? () => i(U(n) ? Me : Be, f) : void 0, g = {
+        dropdownVisible: o.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
         lang: (S = l == null ? void 0 : l.value) == null ? void 0 : S.lang,
@@ -1582,10 +1584,10 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
         h,
         i(Cn, le({
           ref: l,
-          onAdjustDropdown: o,
-          onCloseDropdown: c,
+          onAdjustDropdown: a,
+          onCloseDropdown: u,
           onSelectionChange(m) {
-            u.value = m, !U(n) && (m != null && m.length) && c();
+            c.value = m, !U(n) && (m != null && m.length) && u();
           }
         }, n))
       );
@@ -1604,11 +1606,11 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   setup(e, { emit: t, expose: n }) {
     const {
       selected: s,
-      lang: a,
-      loading: o,
-      removeAll: c,
+      lang: o,
+      loading: a,
+      removeAll: u,
       removeItem: d,
-      setSearchFocus: u,
+      setSearchFocus: c,
       renderCell: l,
       renderSearch: f,
       renderMessage: r,
@@ -1619,12 +1621,12 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
     } = Oe(e, t);
     return n({
       selected: s,
-      lang: a,
-      loading: o,
+      lang: o,
+      loading: a,
       renderCell: l,
-      removeAll: c,
+      removeAll: u,
       removeItem: d,
-      setSearchFocus: u,
+      setSearchFocus: c,
       fetchData: b
     }), () => v([
       f(),
@@ -1642,11 +1644,11 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
   emits: ["visible-change"],
   setup(e, { emit: t, attrs: n, expose: s }) {
     const {
-      visible: a,
-      adjustDropdown: o,
-      closeDropdown: c,
+      visible: o,
+      adjustDropdown: a,
+      closeDropdown: u,
       renderDropdown: d
-    } = Ee(e), u = y([]), l = y(), f = y(!1);
+    } = Ee(e), c = y([]), l = y(), f = y(!1);
     return s({
       removeItem: (r) => {
         var g;
@@ -1659,15 +1661,15 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
     }), () => {
       var O, B, S, x, m;
       const r = {
-        selected: u,
+        selected: c,
         disabled: e.disabled,
         lang: (O = l == null ? void 0 : l.value) == null ? void 0 : O.lang,
         renderCell: (B = l == null ? void 0 : l.value) == null ? void 0 : B.renderCell,
         onRemove(_) {
           U(n) ? l.value.removeItem(_) : l.value.removeAll();
         }
-      }, g = (S = u.value) != null && S.length ? () => i(U(n) ? Me : Be, r) : void 0, h = {
-        dropdownVisible: a.value,
+      }, g = (S = c.value) != null && S.length ? () => i(U(n) ? Me : Be, r) : void 0, h = {
+        dropdownVisible: o.value,
         disabled: e.disabled,
         placeholder: n.placeholder,
         lang: (x = l == null ? void 0 : l.value) == null ? void 0 : x.lang,
@@ -1684,10 +1686,10 @@ const In = /* @__PURE__ */ N(_n, [["render", xn]]), ze = {
         v,
         i($n, le({
           ref: l,
-          onAdjustDropdown: o,
-          onCloseDropdown: c,
+          onAdjustDropdown: a,
+          onCloseDropdown: u,
           onSelectionChange(_) {
-            u.value = _, !U(n) && (_ != null && _.length) && c();
+            c.value = _, !U(n) && (_ != null && _.length) && u();
           }
         }, n))
       );
