@@ -1,13 +1,2 @@
-.DS_Store
-node_modules/
-npm-debug.log
-yarn-error.log
-.nyc_output/
-coverage/
-
-# Editor directories and files
+/node_modules/
 .idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
